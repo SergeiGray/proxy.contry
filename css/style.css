@@ -1,0 +1,19 @@
+* {
+  outline: 1px solid lightgreen;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 1140px;
+}
+
+.header {
+  min-height: 80px;
+}
+
+.header h1 {
+  margin: 0;
+}
