@@ -5,12 +5,15 @@
 	<title>Proxy.contry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/svgxuse.js"></script>
 </head>
 <body>
   <header class="header">
     <section class="wrapper header__container">
       <a href="" class="header__logo">
-        <img src="img/logo.svg" alt="Proxy contry" width="33" height="33">
+        <svg class="header__icon-logo" width="33" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
         <b>proxy</b>.contry
       </a>
       <h1 class="header__title">Индивидуальные анонимные прокси HTTPS и SOCKS5</h1>
@@ -36,23 +39,47 @@
         <section class="objective">
           <h2 class="objective__title">Прокси-серверы со всего мира</h2>
           <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и др.</p>
-          <div>
+          <div class="objective__container">
             <p class="objective__paragraph">IPv6 подходит для</p>
             <div class="objective__services">
-              <a href="">
-                <img src="img/icon_instagram_logo.png" alt="">
-                <img src="img/icon_instagram_title.png" alt="">
+              <a href="https://www.instagram.com/">
+                <svg class="objective__icon" width="120" height="27">
+                  <title>Instagram</title>
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
               </a>
-              <a href="">
-                <img src="img/icon_mail_logo.png" alt="">
-                <img src="img/icon_mail_title.png" alt="">
+              <a href="https://mail.ru/">
+                <svg class="objective__icon" width="70" height="21">
+                  <title>Mail</title>
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </a>
-              <a href=""><img src="" alt=""></a>
-              <a href=""><img src="" alt=""></a>
-              <a href=""><img src="" alt=""></a>
-              <a href=""><img src="" alt=""></a>
+              <a href="https://www.facebook.com/">
+                <svg class="objective__icon" width="92" height="19">
+                  <title>Facebook</title>
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="https://tooligram.com/">
+                <svg class="objective__icon" width="123" height="33">
+                  <title>Tooligram</title>
+                  <use xlink:href="img/sprite.svg#icon-tooligram"></use>
+                </svg>
+              </a>
+              <a href="https://yandex.ru/">
+                <svg class="objective__icon" width="69" height="29">
+                  <title>Yandex</title>
+                  <use xlink:href="img/sprite.svg#icon-yandex"></use>
+                </svg>
+              </a>
+              <a href="https://www.google.ru/">
+                <svg class="objective__icon" width="79" height="25">
+                  <title>Google</title>
+                  <use xlink:href="img/sprite.svg#icon-google"></use>
+                </svg>
+              </a>
             </div>
-            <a href="">и других сервисов</a>
+            <a href="" class="objective__others-services">и других сервисов</a>
           </div>
           <div class="landing_block__pointer">
             <span>Вниз</span>
@@ -60,14 +87,62 @@
         </section>
         <section class="selection">
           <div class="selection__up_block">
-            <p>Выберите прокси по параметрам</p>
-            <form action=""></form>
-            <p><b>Внимание!</b> Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе <a href="">«Проверка совместимости IPv6»</a></p>
+            <p class="selection__title">Выберите прокси по параметрам</p>
+            <form action="" method="post" class="selection__form">
+              <label >
+                <span>Тип</span>
+                <select name="">
+                  <option value="IPv6">IPv6</option>
+                  <option value="IPv4">IPv4</option>
+                  <option value="IPv4 Shared">IPv4 Shared</option>
+                </select>
+              </label>
+              <label for="">
+                <span>Страна</span>
+                <select name="" id="">
+                  <option value="Россия">Россия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="США">США</option>
+                  <option value="Франция">Франция</option>
+                  <option value="Австралия">Австралия</option>
+                  <option value="Сингапур">Сингапур</option>
+                  <option value="Великобритания">Великобритания</option>
+                  <option value="Украина">Украина</option>
+                  <option value="Япония">Япония</option>
+                  <option value="Нидерланды">Нидерланды</option>
+                </select>
+              </label>
+              <label>
+                <span>Количество</span>
+                <input type="text" value="1 шт">
+              </label>
+              <label for="">
+                <span>Срок аренды</span>
+                <select name="" id="">
+                  <option value="3 дня">3 дня</option>
+                  <option value="7 дней">7 дней</option>
+                  <option value="2 недели">2 недели</option>
+                  <option value="1 месяц">1 месяц</option>
+                  <option value="2 месяца">2 месяца</option>
+                  <option value="3 месяца">3 месяца</option>
+                  <option value="6 месяцев">6 месяцев</option>
+                  <option value="1 год">1 год</option>
+                </select>
+              </label>
+              <label for="">
+                <span>Протокол</span>
+                <select name="" id="">
+                  <option value="HTTPS">HTTPS</option>
+                  <option value="SOCKS">SOCKS</option>
+                </select>
+              </label>
+            </form>
+            <p class="selection__paragraph"><b>Внимание!</b> <span>Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="selection__link">«Проверка совместимости IPv6»</a></p>
           </div>
           <div class="selection__down_block">
             <div class="up_line">
-              <p>Оплатите заказ</p>
-              <a href="">У меня есть промокод</a>
+              <p class="selection__title">Оплатите заказ</p>
+              <a href="" class="selection__link">У меня есть промокод</a>
             </div>
             <div class="down_line">
               <div class="price">
@@ -75,7 +150,7 @@
                 <span>6,5 ₽/шт</span>
               </div>
               <button>Купить</button>
-              <p>Нажимая на кнопку вы соглашаетесь на обработку персональных данных. Политика конфидециальности</p>
+              <p class="selection__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span> <a href="" class="selection__link">Политика конфидециальности</a></p>
             </div>
           </div>
         </section>
