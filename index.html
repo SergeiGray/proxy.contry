@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Proxy.contry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/svgxuse.js"></script>
 </head>
 <body>
   <header class="header">
@@ -31,11 +31,11 @@
     </section>
   </header>
   <main>
-    <section class="landing_block">
-      <video loop muted autoplay poster="img/background.png" width="100%" class="background_video">
+    <section class="landing">
+      <video loop muted autoplay poster="img/background.png" width="150%" class="background_video">
         <source src="videos/background_video.mp4">
       </video>
-      <section class="wrapper landing_block__container">
+      <section class="wrapper landing__container">
         <section class="objective">
           <h2 class="objective__title">Прокси-серверы со всего мира</h2>
           <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и др.</p>
@@ -81,25 +81,25 @@
             </div>
             <a href="" class="objective__others-services">и других сервисов</a>
           </div>
-          <div class="landing_block__pointer">
+          <div class="landing__pointer">
             <span>Вниз</span>
           </div>
         </section>
-        <section class="selection">
-          <div class="selection__up_block">
-            <p class="selection__title">Выберите прокси по параметрам</p>
-            <form action="" method="post" class="selection__form">
-              <label >
-                <span>Тип</span>
-                <select name="">
+        <section class="parameters">
+          <div class="parameters__up_block">
+            <p class="parameters__title">Выберите прокси по параметрам</p>
+            <form id="parameters__form" action="handler.php" method="post" class="parameters__form">
+              <label>
+                <span class="parameters__form-title">Тип</span>
+                <select name="type" class="parameters__select">
                   <option value="IPv6">IPv6</option>
                   <option value="IPv4">IPv4</option>
                   <option value="IPv4 Shared">IPv4 Shared</option>
                 </select>
               </label>
-              <label for="">
-                <span>Страна</span>
-                <select name="" id="">
+              <label>
+                <span class="parameters__form-title">Страна</span>
+                <select name="country" id="" class="parameters__select">
                   <option value="Россия">Россия</option>
                   <option value="Германия">Германия</option>
                   <option value="США">США</option>
@@ -113,12 +113,12 @@
                 </select>
               </label>
               <label>
-                <span>Количество</span>
-                <input type="text" value="1 шт">
+                <span class="parameters__form-title">Количество</span>
+                <input name="amount" type="text" value="1 шт" placeholder="1 шт">
               </label>
-              <label for="">
-                <span>Срок аренды</span>
-                <select name="" id="">
+              <label>
+                <span class="parameters__form-title">Срок аренды</span>
+                <select name="time" id="" class="parameters__select">
                   <option value="3 дня">3 дня</option>
                   <option value="7 дней">7 дней</option>
                   <option value="2 недели">2 недели</option>
@@ -129,31 +129,70 @@
                   <option value="1 год">1 год</option>
                 </select>
               </label>
-              <label for="">
-                <span>Протокол</span>
-                <select name="" id="">
+              <label class="parameters__last-label">
+                <span class="parameters__form-title">Протокол</span>
+                <select name="protocol" id="" class="parameters__select">
                   <option value="HTTPS">HTTPS</option>
                   <option value="SOCKS">SOCKS</option>
                 </select>
               </label>
             </form>
-            <p class="selection__paragraph"><b>Внимание!</b> <span>Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="selection__link">«Проверка совместимости IPv6»</a></p>
+            <p class="parameters__paragraph"><b>Внимание!</b> <span>Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="selection__link">«Проверка совместимости IPv6»</a></p>
           </div>
-          <div class="selection__down_block">
-            <div class="up_line">
-              <p class="selection__title">Оплатите заказ</p>
-              <a href="" class="selection__link">У меня есть промокод</a>
+          <div class="parameters__down_block">
+            <div class="parameters__up_line">
+              <p class="parameters__title">Оплатите заказ</p>
+              <a href="" class="parameters__link">У меня есть промокод</a>
             </div>
-            <div class="down_line">
-              <div class="price">
-                <span>6,5 ₽</span>
-                <span>6,5 ₽/шт</span>
+            <div class="parameters__down_line">
+              <div class="parameters__price">
+                <span>6,5 &#8381</span>
+                <span>6,5 &#8381/шт</span>
               </div>
-              <button>Купить</button>
-              <p class="selection__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span> <a href="" class="selection__link">Политика конфидециальности</a></p>
+              <button form="parameters__form" type="submit" class="parameters__sending">Купить</button>
+              <p class="parameters__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span> <a href="" class="parameters__link">Политика конфидециальности</a></p>
             </div>
           </div>
         </section>
+      </section>
+    </section>
+    <section class="choice">
+      <section class="wrapper choice__container">
+        <img src="img/choice.png" width="505" height="285" class="choice__image">
+        <div class="choice__right_block">
+          <p class="choice__title">Не знаете, какой прокси нужен?</p>
+          <p class="choice__paragraph">Укажите цель использования, мы подберем прокси для вас</p>
+          <form id="choice__form" action="handler.php" method="post" class="choice__form">
+            <label>
+              <span class="choice__form-title">Сервис</span>
+              <input name="address" type="text" placeholder="например, http://yandex.ru">
+            </label>
+            <button form="choice__form" type="submit" class="choice__sending">Подобрать</button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <section class="using">
+      <section class="wrapper using__container">
+        <p>Как пользоваться?</p>
+        <div class="using__down_block">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    </section>
+    <section class="advantage">
+      <section class="wrapper advantage__container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </section>
     </section>
   </main>
@@ -161,5 +200,13 @@
 
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('.parameters__select').select2();
+    });
+  </script>
 </body>
 </html>
