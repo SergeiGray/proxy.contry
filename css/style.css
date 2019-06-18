@@ -649,3 +649,9 @@ body {
   height: 57px;
   background: linear-gradient(90deg, #7E64FE 0%, #4F4195 128.4%);
 }
+
+/*--WHOLESALE---*/
+
+.wholesale {
+  background: url(../img/background_wholesale.png) center center no-repeat;
+}
