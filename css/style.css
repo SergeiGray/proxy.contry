@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700&display=swap&subset=cyrillic');
 
 * {
-  outline: 1px solid lightgreen;
+  /*outline: 1px solid lightgreen;*/
 }
 
 body {
@@ -445,6 +445,10 @@ body {
 
 /*---CHOICE---*/
 
+.choice {
+  margin-bottom: 90px;
+}
+
 .choice__container {
   display: flex;
   border: 1px solid #E7E7E7;
@@ -529,4 +533,119 @@ body {
 
 /*---USING---*/
 
+.using {
+  margin-bottom: 90px;
+}
 
+.using__container {
+  display: flex;
+  flex-direction: column;
+  color: #221B44;
+}
+
+.using__down_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.using__item {
+  display: flex;
+  box-sizing: border-box;
+  width: 340px;
+}
+
+.using__icon {
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+
+.using__title {
+  margin: 0 0 55px 0;
+  font-size: 32px;
+}
+
+.using__content p:first-child {
+  margin: 0 0 21px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.using__content p:last-child {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/*---ADVANTAGE---*/
+
+.advantage__table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #221B44;
+}
+
+.advantage__item {
+  position: relative;
+  width: 380px;
+  height: 215px;
+  border: 1px solid #E7E7E7;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.advantage__item:not(.advantage__last_item):hover {
+  background-color: #7E64FE;
+}
+
+.advantage__item:hover .advantage__paragraph {
+  color: #ffffff;
+}
+
+.advantage__item_number {
+  position: absolute;
+  top: 23px;
+  left: 37px;
+  font-size: 40px;
+  opacity: 0.05;
+}
+
+.advantage__paragraph {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.advantage__title {
+  display: inline;
+  margin-right: 40px;
+  font-size: 26px;
+}
+
+.advantage__link {
+  display: inline-block;
+  position: relative;
+  width: 230px;
+  height: 57px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 57px;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(90deg, #7E64FE 0%, rgba(126, 100, 254, 0) 128.4%);
+}
+
+.advantage__link::after {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  left: 6px;
+  content: '';
+  width: 230px;
+  height: 57px;
+  background: linear-gradient(90deg, #7E64FE 0%, #4F4195 128.4%);
+}
