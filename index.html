@@ -254,17 +254,61 @@
     <section class="wholesale">
       <section class="wrapper wholesale__container">
         <div class="wholesale__up_block">
-          <p class="wholesale__price">
+          <p class="wholesale__discount">
             <span>до</span>-60%
           </p>
-          <div class="wholesale__right_block">
+          <div class="wholesale__up_right_block">
             <p class="wholesale__title">Оптом дешевле!</p>
             <p class="wholesale__paragraph">Если у вас есть потребность в большом количестве прокси, мы будем рады предоставить скидку до -60% на весь объем. Больше берете — больше скидка!</p>
           </div>
         </div>
-        <form action="">
-
-        </form>
+        <div class="wholesale__down_left_block">
+          <form id="wholesale__form" action="handler.php" method="post" class="wholesale__form">
+            <fieldset>
+              <span class="wholesale__form-title">Количество</span>
+              <input id="wholesale__radio_1" type="radio" name="amount" value="100 шт" class="wholesale__radio">
+              <label for="wholesale__radio_1" class="wholesale__radio_label">100 шт</label>
+              <input id="wholesale__radio_2" type="radio" name="amount" value="200 шт" class="wholesale__radio">
+              <label for="wholesale__radio_2" class="wholesale__radio_label">200 шт</label>
+              <input id="wholesale__radio_3" type="radio" name="amount" value="300 шт" class="wholesale__radio">
+              <label for="wholesale__radio_3" class="wholesale__radio_label">300 шт</label>
+              <input id="wholesale__radio_4" type="radio" name="amount" value="500 шт" class="wholesale__radio" class="wholesale__radio">
+              <label for="wholesale__radio_4" class="wholesale__radio_label">500 шт</label>
+            </fieldset>
+            <label class="wholesale__select_label">
+              <span class="wholesale__form-title">Тип</span>
+              <select name="type" class="wholesale__select">
+                <option value="IPv6">IPv6</option>
+                <option value="IPv4">IPv4</option>
+                <option value="IPv4 Shared">IPv4 Shared</option>
+              </select>
+            </label >
+            <label class="wholesale__select_label">
+              <span class="wholesale__form-title">Страна</span>
+              <select name="country" id="" class="wholesale__select">
+                <option value="Россия">Россия</option>
+                <option value="Германия">Германия</option>
+                <option value="США">США</option>
+                <option value="Франция">Франция</option>
+                <option value="Австралия">Австралия</option>
+                <option value="Сингапур">Сингапур</option>
+                <option value="Великобритания">Великобритания</option>
+                <option value="Украина">Украина</option>
+                <option value="Япония">Япония</option>
+                <option value="Нидерланды">Нидерланды</option>
+              </select>
+            </label>
+          </form>
+        </div>
+        <div class="wholesale__down_right_block">
+          <div class="wholesale__price">
+            <p>6500 &#8381</p>
+            <p>4500 &#8381</p>
+          </div>
+          <button>-30% Купить</button>
+        </div>
+        <p class="wholesale__paragraph">Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</p>
+        <a href="">Политика конфидециальности</a>
       </section>
     </section>
   </main>
@@ -277,7 +321,10 @@
   <script src="js/svgxuse.min.js"></script>
   <script>
     $(document).ready(function() {
-    $('.parameters__select').select2();
+      $('.parameters__select').select2();
+    });
+    $(document).ready(function() {
+      $('.wholesale__select').select2();
     });
   </script>
 </body>

@@ -308,7 +308,6 @@ body {
 
 .parameters__down_line {
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
 }
 .parameters__price {
@@ -653,5 +652,100 @@ body {
 /*--WHOLESALE---*/
 
 .wholesale {
-  background: url(../img/background_wholesale.png) center center no-repeat;
+  background: #221B44 url(../img/background_wholesale.png) center top no-repeat;
+  background-size: 100% 100%;
+}
+
+.wholesale__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wholesale__up_block {
+  display: flex;
+}
+
+.wholesale__discount {
+  position: relative;
+  margin: 60px 85px 0 0;
+  font-weight: bold;
+  font-size: 132px;
+  color: #7E64FE;
+  text-shadow: 1px 7px 20px rgba(114, 85, 255, 0.3);
+}
+
+.wholesale__discount span {
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.6;
+  text-shadow: none;
+}
+
+.wholesale__up_right_block {
+  width: 615px;
+  margin-top: 90px;
+}
+.wholesale__title {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.wholesale__up_block .wholesale__paragraph {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.wholesale__form fieldset {
+  border: none;
+}
+
+.wholesale__form-title {
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.wholesale__radio {
+  display: none;
+}
+
+.wholesale__radio_label {
+  padding: 6px 14px 7px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.wholesale__radio:checked + .wholesale__radio_label {
+ background-color: #7E64FE;
+ border: none;
+}
+
+.wholesale__select_label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 150px;
+  margin-right: 30px;
+  margin-bottom: 28px;
+  padding-bottom: 4px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.wholesale__form select {
+  height: 28px;
+  background: transparent;
+  border: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
 }
