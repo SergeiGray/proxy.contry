@@ -137,7 +137,7 @@
                 </select>
               </label>
             </form>
-            <p class="parameters__paragraph"><b>Внимание!</b> <span>Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="selection__link">«Проверка совместимости IPv6»</a></p>
+            <p class="parameters__paragraph"><b>Внимание!</b> <span>Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="parameters__link">«Проверка совместимости IPv6»</a></p>
           </div>
           <div class="parameters__down_block">
             <div class="parameters__up_line">
@@ -262,53 +262,58 @@
             <p class="wholesale__paragraph">Если у вас есть потребность в большом количестве прокси, мы будем рады предоставить скидку до -60% на весь объем. Больше берете — больше скидка!</p>
           </div>
         </div>
-        <div class="wholesale__down_left_block">
-          <form id="wholesale__form" action="handler.php" method="post" class="wholesale__form">
-            <fieldset>
-              <span class="wholesale__form-title">Количество</span>
-              <input id="wholesale__radio_1" type="radio" name="amount" value="100 шт" class="wholesale__radio">
-              <label for="wholesale__radio_1" class="wholesale__radio_label">100 шт</label>
-              <input id="wholesale__radio_2" type="radio" name="amount" value="200 шт" class="wholesale__radio">
-              <label for="wholesale__radio_2" class="wholesale__radio_label">200 шт</label>
-              <input id="wholesale__radio_3" type="radio" name="amount" value="300 шт" class="wholesale__radio">
-              <label for="wholesale__radio_3" class="wholesale__radio_label">300 шт</label>
-              <input id="wholesale__radio_4" type="radio" name="amount" value="500 шт" class="wholesale__radio" class="wholesale__radio">
-              <label for="wholesale__radio_4" class="wholesale__radio_label">500 шт</label>
-            </fieldset>
-            <label class="wholesale__select_label">
-              <span class="wholesale__form-title">Тип</span>
-              <select name="type" class="wholesale__select">
-                <option value="IPv6">IPv6</option>
-                <option value="IPv4">IPv4</option>
-                <option value="IPv4 Shared">IPv4 Shared</option>
-              </select>
-            </label >
-            <label class="wholesale__select_label">
-              <span class="wholesale__form-title">Страна</span>
-              <select name="country" id="" class="wholesale__select">
-                <option value="Россия">Россия</option>
-                <option value="Германия">Германия</option>
-                <option value="США">США</option>
-                <option value="Франция">Франция</option>
-                <option value="Австралия">Австралия</option>
-                <option value="Сингапур">Сингапур</option>
-                <option value="Великобритания">Великобритания</option>
-                <option value="Украина">Украина</option>
-                <option value="Япония">Япония</option>
-                <option value="Нидерланды">Нидерланды</option>
-              </select>
-            </label>
-          </form>
-        </div>
-        <div class="wholesale__down_right_block">
-          <div class="wholesale__price">
-            <p>6500 &#8381</p>
-            <p>4500 &#8381</p>
+        <div class="wholesale__down_block">
+          <div class="wholesale__down_left_block">
+            <form id="wholesale__form" action="handler.php" method="post" class="wholesale__form">
+              <div class="wholesale__form_up_block">
+                <span class="wholesale__form-title">Количество</span>
+                <input id="wholesale__radio_1" type="radio" name="amount" value="100 шт" class="wholesale__radio" checked>
+                <label for="wholesale__radio_1" class="wholesale__radio_label">100 шт</label>
+                <input id="wholesale__radio_2" type="radio" name="amount" value="200 шт" class="wholesale__radio">
+                <label for="wholesale__radio_2" class="wholesale__radio_label">200 шт</label>
+                <input id="wholesale__radio_3" type="radio" name="amount" value="300 шт" class="wholesale__radio">
+                <label for="wholesale__radio_3" class="wholesale__radio_label">300 шт</label>
+                <input id="wholesale__radio_4" type="radio" name="amount" value="500 шт" class="wholesale__radio" class="wholesale__radio">
+                <label for="wholesale__radio_4" class="wholesale__radio_label">500 шт</label>
+              </div>
+              <div class="wholesale__form_down_block">
+                <label class="wholesale__select_label">
+                  <span class="wholesale__form-title">Тип</span>
+                  <select name="type" class="wholesale__select">
+                    <option value="IPv6">IPv6</option>
+                    <option value="IPv4">IPv4</option>
+                    <option value="IPv4 Shared">IPv4 Shared</option>
+                  </select>
+                </label >
+                <label class="wholesale__select_label">
+                  <span class="wholesale__form-title">Страна</span>
+                  <select name="country" id="" class="wholesale__select">
+                    <option value="Россия">Россия</option>
+                    <option value="Германия">Германия</option>
+                    <option value="США">США</option>
+                    <option value="Франция">Франция</option>
+                    <option value="Австралия">Австралия</option>
+                    <option value="Сингапур">Сингапур</option>
+                    <option value="Великобритания">Великобритания</option>
+                    <option value="Украина">Украина</option>
+                    <option value="Япония">Япония</option>
+                    <option value="Нидерланды">Нидерланды</option>
+                  </select>
+                </label>
+              </div>
+            </form>
           </div>
-          <button>-30% Купить</button>
+          <div class="wholesale__down_right_block">
+            <div class="wholesale__price">
+              <p>6500 &#8381</p>
+              <p>4500 &#8381</p>
+            </div>
+            <button form="wholesale__form" type="submit" class="wholesale__sending">-30% Купить</button>
+            <p class="wholesale__paragraph">Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <br>
+              <a href="" class="wholesale__link">Политика конфидециальности</a>
+            </p>
+          </div>
         </div>
-        <p class="wholesale__paragraph">Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</p>
-        <a href="">Политика конфидециальности</a>
       </section>
     </section>
   </main>
