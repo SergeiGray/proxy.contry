@@ -32,14 +32,17 @@
   </header>
   <main>
     <section class="landing">
-      <video loop muted autoplay poster="img/background_landing.png" width="150%" class="background_video">
-        <source src="videos/background_video.mp4">
+      <video loop muted autoplay poster="img/background_landing_desktop.png" width="150%" class="background_video">
+        <source
+          type="video/mp4"
+          media="(min-width: 1150px)"
+          src="videos/background_video.mp4">
       </video>
       <section class="wrapper landing__container">
         <section class="objective">
           <h2 class="objective__title">Прокси-серверы со всего мира</h2>
           <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и др.</p>
-          <div class="objective__container">
+          <div class="objective__applicable">
             <p class="objective__paragraph">IPv6 подходит для</p>
             <div class="objective__services">
               <a href="https://www.instagram.com/">
@@ -137,7 +140,7 @@
                 </select>
               </label>
             </form>
-            <p class="parameters__paragraph"><b>Внимание!</b> <span>Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="parameters__link">«Проверка совместимости IPv6»</a></p>
+            <p class="parameters__paragraph"> <span>Внимание! Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="parameters__link">«Проверка совместимости IPv6»</a></p>
           </div>
           <div class="parameters__down_block">
             <div class="parameters__up_line">
@@ -150,15 +153,62 @@
                 <span>6,5 &#8381/шт</span>
               </div>
               <button form="parameters__form" type="submit" class="parameters__sending">Купить</button>
-              <p class="parameters__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span> <a href="" class="parameters__link">Политика конфидециальности</a></p>
+              <p class="parameters__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span><br><a href="" class="parameters__link">Политика конфидециальности</a></p>
             </div>
           </div>
         </section>
+        <div class="landing__applicable">
+          <p class="objective__paragraph">IPv6 подходит для</p>
+          <div class="objective__services">
+            <a href="https://www.instagram.com/">
+              <svg class="objective__icon" width="120" height="27">
+                <title>Instagram</title>
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="https://mail.ru/">
+              <svg class="objective__icon" width="70" height="21">
+                <title>Mail</title>
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/">
+              <svg class="objective__icon" width="92" height="19">
+                <title>Facebook</title>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://tooligram.com/">
+              <svg class="objective__icon" width="123" height="33">
+                <title>Tooligram</title>
+                <use xlink:href="img/sprite.svg#icon-tooligram"></use>
+              </svg>
+            </a>
+            <a href="https://yandex.ru/">
+              <svg class="objective__icon" width="69" height="29">
+                <title>Yandex</title>
+                <use xlink:href="img/sprite.svg#icon-yandex"></use>
+              </svg>
+            </a>
+            <a href="https://www.google.ru/">
+              <svg class="objective__icon" width="79" height="25">
+                <title>Google</title>
+                <use xlink:href="img/sprite.svg#icon-google"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="" class="objective__others-services">и других сервисов</a>
+        </div>
       </section>
     </section>
     <section class="choice">
       <section class="wrapper choice__container">
-        <img src="img/choice.png" width="505" height="285" class="choice__image">
+        <picture class="choice__picture">
+          <source
+            media="(max-width: 1190px)"
+            srcset="img/choice-table.png">
+          <img src="img/choice-desktop.png" class="choice__image">
+        </picture>
         <div class="choice__right_block">
           <p class="choice__title">Не знаете, какой прокси нужен?</p>
           <p class="choice__paragraph">Укажите цель использования, мы подберем прокси для вас</p>
@@ -209,46 +259,38 @@
     </section>
     <section class="advantage">
       <section class="wrapper advantage__container">
-        <table class="advantage__table" >
-          <tr>
-            <td class="advantage__item">
-              <span class="advantage__item_number">01</span>
-              <p class="advantage__paragraph">Покупка от 1 шт.</p>
-            </td>
-            <td class="advantage__item">
-              <span class="advantage__item_number">02</span>
-              <p class="advantage__paragraph">Моментальная<br>автоматическая выдача</p>
-            </td>
-            <td class="advantage__item">
-              <span class="advantage__item_number">03</span>
-              <p class="advantage__paragraph">Удобная<br>панель управления</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="advantage__item">
-              <span class="advantage__item_number">04</span>
-              <p class="advantage__paragraph">API для разработчиков</p>
-            </td>
-            <td class="advantage__item">
-              <span class="advantage__item_number">05</span>
-              <p class="advantage__paragraph">Круглосуточная<br>поддержка</p>
-            </td>
-            <td class="advantage__item">
-              <span class="advantage__item_number">06</span>
-              <p class="advantage__paragraph">Гарантия качества —<br>все прокси проходят проверку</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="advantage__item">
-              <span class="advantage__item_number">07</span>
-              <p class="advantage__paragraph">Защита покупок.<br>Вернём деньги (подробнее)</p>
-            </td>
-            <td class="advantage__item advantage__last_item" colspan="2">
-              <p class="advantage__title">Вам понравится!</p>
-              <a href="" class="advantage__link">Зарегистрироваться</a>
-            </td>
-          </tr>
-        </table>
+        <div class="advantage__item">
+          <span class="advantage__item_number">01</span>
+          <p class="advantage__paragraph">Покупка от 1 шт.</p>
+        </div>
+        <div class="advantage__item">
+          <span class="advantage__item_number">02</span>
+          <p class="advantage__paragraph">Моментальная<br>автоматическая выдача</p>
+        </div>
+        <div class="advantage__item">
+          <span class="advantage__item_number">03</span>
+          <p class="advantage__paragraph">Удобная<br>панель управления</p>
+        </div>
+        <div class="advantage__item">
+          <span class="advantage__item_number">04</span>
+          <p class="advantage__paragraph">API для разработчиков</p>
+        </div>
+        <div class="advantage__item">
+          <span class="advantage__item_number">05</span>
+          <p class="advantage__paragraph">Круглосуточная<br>поддержка</p>
+        </div>
+        <div class="advantage__item">
+          <span class="advantage__item_number">06</span>
+          <p class="advantage__paragraph">Гарантия качества —<br>все прокси проходят проверку</p>
+        </div>
+        <div class="advantage__item">
+          <span class="advantage__item_number">07</span>
+          <p class="advantage__paragraph">Защита покупок.<br>Вернём деньги (подробнее)</p>
+        </div>
+        <div class="advantage__item">
+          <p class="advantage__title">Вам понравится!</p>
+          <a href="" class="advantage__link">Зарегистрироваться</a>
+        </div>
       </section>
     </section>
     <section class="wholesale">
@@ -309,7 +351,7 @@
               <p>4500 &#8381</p>
             </div>
             <button form="wholesale__form" type="submit" class="wholesale__sending">-30% Купить</button>
-            <p class="wholesale__paragraph">Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <br>
+            <p class="wholesale__paragraph">Нажимая на кнопку вы соглашаетесь на обработку персональных данных.
               <a href="" class="wholesale__link">Политика конфидециальности</a>
             </p>
           </div>
@@ -376,22 +418,22 @@
         <div class="social__line"></div>
         <div class="social__right_block">
           <a href="" class="social__item">
-            <svg class="social__icon" width="24" height="24">
+            <svg class="social__icon_facebook" width="24" height="24">
               <use xlink:href="img/sprite.svg#icon-facebook-min"></use>
             </svg>
           </a>
           <a href="" class="social__item">
-            <svg class="social__icon" width="26" height="26">
+            <svg class="social__icon_vk" width="26" height="26">
               <use xlink:href="img/sprite.svg#icon-vk-min"></use>
             </svg>
           </a>
           <a href="" class="social__item">
-            <svg class="social__icon" width="22" height="22">
+            <svg class="social__icon_twitter" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-twitter-min"></use>
             </svg>
           </a>
           <a href=""  class="social__item">
-            <svg class="social__icon" width="22" height="22">
+            <svg class="social__icon_instagram" width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-instagram-min"></use>
             </svg>
           </a>
@@ -435,34 +477,55 @@
     </section>
     <section class="payment">
       <section class="wrapper payment__container">
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="70" height="22">
+          <use xlink:href="img/sprite.svg#icon-visa-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="48" height="40">
+          <use xlink:href="img/sprite.svg#icon-mastercard-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="95" height="26">
+          <use xlink:href="img/sprite.svg#icon-yandex-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="88" height="32">
+          <use xlink:href="img/sprite.svg#icon-qiwi-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="114" height="28">
+          <use xlink:href="img/sprite.svg#icon-bitcoin-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="92" height="24">
+          <use xlink:href="img/sprite.svg#icon-paypal-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="90" height="25">
+          <use xlink:href="img/sprite.svg#icon-payeer-pay"></use>
         </svg>
-        <svg class="payment__icon" width="" height="">
-          <use xlink:href="img/sprite.svg#"></use>
+        <svg class="payment__icon" width="172" height="52">
+          <use xlink:href="img/sprite.svg#icon-webmoney-pay"></use>
         </svg>
       </section>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <section class="wrapper footer_container">
+      <div class="footer__left_block">
+        <a href="" class="footer__logo">
+          <svg class="footer__icon-logo" width="25" height="25">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+          <b>proxy</b>.contry
+        </a>
+        <p class="footer__title">Индивидуальные анонимные<br>прокси HTTPS и SOCKS5</p>
+      </div>
+      <div class="footer__center_block">
+        <p class="footer__copyright">© 2019 «Proxy.Country»<br>Все права защищены</p>
+      </div>
+      <div class="footer__right_block">
+        <p>
+          <a href="" class="footer__link">Политика конфиденциальности</a><br>
+          <a href="" class="footer__link">Пользовательское соглашение</a>
+        </p>
+      </div>
+    </section>
+  </footer>
 
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
