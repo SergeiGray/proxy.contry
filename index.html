@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Proxy.contry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
         <svg class="header__icon-logo" width="33" height="33">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg>
-        <b>proxy</b>.contry
+        <span><b>proxy.</b>contry</span>
       </a>
       <h1 class="header__title">Индивидуальные анонимные прокси HTTPS и SOCKS5</h1>
       <div class="header__lang">
@@ -24,6 +25,10 @@
       </div>
       <div class="header__login">
         <a href="">
+          <svg class="header__login_icon" width="26" height="26">
+            <title>LogIn</title>
+            <use xlink:href="img/sprite.svg#icon-login"></use>
+          </svg>
           <b class="header__around"></b>
           <span>Личный кабинет</span>
         </a>
@@ -40,6 +45,7 @@
       </video>
       <section class="wrapper landing__container">
         <section class="objective">
+          <p class="landing__mobile_title">Индивидуальные анонимные прокси HTTPS и SOCKS5</p>
           <h2 class="objective__title">Прокси-серверы со всего мира</h2>
           <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и др.</p>
           <div class="objective__applicable">
@@ -145,7 +151,7 @@
           <div class="parameters__down_block">
             <div class="parameters__up_line">
               <p class="parameters__title">Оплатите заказ</p>
-              <a href="" class="parameters__link">У меня есть промокод</a>
+              <a href="" class="parameters__link"><span class="parameters__link_tablet">У меня есть промокод</span><span class="parameters__link_mobile">Промокод</span></a>
             </div>
             <div class="parameters__down_line">
               <div class="parameters__price">
@@ -161,37 +167,37 @@
           <p class="objective__paragraph">IPv6 подходит для</p>
           <div class="objective__services">
             <a href="https://www.instagram.com/">
-              <svg class="objective__icon" width="120" height="27">
+              <svg class="objective__icon objective__icon_instagram" width="120" height="27">
                 <title>Instagram</title>
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
             <a href="https://mail.ru/">
-              <svg class="objective__icon" width="70" height="21">
+              <svg class="objective__icon objective__icon_mail" width="70" height="21">
                 <title>Mail</title>
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </a>
             <a href="https://www.facebook.com/">
-              <svg class="objective__icon" width="92" height="19">
+              <svg class="objective__icon objective__icon_facebook" width="92" height="19">
                 <title>Facebook</title>
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
             <a href="https://tooligram.com/">
-              <svg class="objective__icon" width="123" height="33">
+              <svg class="objective__icon objective__icon_tooligram" width="123" height="33">
                 <title>Tooligram</title>
                 <use xlink:href="img/sprite.svg#icon-tooligram"></use>
               </svg>
             </a>
             <a href="https://yandex.ru/">
-              <svg class="objective__icon" width="69" height="29">
+              <svg class="objective__icon objective__icon_yandex" width="69" height="29">
                 <title>Yandex</title>
                 <use xlink:href="img/sprite.svg#icon-yandex"></use>
               </svg>
             </a>
             <a href="https://www.google.ru/">
-              <svg class="objective__icon" width="79" height="25">
+              <svg class="objective__icon objective__icon_google" width="79" height="25">
                 <title>Google</title>
                 <use xlink:href="img/sprite.svg#icon-google"></use>
               </svg>
@@ -204,6 +210,9 @@
     <section class="choice">
       <section class="wrapper choice__container">
         <picture class="choice__picture">
+          <source
+            media="(max-width: 750px)"
+            srcset="img/choice-mobile.png">
           <source
             media="(max-width: 1190px)"
             srcset="img/choice-table.png">
@@ -231,8 +240,8 @@
               <use xlink:href="img/sprite.svg#icon-cogwheels"></use>
             </svg>
             <div class="using__content">
-              <p>01. Получите настройки</p>
-              <p>После покупки вам будут выданы
+              <p class="using__content_title none">01. Получите настройки</p>
+              <p class="using__content_paragraph">После покупки вам будут выданы
               данные для настройки прокси</p>
             </div>
           </div>
@@ -241,8 +250,8 @@
               <use xlink:href="img/sprite.svg#icon-data-storage"></use>
             </svg>
             <div class="using__content">
-              <p>02. Подключитесь</p>
-              <p>Введите настройки в браузере или в другом ПО, которое используете</p>
+              <p class="using__content_title">02. Подключитесь</p>
+              <p class="using__content_paragraph">Введите настройки в браузере или в другом ПО, которое используете</p>
             </div>
           </div>
           <div class="using__item">
@@ -250,8 +259,8 @@
               <use xlink:href="img/sprite.svg#icon-earth-globe"></use>
             </svg>
             <div class="using__content">
-              <p>03. Пользуйтесь</p>
-              <p>Работайте в интернете от лица используемого прокси-сервера</p>
+              <p class="using__content_title">03. Пользуйтесь</p>
+              <p class="using__content_paragraph">Работайте в интернете от лица используемого прокси-сервера</p>
             </div>
           </div>
         </div>
@@ -285,7 +294,7 @@
         </div>
         <div class="advantage__item">
           <span class="advantage__item_number">07</span>
-          <p class="advantage__paragraph">Защита покупок.<br>Вернём деньги (подробнее)</p>
+          <p class="advantage__paragraph">Защита покупок.<br>Вернём деньги (<a href="" class="advantage__item_link">подробнее</a>)</p>
         </div>
         <div class="advantage__item">
           <p class="advantage__title">Вам понравится!</p>
