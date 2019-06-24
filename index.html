@@ -142,7 +142,7 @@
               </label>
               <label class="parameters__last-label">
                 <span class="parameters__form-title">Протокол</span>
-                <select name="protocol" id="" class="parameters__select">
+                <select name="protocol" class="parameters__select">
                   <option value="HTTPS">HTTPS</option>
                   <option value="SOCKS">SOCKS</option>
                 </select>
@@ -553,6 +553,11 @@
     $(document).ready(function() {
       $('.wholesale__select').select2();
     });
+  </script>
+  <script>
+    $('.parameters__last-label').click(function(event) {
+      $('body').children('.select2-container').addClass('parameters__last_select_space');
+     });
   </script>
 </body>
 </html>
