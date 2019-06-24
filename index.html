@@ -518,6 +518,61 @@
       </section>
     </section>
   </main>
+  <section class="pop_up">
+    <section class="pop_up__overlay">
+    </section>
+    <section class="pop_up__authorization">
+      <svg class="pop_up__icon_close" width="16" height="16">
+        <title>Закрыть</title>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <p class="pop_up__title">Авторизация</p>
+      <p class="pop_up__up_paragraph">Введите логин и пароль, указанные  при регистрации</p>
+      <form id="pop_up__authorization_form" action="handler.php" method="post" class="pop_up__form">
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Логин</span>
+          <input type="email" name="login">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Пароль</span>
+          <input type="text" name="password">
+        </label>
+        <a href="" class="pop_up__form_link">Забыл пароль</a>
+        <button form="pop_up__authorization_form" class="pop_up__sending" type="submit">Войти</button>
+      </form>
+      <p class="pop_up__down_paragraph">
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="" class="pop_up__down_link">Политика конфидециальности</a>
+      </p>
+      <a href="" class="pop_up__link">Зарегистрироваться</a>
+    </section>
+    <section class="pop_up__registration">
+      <svg class="pop_up__icon_close" width="16" height="16">
+        <title>Закрыть</title>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <p class="pop_up__title">Регистрация</p>
+      <p class="pop_up__up_paragraph">Введите логин и пароль, указанные  при регистрации</p>
+      <form id="pop_up__registration_form" action="handler.php" method="post" class="pop_up__form">
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Логин (E-mail)</span>
+          <input type="email" name="login">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Пароль</span>
+          <input type="text" name="password">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Повторите пароль</span>
+          <input type="text" name="repeat_password">
+        </label>
+        <button form="pop_up__registration_form" class="pop_up__sending" type="submit">Зарегистрироваться</button>
+      </form>
+      <p class="pop_up__down_paragraph">
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="" class="pop_up__down_link">Политика конфидециальности</a>
+      </p>
+      <a href="" class="pop_up__link">Уже есть аккаунт</a>
+    </section>
+  </section>
   <footer>
     <section class="wrapper footer_container">
       <div class="footer__left_block">

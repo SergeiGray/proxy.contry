@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700&display=swap&subset=cyrillic');
 
-html {
-  overflow-x: hidden;
-}
 /** {
   outline: 1px solid red;
 }*/
+
+/*---OVERALL STYLE---*/
+
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -2918,4 +2921,179 @@ footer {
   font-size: 14px;
   color: #ffffff;
   opacity: 0.7;
+}
+
+/*---POP_UP---*/
+
+.pop_up__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pop_up__authorization {
+  display: none;
+  position: fixed;
+  top: 50%;
+  margin-top: -298px;
+  left: 50%;
+  margin-left: -218px;
+  right: 0;
+  flex-direction: column;
+  width: 436px;
+  min-height: 596px;
+  box-sizing: border-box;
+  padding: 44px 60px 0;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+}
+
+.pop_up__registration {
+  display: none;
+  position: fixed;
+  top: 50%;
+  margin-top: -327px;
+  left: 50%;
+  margin-left: -218px;
+  right: 0;
+  flex-direction: column;
+  width: 436px;
+  min-height: 654px;
+  box-sizing: border-box;
+  padding: 44px 60px 0;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+}
+
+.pop_up__icon_close {
+  position: absolute;
+  top: 24px;
+  right: 22px;
+}
+
+.pop_up__title {
+  margin: 0 0 12px;
+  font-size: 32px;
+  color: #221B44;
+}
+
+@media (max-width:1190px) {
+  .pop_up__title {
+    font-size: 28px;
+  }
+}
+
+.pop_up__link,
+.pop_up__up_paragraph {
+  max-width: 280px;
+  font-size: 16px;
+  color: #221B44;
+  opacity: 0.7;
+}
+
+.pop_up__up_paragraph {
+  margin: 0 0 30px;
+}
+
+.pop_up__down_link,
+.pop_up__down_paragraph {
+  margin: 0;
+  font-size: 12px;
+  color: #999999;
+}
+
+.pop_up__down_paragraph {
+  margin-bottom: 33px;
+}
+
+.pop_up__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.pop_up__form-title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.5;
+}
+.pop_up__form input {
+  height: 28px;
+  background: transparent;
+  border: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+.pop_up__form_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  padding-bottom: 4px;
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+}
+
+.pop_up__authorization .pop_up__form_label:last-of-type {
+  margin-bottom: 15px;
+}
+
+.pop_up__registration .pop_up__form_label:last-of-type {
+  margin-bottom: 47px;
+}
+
+.pop_up__form_link {
+  margin-bottom: 42px;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.pop_up__sending {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 57px;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#7E64FE), color-stop(128.4%, rgba(126, 100, 254, 0)));
+  background: -webkit-linear-gradient(left, #7E64FE 0%, rgba(126, 100, 254, 0) 128.4%);
+  background: -o-linear-gradient(left, #7E64FE 0%, rgba(126, 100, 254, 0) 128.4%);
+  background: linear-gradient(90deg, #7E64FE 0%, rgba(126, 100, 254, 0) 128.4%);
+}
+
+.pop_up__sending::after {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  left: 6px;
+  content: '';
+  width: 100%;
+  height: 57px;
+  background: -webkit-gradient(linear, left top, right top, from(#7E64FE), color-stop(128.4%, #4F4195));
+  background: -webkit-linear-gradient(left, #7E64FE 0%, #4F4195 128.4%);
+  background: -o-linear-gradient(left, #7E64FE 0%, #4F4195 128.4%);
+  background: linear-gradient(90deg, #7E64FE 0%, #4F4195 128.4%);
 }
