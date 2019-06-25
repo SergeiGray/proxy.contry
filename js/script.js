@@ -26,8 +26,9 @@
     $('.pop_up__icon_close, .pop_up__overlay').click(function (){
       $('.pop_up__authorization, .pop_up__overlay').css({'opacity': 0, 'display': 'none'});
     });
-    $('a.header__login_link').click(function (event){
+    $('a.header__login_link, a.pop_up__link_auto').click(function (event){
       event.preventDefault();
+      $('.pop_up__registration').css({'display': 'none'});
       $('.pop_up__authorization, .pop_up__overlay').css({'opacity': 1, 'display': 'flex'});
       $(document).keydown(function(event) {
           if (event.keyCode === 27) {
@@ -44,6 +45,7 @@
     });
     $('a.pop_up__link_reg, a.advantage__link_reg').click(function (event){
       event.preventDefault();
+      $('.pop_up__authorization').css({'display': 'none'});
       $('.pop_up__registration, .pop_up__overlay').css({'opacity': 1, 'display': 'flex'});
       $(document).keydown(function(event) {
           if (event.keyCode === 27) {
