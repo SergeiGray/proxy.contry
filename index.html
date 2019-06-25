@@ -34,7 +34,6 @@
             <title>LogIn</title>
             <use xlink:href="img/sprite.svg#icon-login"></use>
           </svg>
-          <!-- <b class="header__around"></b> -->
           <span>Личный кабинет</span>
         </a>
       </div>
@@ -47,47 +46,91 @@
           <p class="landing__mobile_title">Индивидуальные анонимные прокси HTTPS и SOCKS5</p>
           <h2 class="objective__title">Прокси-серверы со всего мира</h2>
           <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и др.</p>
-          <div class="objective__applicable">
-            <p class="objective__paragraph">IPv6 подходит для</p>
-            <div class="objective__services">
-              <a href="https://www.instagram.com/">
-                <svg class="objective__icon" width="120" height="27">
-                  <title>Instagram</title>
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-              <a href="https://mail.ru/">
-                <svg class="objective__icon" width="70" height="21">
-                  <title>Mail</title>
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </a>
-              <a href="https://www.facebook.com/">
-                <svg class="objective__icon" width="92" height="19">
-                  <title>Facebook</title>
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-              <a href="https://tooligram.com/">
-                <svg class="objective__icon" width="123" height="33">
-                  <title>Tooligram</title>
-                  <use xlink:href="img/sprite.svg#icon-tooligram"></use>
-                </svg>
-              </a>
-              <a href="https://yandex.ru/">
-                <svg class="objective__icon" width="69" height="29">
-                  <title>Yandex</title>
-                  <use xlink:href="img/sprite.svg#icon-yandex"></use>
-                </svg>
-              </a>
-              <a href="https://www.google.ru/">
-                <svg class="objective__icon" width="79" height="25">
-                  <title>Google</title>
-                  <use xlink:href="img/sprite.svg#icon-google"></use>
-                </svg>
-              </a>
+          <div class="objective__applicable_conteiner">
+            <div class="objective__applicable objective__applicable_IPv6">
+              <p class="objective__paragraph">IPv6 подходит для</p>
+              <div class="objective__services">
+                <a href="https://www.instagram.com/">
+                  <svg class="objective__icon" width="120" height="27">
+                    <title>Instagram</title>
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="https://mail.ru/">
+                  <svg class="objective__icon" width="70" height="21">
+                    <title>Mail</title>
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/">
+                  <svg class="objective__icon" width="92" height="19">
+                    <title>Facebook</title>
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://tooligram.com/">
+                  <svg class="objective__icon" width="123" height="33">
+                    <title>Tooligram</title>
+                    <use xlink:href="img/sprite.svg#icon-tooligram"></use>
+                  </svg>
+                </a>
+                <a href="https://yandex.ru/">
+                  <svg class="objective__icon" width="69" height="29">
+                    <title>Yandex</title>
+                    <use xlink:href="img/sprite.svg#icon-yandex"></use>
+                  </svg>
+                </a>
+                <a href="https://www.google.ru/">
+                  <svg class="objective__icon" width="79" height="25">
+                    <title>Google</title>
+                    <use xlink:href="img/sprite.svg#icon-google"></use>
+                  </svg>
+                </a>
+              </div>
+              <a href="" class="objective__others-services">и других сервисов</a>
             </div>
-            <a href="" class="objective__others-services">и других сервисов</a>
+            <div class="objective__applicable objective__applicable_IPv4">
+              <p class="objective__paragraph">IPv4 подходит для</p>
+              <div class="objective__services">
+                <a href="https://www.vk.com/">
+                  <svg class="objective__icon" width="39" height="38">
+                    <title>VK</title>
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+                <a href="https://www.avito.ru/">
+                  <svg class="objective__icon" width="90" height="27">
+                    <title>Avito</title>
+                    <use xlink:href="img/sprite.svg#icon-avito"></use>
+                  </svg>
+                </a>
+                <a href="https://www.wordstat.yandex.ru/">
+                  <svg class="objective__icon" width="100" height="45">
+                    <title>Wordstat</title>
+                    <use xlink:href="img/sprite.svg#icon-wordstat"></use>
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com/">
+                  <svg class="objective__icon" width="39" height="40">
+                    <title>Twitter</title>
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://www.qiwi.com/">
+                  <svg class="objective__icon" width="82" height="30">
+                    <title>QIWI</title>
+                    <use xlink:href="img/sprite.svg#icon-qiwi"></use>
+                  </svg>
+                </a>
+                <a href="https://www.key-collector.ru/">
+                  <svg class="objective__icon" width="118" height="33">
+                    <title>Key Collector</title>
+                    <use xlink:href="img/sprite.svg#icon-key-collector"></use>
+                  </svg>
+                </a>
+              </div>
+              <a href="" class="objective__others-services">и других сервисов</a>
+            </div>
           </div>
           <div class="landing__pointer">
             <span>Вниз</span>
@@ -100,9 +143,8 @@
               <label>
                 <span class="parameters__form-title">Тип</span>
                 <select name="type" class="parameters__select">
-                  <option value="IPv6">IPv6</option>
+                  <option value="IPv6" selected="">IPv6</option>
                   <option value="IPv4">IPv4</option>
-                  <option value="IPv4 Shared">IPv4 Shared</option>
                 </select>
               </label>
               <label>
@@ -163,46 +205,90 @@
           </div>
         </section>
         <div class="landing__applicable">
-          <p class="objective__paragraph">IPv6 подходит для</p>
-          <div class="objective__services">
-            <a href="https://www.instagram.com/">
-              <svg class="objective__icon objective__icon_instagram" width="120" height="27">
-                <title>Instagram</title>
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a href="https://mail.ru/">
-              <svg class="objective__icon objective__icon_mail" width="70" height="21">
-                <title>Mail</title>
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/">
-              <svg class="objective__icon objective__icon_facebook" width="92" height="19">
-                <title>Facebook</title>
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a href="https://tooligram.com/">
-              <svg class="objective__icon objective__icon_tooligram" width="123" height="33">
-                <title>Tooligram</title>
-                <use xlink:href="img/sprite.svg#icon-tooligram"></use>
-              </svg>
-            </a>
-            <a href="https://yandex.ru/">
-              <svg class="objective__icon objective__icon_yandex" width="69" height="29">
-                <title>Yandex</title>
-                <use xlink:href="img/sprite.svg#icon-yandex"></use>
-              </svg>
-            </a>
-            <a href="https://www.google.ru/">
-              <svg class="objective__icon objective__icon_google" width="79" height="25">
-                <title>Google</title>
-                <use xlink:href="img/sprite.svg#icon-google"></use>
-              </svg>
-            </a>
+          <div class="objective__applicable objective__applicable_IPv6">
+            <p class="objective__paragraph">IPv6 подходит для</p>
+            <div class="objective__services">
+              <a href="https://www.instagram.com/">
+                <svg class="objective__icon" width="120" height="27">
+                  <title>Instagram</title>
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="https://mail.ru/">
+                <svg class="objective__icon" width="70" height="21">
+                  <title>Mail</title>
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/">
+                <svg class="objective__icon" width="92" height="19">
+                  <title>Facebook</title>
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="https://tooligram.com/">
+                <svg class="objective__icon" width="123" height="33">
+                  <title>Tooligram</title>
+                  <use xlink:href="img/sprite.svg#icon-tooligram"></use>
+                </svg>
+              </a>
+              <a href="https://yandex.ru/">
+                <svg class="objective__icon" width="69" height="29">
+                  <title>Yandex</title>
+                  <use xlink:href="img/sprite.svg#icon-yandex"></use>
+                </svg>
+              </a>
+              <a href="https://www.google.ru/">
+                <svg class="objective__icon" width="79" height="25">
+                  <title>Google</title>
+                  <use xlink:href="img/sprite.svg#icon-google"></use>
+                </svg>
+              </a>
+            </div>
+            <a href="" class="objective__others-services">и других сервисов</a>
           </div>
-          <a href="" class="objective__others-services">и других сервисов</a>
+          <div class="objective__applicable objective__applicable_IPv4">
+            <p class="objective__paragraph">IPv4 подходит для</p>
+            <div class="objective__services">
+              <a href="https://www.vk.com/">
+                <svg class="objective__icon" width="39" height="38">
+                  <title>VK</title>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+              <a href="https://www.avito.ru/">
+                <svg class="objective__icon" width="90" height="27">
+                  <title>Avito</title>
+                  <use xlink:href="img/sprite.svg#icon-avito"></use>
+                </svg>
+              </a>
+              <a href="https://www.wordstat.yandex.ru/">
+                <svg class="objective__icon" width="100" height="45">
+                  <title>Wordstat</title>
+                  <use xlink:href="img/sprite.svg#icon-wordstat"></use>
+                </svg>
+              </a>
+              <a href="https://www.twitter.com/">
+                <svg class="objective__icon" width="39" height="40">
+                  <title>Twitter</title>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.qiwi.com/">
+                <svg class="objective__icon" width="82" height="30">
+                  <title>QIWI</title>
+                  <use xlink:href="img/sprite.svg#icon-qiwi"></use>
+                </svg>
+              </a>
+              <a href="https://www.key-collector.ru/">
+                <svg class="objective__icon" width="118" height="33">
+                  <title>Key Collector</title>
+                  <use xlink:href="img/sprite.svg#icon-key-collector"></use>
+                </svg>
+              </a>
+            </div>
+            <a href="" class="objective__others-services">и других сервисов</a>
+          </div>
         </div>
       </section>
     </section>
@@ -224,6 +310,7 @@
             <label>
               <span class="choice__form-title">Сервис</span>
               <input name="address" type="text" placeholder="например, http://yandex.ru">
+              <span class="choice__form_line"></span>
             </label>
             <button form="choice__form" type="submit" class="choice__sending">Подобрать</button>
           </form>
@@ -297,7 +384,7 @@
         </div>
         <div class="advantage__item">
           <p class="advantage__title">Вам понравится!</p>
-          <a href="" class="advantage__link">Зарегистрироваться</a>
+          <a href="" class="advantage__link advantage__link_reg">Зарегистрироваться</a>
         </div>
       </section>
     </section>
@@ -403,14 +490,18 @@
             <label class="questions__form_label">
               <span class="questions__form-title">Имя</span>
               <input type="text" name="name" placeholder="Введите имя">
+              <span class="questions__form_line"></span>
             </label>
             <label class="questions__form_label">
               <span class="questions__form-title">E-mail</span>
               <input type="email" name="email" placeholder="example@gmail.com">
+              <span class="questions__form_line"></span>
             </label>
             <label class="questions__form_label">
               <span class="questions__form-title">Сообщение</span>
-              <textarea name="text" placeholder="Введите текст"></textarea></label>
+              <textarea name="text" placeholder="Введите текст"></textarea>
+              <span class="questions__form_line"></span>
+            </label>
           </form>
           <div class="questions__down_block">
             <button form="questions__form" type="submit" class="questions__sending">Отправить</button>
@@ -542,7 +633,7 @@
       <p class="pop_up__down_paragraph">
         Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="" class="pop_up__down_link">Политика конфидециальности</a>
       </p>
-      <a href="" class="pop_up__link">Зарегистрироваться</a>
+      <a href="" class="pop_up__link pop_up__link_reg">Зарегистрироваться</a>
     </section>
     <section class="pop_up__registration">
       <svg class="pop_up__icon_close" width="16" height="16">
@@ -600,24 +691,6 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.parameters__select').select2();
-    });
-    $(document).ready(function() {
-      $('.wholesale__select').select2();
-    });
-  </script>
-  <script>
-    $('.parameters__last-label').click(function(event) {
-      $('body').children('.select2-container').addClass('parameters__select_protocol');
-     });
-    $('.wholesale__select_first_label').click(function(event) {
-      $('body').children('.select2-container').addClass('wholesale__select_type');
-     });
-    $('.wholesale__select_second_label').click(function(event) {
-      $('body').children('.select2-container').addClass('wholesale__select_country');
-     });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

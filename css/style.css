@@ -33,14 +33,6 @@ body {
   }
 }
 
-input:focus {
-
-}
-
-input:invalid {
-
-}
-
 /*---HEADER---*/
 
 .header {
@@ -509,8 +501,16 @@ input:invalid {
 
 @media (max-width:1190px) {
   .objective__applicable {
+    margin-bottom: 0;
+  }
+  .objective__applicable_conteiner {
     display: none;
   }
+}
+
+
+.objective__applicable_IPv4 {
+  display: none;
 }
 
 .objective > .objective__paragraph {
@@ -544,6 +544,7 @@ input:invalid {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: space-between;
   width: 350px;
   margin-bottom: 6px;
 }
@@ -615,6 +616,10 @@ input:invalid {
 .objective__others-services {
   line-height: 130%;
   color: #aebbe8;
+}
+
+.objective__others-services:hover {
+  color: #B3A4FF;
 }
 
 /*---PARAMETERS---*/
@@ -1257,7 +1262,6 @@ input:invalid {
   margin-bottom: 28px;
   padding-bottom: 4px;
   overflow: hidden;
-  border-bottom: 1px solid #CCCCCC;
 }
 
 @media (max-width:1190px) {
@@ -1279,7 +1283,33 @@ input:invalid {
   font-family: Ubuntu, Arial, sans-serif;
   font-size: 16px;
   color: #999999;
+  box-shadow: none;
 }
+
+.choice__form input:focus {
+  color: #221B44;
+  opacity: 0.7;
+}
+
+.choice__form input:invalid {
+  border: none;
+  color: #FF0000;
+  opacity: 0.7;
+}
+
+.choice__form_line {
+  display: block;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.choice__form input:focus + .choice__form_line {
+  border-color: #7E64FE;
+}
+
+.choice__form input:invalid + .choice__form_line {
+  border-color: #FF0000;
+}
+
 
 .choice__sending {
   position: relative;
@@ -2478,7 +2508,34 @@ input:invalid {
   border: none;
   font-family: Ubuntu, Arial, sans-serif;
   font-size: 16px;
-  color: #000000;
+  color: #999999;
+  box-shadow: none;
+}
+
+.questions__form input:focus {
+  color: #221B44;
+  opacity: 0.7;
+}
+
+.questions__form input:invalid {
+  border: none;
+  color: #FF0000;
+  opacity: 0.7;
+}
+
+.questions__form_line {
+  display: block;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.questions__form input:focus + .questions__form_line,
+.questions__form textarea:focus + .questions__form_line {
+  border-color: #7E64FE;
+}
+
+.questions__form input:invalid + .questions__form_line,
+.questions__form textarea:invalid + .questions__form_line {
+  border-color: #FF0000;
 }
 
 .questions__form_label {
@@ -2494,7 +2551,6 @@ input:invalid {
   margin-bottom: 30px;
   padding-bottom: 4px;
   overflow: hidden;
-  border-bottom: 1px solid #cccccc;
 }
 
 @media (max-width:1190px) {
@@ -2531,7 +2587,19 @@ input:invalid {
   border: none;
   font-family: Ubuntu, Arial, sans-serif;
   font-size: 16px;
+  box-shadow: none;
+  color: #999999;
+}
 
+.questions__form textarea:focus {
+  color: #221B44;
+  opacity: 0.7;
+}
+
+.questions__form textarea:invalid {
+  border: none;
+  color: #FF0000;
+  opacity: 0.7;
 }
 
 @media (max-width:1190px) {
@@ -3125,11 +3193,18 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .pop_up__authorization {
   display: none;
   position: fixed;
+  z-index: 2;
   top: 50%;
   margin-top: -298px;
   left: 50%;
@@ -3143,11 +3218,18 @@ footer {
   border: 1px solid #E7E7E7;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: opacity .5s, top .5s;
+  -moz-transition: opacity .5s, top .5s;
+  -ms-transition: opacity .5s, top .5s;
+  -o-transition: opacity .5s, top .5s;
+  transition: opacity .5s, top .5s;
 }
 
 .pop_up__registration {
   display: none;
   position: fixed;
+  z-index: 3;
   top: 50%;
   margin-top: -327px;
   left: 50%;
@@ -3161,6 +3243,12 @@ footer {
   border: 1px solid #E7E7E7;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: opacity .5s, top .5s;
+  -moz-transition: opacity .5s, top .5s;
+  -ms-transition: opacity .5s, top .5s;
+  -o-transition: opacity .5s, top .5s;
+  transition: opacity .5s, top .5s;
 }
 
 .pop_up__icon_close {
