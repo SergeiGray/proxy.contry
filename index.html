@@ -11,15 +11,12 @@
 <body>
   <section class="background_video_container">
     <video loop muted autoplay poster="img/background_landing_desktop.png"  class="background_video">
-   <source
-     type="video/mp4"
-     media="(min-width: 1150px)"
-     src="videos/background_video.mp4">
-         </video>
+      <source type="video/mp4" media="(min-width: 1150px)" src="videos/background_video.mp4">
+    </video>
   </section>
   <header class="header">
     <section class="wrapper header__container">
-      <a href="" class="header__logo">
+      <a href="index.html" class="header__logo">
         <svg class="header__icon-logo" width="33" height="33">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg>
@@ -27,17 +24,17 @@
       </a>
       <h1 class="header__title">Индивидуальные анонимные прокси HTTPS и SOCKS5</h1>
       <div class="header__lang">
-        <a href="" class="header__ru">Ru</a>
-        <b></b>
-        <a href="" class="header__en">En</a>
+        <a href="index.html" class="header__lang_enabled">Ru</a>
+        <b class="header__lang_dividing_line"></b>
+        <a href="" class="header__lang_disabled">En</a>
       </div>
       <div class="header__login">
-        <a href="">
+        <a href="" class="header__login_link">
           <svg class="header__login_icon" width="26" height="26">
             <title>LogIn</title>
             <use xlink:href="img/sprite.svg#icon-login"></use>
           </svg>
-          <b class="header__around"></b>
+          <!-- <b class="header__around"></b> -->
           <span>Личный кабинет</span>
         </a>
       </div>
@@ -332,7 +329,7 @@
                </div>
               </div>
               <div class="wholesale__form_down_block">
-                <label class="wholesale__select_label">
+                <label class="wholesale__select_label wholesale__select_first_label">
                   <span class="wholesale__form_title">Тип</span>
                   <select name="type" class="wholesale__select">
                     <option value="IPv6">IPv6</option>
@@ -340,7 +337,7 @@
                     <option value="IPv4 Shared">IPv4 Shared</option>
                   </select>
                 </label >
-                <label class="wholesale__select_label">
+                <label class="wholesale__select_label wholesale__select_second_label">
                   <span class="wholesale__form_title">Страна</span>
                   <select name="country" id="" class="wholesale__select">
                     <option value="Россия">Россия</option>
@@ -456,37 +453,39 @@
     </section>
     <section class="why_we">
       <section class="wrapper why_we__container">
-        <p class="why_we__paragraph">Наша команда уже более шести лет занимается продажей персональных, индивидуальных, анонимных прокси серверов.</p>
-        <p class="why_we__title">Почему вам стоит купить прокси у нас:</p>
-        <ul class="why_we__list">
-          <li>
-            <span>Высокая скорость работы - прокси быстрые и стабильные;</span>
-          </li>
-          <li>
-            <span>Полная анонимность - прокси полностью анонимные и мы не логируем ваши действия, и выдаем прокси только в один руки;</span>
-          </li>
-          <li>
-            <span>Низкие цены - у нас одни из самых дешевых прокси на рынке IPv6 и IPv4;</span>
-          </li>
-          <li>
-            <span>Полная автоматизация - вам не нужно ожидать выдачи арендованных прокси после оплаты, они выдаются сразу же автоматически и отображаются в личном кабинете;</span>
-          </li>
-          <li>
-            <span>Быстрая поддержка - мы ответим на все ваши технические и косвенные вопросы по IPv6 и IPv4 прокси. Для связи с нами используйте email, либо онлайн консультант;</span>
-          </li>
-          <li>
-            <span>Наши надежные персональные прокси подходят для работы со всеми сайтами и сервисами;</span>
-          </li>
-          <li>
-            <span>Прокси IPv6 отлично подойдут для работы в социальных сетях, таких как: facebook, instagram, youtube и многими другими с поддержкой IPv6;</span>
-          </li>
-          <li>
-            <span>Прокси IPv4 подойдут для работы с любыми сайтами и сервисами;</span>
-          </li>
-          <li>
-            <span>Наши дешевые быстрые прокси позволят вам работать в сети комфортно и безопасно. Если вы еще задаетесь вопросом: Где купить прокси? - то ответ на него - PROXY6.net</span>
-          </li>
-        </ul>
+        <div class="why_we__left_line">
+          <p class="why_we__paragraph">Наша команда уже более шести лет занимается продажей персональных, индивидуальных, анонимных прокси серверов.</p>
+          <p class="why_we__title">Почему вам стоит купить прокси у нас:</p>
+          <ul class="why_we__list">
+            <li>
+              <span>Высокая скорость работы - прокси быстрые и стабильные;</span>
+            </li>
+            <li>
+              <span>Полная анонимность - прокси полностью анонимные и мы не логируем ваши действия, и выдаем прокси только в один руки;</span>
+            </li>
+            <li>
+              <span>Низкие цены - у нас одни из самых дешевых прокси на рынке IPv6 и IPv4;</span>
+            </li>
+            <li>
+              <span>Полная автоматизация - вам не нужно ожидать выдачи арендованных прокси после оплаты, они выдаются сразу же автоматически и отображаются в личном кабинете;</span>
+            </li>
+            <li>
+              <span>Быстрая поддержка - мы ответим на все ваши технические и косвенные вопросы по IPv6 и IPv4 прокси. Для связи с нами используйте email, либо онлайн консультант;</span>
+            </li>
+            <li>
+              <span>Наши надежные персональные прокси подходят для работы со всеми сайтами и сервисами;</span>
+            </li>
+            <li>
+              <span>Прокси IPv6 отлично подойдут для работы в социальных сетях, таких как: facebook, instagram, youtube и многими другими с поддержкой IPv6;</span>
+            </li>
+            <li>
+              <span>Прокси IPv4 подойдут для работы с любыми сайтами и сервисами;</span>
+            </li>
+            <li>
+              <span>Наши дешевые быстрые прокси позволят вам работать в сети комфортно и безопасно. Если вы еще задаетесь вопросом: Где купить прокси? - то ответ на него - PROXY6.net</span>
+            </li>
+          </ul>
+        </div>
       </section>
     </section>
     <section class="payment">
@@ -611,7 +610,13 @@
   </script>
   <script>
     $('.parameters__last-label').click(function(event) {
-      $('body').children('.select2-container').addClass('parameters__last_select_space');
+      $('body').children('.select2-container').addClass('parameters__select_protocol');
+     });
+    $('.wholesale__select_first_label').click(function(event) {
+      $('body').children('.select2-container').addClass('wholesale__select_type');
+     });
+    $('.wholesale__select_second_label').click(function(event) {
+      $('body').children('.select2-container').addClass('wholesale__select_country');
      });
   </script>
 </body>
