@@ -2,8 +2,6 @@
 
 /*---OVERALL STYLE---*/
 
-/** {outline: 1px solid red;}*/
-
 html {
   overflow-x: hidden;
 }
@@ -1843,6 +1841,7 @@ body {
 
 @media (max-width:1190px) {
   .wholesale__up_right_block {
+    width: 320px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700&display=swap&subset=cyrillic');
+
+/*---OVERALL STYLE---*/
+
+* {outline: 1px solid red;}
+
+body {
+  margin: 0;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*---HEADER---*/
+
+.header {
+  background: linear-gradient(183.22deg, #7E64FE -17.54%, rgba(126, 100, 254, 0) 80.64%), rgb(0, 0, 0);
+}
+
+.header__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.header__navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.header__navigation_container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__navigation_container li {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.header__icon-logo {
+  margin-right: 10px;
+  fill: #B3A4FF;
+}
+
+.header__logo,
+.header__ip_link,
+.header__balance_link,
+.header__login_link,
+.header__balance_button {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header__balance_button {
+  text-transform: uppercase;
+}
+
+/*---LAYOUT---*/
+
+.layout {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+/*---NAV---*/
+
+.nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  width: 262px;
+}
+
+.nav__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*---MAIN---*/
+
+.main {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-grow: 1;
+}
+
+/*---MY_PROXY---*/
+
+.my_proxy {
+  width: 100%;
+}
+
+.my_proxy__table {
+  width: 100%;
+}
