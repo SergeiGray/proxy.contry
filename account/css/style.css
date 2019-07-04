@@ -410,6 +410,13 @@ body {
   color: #666666;
 }
 
+.my_proxy__text {
+margin: 0;
+font-size: 13px;
+line-height: 140%;
+color: #666666;
+}
+
 .my_proxy__counter {
   display: -webkit-flex;
   display: -moz-flex;
@@ -436,6 +443,71 @@ body {
 .my_proxy__item .my_proxy__icon {
   margin-right: 9px;
 }
+
+/*___prolong___*/
+
+.my_proxy__prolong {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.my_proxy__prolong_container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.my_proxy__prolong_container:first-child {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.my_proxy__prolong_form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+/*___search___*/
+
+.my_proxy__search {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.my_proxy__search_form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+/*___edit___*/
+
+
 
 /*___table base start___*/
 

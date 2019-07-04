@@ -233,6 +233,170 @@
             </svg>
           </a>
         </nav>
+        <section class="my_proxy__prolong">
+          <div class="my_proxy__prolong_container">
+            <form action="" class="my_proxy__prolong_form">
+              <span class="my_proxy__text">Срок</span>
+              <select name="" id="" class="my_proxy__prolong_select">
+                <option value="1">1 день</option>
+                <option value="2">2 деня</option>
+                <option value="3">3 деня</option>
+                <option value="4">4 деня</option>
+                <option value="5">5 деней</option>
+                <option value="6">6 деней</option>
+                <option value="7">7 деней</option>
+              </select>
+              <p>Стоимость: <span>23,30 руб.</span></p>
+              <button type="submit">Продлить</button>
+            </form>
+          </div>
+          <div class="my_proxy__prolong_container">
+            <p>Включить автопродление</p>
+            <button>Для всех прокси</button>
+            <button>Для выбранных прокси</button>
+          </div>
+        </section>
+        <section class="my_proxy__search">
+          <form action="" class="my_proxy__search_form">
+            <span>Поиск</span>
+            <select name="" id="" class="my_proxy__search_select">
+              <option value="">Везде</option>
+            </select>
+            <input type="text" placeholder="Что искать">
+            <button type="submit">Найти</button>
+          </form>
+          <p>Вы можете использовать
+            <a href="">Поиск списком
+              <svg class="my_proxy__icon" width="13" height="13">
+                <use xlink:href="img/sprite.svg#icon-round-question"></use>
+              </svg>
+            </a>
+          </p>
+        </section>
+        <section class="my_proxy__edit">
+          <nav class="my_proxy__edit_nav">
+            <a href="">Логин и пароль</a>
+            <a href="">Комментарий</a>
+            <a href="">Тип прокси</a>
+          </nav>
+          <section class="my_proxy__edit_login">
+            <form action="">
+              <input type="text" placeholder="Новый логин">
+              <input type="text" placeholder="Новый пароль">
+              <button type="submit">Сохранить</button>
+              <button>Сгенерировать</button>
+            </form>
+            <label>
+              <input type="checkbox">
+              Использовать уникальный логин и пароль для каждого прокси
+            </label>
+          </section>
+          <section class="my_proxy__edit_comment">
+            <form action="">
+              <input type="text">
+              <button type="submit">Добавить</button>
+              <button>Очистить все</button>
+            </form>
+            <p>Здесь вы можете присвоить комментарий к списку прокси для удобства поиска и сортировки или очистить все комментарии</p>
+          </section>
+          <section class="my_proxy__edit_type">
+            <form action="">
+              <input type="radio" name="my_proxy__edit_type">
+              <input type="radio" name="my_proxy__edit_type">
+              <button type="submit">Применить</button>
+            </form>
+            <p>Выбранный тип будет применён ко всем указанным прокси</p>
+          </section>
+        </section>
+        <section class="my_proxy__auth">
+          <form action="">
+            <input type="radio">
+            <span>По логину и паролю</span>
+            <input type="radio">
+            <span>По IP</span>
+            <button type="submit">Применить</button>
+          </form>
+          <form action="">
+            <input type="text" placeholder="Укажите IP">
+            <button type="submit">Сохранить</button>
+          </form>
+        </section>
+        <section class="my_proxy__download">
+          <form action="">
+            <p>Укажите формат вывода</p>
+            <p>
+              <span>IP</span>
+              <input type="text" value=":">
+              <span>port</span>
+              <input type="text" value="@">
+              <span>login</span>
+              <input type="text" value=":">
+              <span>pass</span>
+            </p>
+            <button type="submit">
+              <svg width="15" height="15"></svg>
+            </button>
+            <span>— поменять местами IP и login</span>
+          </form>
+          <form action="">
+            <select name="" id="">
+              <option value="">С авторизацией</option>
+            </select>
+            <select name="" id="">
+              <option value="">HTTP (s)</option>
+            </select>
+            <select name="" id="">
+              <option value="">.csv</option>
+            </select>
+            <button type="submit">Скачать</button>
+            <button>Копировать в буфер</button>
+          </form>
+        </section>
+        <section class="my_proxy__filter">
+          <form action="">
+            <div>
+              <h2>Сортировать</h2>
+              <label>
+                Показывать сначала
+                <select name="" id="">
+                  <option value="">Новые</option>
+                </select>
+              </label>
+            </div>
+            <select name="" id="">
+              <option value="">Активные</option>
+              <option value="">Требуют продления</option>
+              <option value="">Видимые</option>
+              <option value="">Скрытые</option>
+            </select>
+            <select name="" id="">
+              <option value="">IPv4</option>
+              <option value="">IPv6</option>
+              <option value="">Shared IPv4</option>
+            </select>
+            <select name="" id="">
+              <option value="">Socks</option>
+              <option value="">Https</option>
+            </select>
+            <select name="" id="">
+              <option value="">Россия</option>
+              <option value="">Германия</option>
+            </select>
+            <select name="" id="">
+              <option value="">Есть комментарий</option>
+              <option value="">Нет комментария</option>
+            </select>
+            <select name="" id="">
+              <option value="">Автопродление вкл</option>
+              <option value="">Автопродление выкл</option>
+            </select>
+            <select name="" id="">
+              <option value="">Группа А</option>
+              <option value="">Группа В</option>
+            </select>
+            <button type="submit">Применить</button>
+          </form>
+        </section>
         <table class="my_proxy__table">
           <thead class="my_proxy__thead">
             <tr class="my_proxy__header_row">

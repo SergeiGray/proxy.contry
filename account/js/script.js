@@ -6,6 +6,9 @@
     $(document).ready(function() {
       $('.my_proxy__footer_select').select2();
     });
+    $(document).ready(function() {
+      $('.my_proxy__prolong_select').select2();
+    });
   };
 
   var getSliderInNav = function () {
