@@ -5,6 +5,7 @@
   <title>Proxy.contry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -179,6 +180,7 @@
     </nav>
     <main class="main">
       <section class="my_proxy">
+        <h2 class="my_proxy__title">Мои прокси</h2>
         <nav class="my_proxy__navigation">
           <ul class="my_proxy__list">
             <li class="my_proxy__item">
@@ -187,6 +189,7 @@
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
                 </svg>
                 Продлить
+                <span class="my_proxy__counter">1</span>
               </a>
             </li>
             <li class="my_proxy__item">
@@ -203,6 +206,7 @@
                   <use xlink:href="img/sprite.svg#icon-draw"></use>
                 </svg>
                 Изменить
+                <span class="my_proxy__counter">10</span>
               </a>
             </li>
             <li class="my_proxy__item">
@@ -219,6 +223,7 @@
                   <use xlink:href="img/sprite.svg#icon-download"></use>
                 </svg>
                 Скачать
+                <span class="my_proxy__counter">1000</span>
               </a>
             </li>
           </ul>
@@ -288,27 +293,136 @@
                 <span>23д 15ч</span>
               </td>
               <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
                 <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
+                  Этот прокси периодически барахлит. Держать на контроле
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__action">
                 <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
                   <use xlink:href="img/sprite.svg#icon-invisible"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
+                <input id="my_proxy__checkbox_2" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_2" class="my_proxy__checkbox_label">
+                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__country">
+                <svg class="my_proxy__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-ru"></use>
+                </svg>
+              </td>
+              <td class="my_proxy__col my_proxy__type">
+                <span>5.188.181.246</span>
+              </td>
+              <td class="my_proxy__col my_proxy__ip">
+                <span>1050</span>
+              </td>
+              <td class="my_proxy__col my_proxy__socks">
+                <span>-</span>
+              </td>
+              <td class="my_proxy__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="my_proxy__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="my_proxy__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="my_proxy__col my_proxy__coment">
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
+                  Этот прокси периодически барахлит. Держать на контроле
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="my_proxy__col my_proxy__check">
+                <input id="my_proxy__checkbox_3" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_3" class="my_proxy__checkbox_label">
+                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__country">
+                <svg class="my_proxy__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+              <td class="my_proxy__col my_proxy__type">
+                <span>5.188.181.246</span>
+              </td>
+              <td class="my_proxy__col my_proxy__ip">
+                <span>1050</span>
+              </td>
+              <td class="my_proxy__col my_proxy__socks">
+                <span>-</span>
+              </td>
+              <td class="my_proxy__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="my_proxy__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="my_proxy__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="my_proxy__col my_proxy__coment">
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
+                  Продлевать
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="my_proxy__col my_proxy__check">
+                <input id="my_proxy__checkbox_4" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_4" class="my_proxy__checkbox_label">
                   <svg class="my_proxy__checkbox_icon" width="10" height="7">
                     <use xlink:href="img/sprite.svg#icon-check"></use>
                   </svg>
@@ -338,27 +452,134 @@
                 <span>23д 15ч</span>
               </td>
               <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+"></textarea>
                 <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__action">
                 <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
                   <use xlink:href="img/sprite.svg#icon-invisible"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
+                <input id="my_proxy__checkbox_5" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_5" class="my_proxy__checkbox_label">
+                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__country">
+                <svg class="my_proxy__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-ru"></use>
+                </svg>
+              </td>
+              <td class="my_proxy__col my_proxy__type">
+                <span>5.188.181.246</span>
+              </td>
+              <td class="my_proxy__col my_proxy__ip">
+                <span>1050</span>
+              </td>
+              <td class="my_proxy__col my_proxy__socks">
+                <span>-</span>
+              </td>
+              <td class="my_proxy__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="my_proxy__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="my_proxy__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="my_proxy__col my_proxy__coment">
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
+                  Продлевать
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="my_proxy__col my_proxy__check">
+                <input id="my_proxy__checkbox_6" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_6" class="my_proxy__checkbox_label">
+                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__country">
+                <svg class="my_proxy__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+              <td class="my_proxy__col my_proxy__type">
+                <span>5.188.181.246</span>
+              </td>
+              <td class="my_proxy__col my_proxy__ip">
+                <span>1050</span>
+              </td>
+              <td class="my_proxy__col my_proxy__socks">
+                <span>-</span>
+              </td>
+              <td class="my_proxy__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="my_proxy__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="my_proxy__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="my_proxy__col my_proxy__coment">
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+"></textarea>
+                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon my_proxy__icon_active" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="my_proxy__col my_proxy__check">
+                <input id="my_proxy__checkbox_7" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_7" class="my_proxy__checkbox_label">
                   <svg class="my_proxy__checkbox_icon" width="10" height="7">
                     <use xlink:href="img/sprite.svg#icon-check"></use>
                   </svg>
@@ -388,6 +609,110 @@
                 <span>23д 15ч</span>
               </td>
               <td class="my_proxy__col my_proxy__coment">
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+"></textarea>
+                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon my_proxy__icon_active" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="my_proxy__col my_proxy__check">
+                <input id="my_proxy__checkbox_8" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_8" class="my_proxy__checkbox_label">
+                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__country">
+                <svg class="my_proxy__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-ru"></use>
+                </svg>
+              </td>
+              <td class="my_proxy__col my_proxy__type">
+                <span>5.188.181.246</span>
+              </td>
+              <td class="my_proxy__col my_proxy__ip">
+                <span>1050</span>
+              </td>
+              <td class="my_proxy__col my_proxy__socks">
+                <span>-</span>
+              </td>
+              <td class="my_proxy__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="my_proxy__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="my_proxy__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="my_proxy__col my_proxy__coment">
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text"></textarea>
+                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__action">
+                <svg class="my_proxy__icon my_proxy__icon_active" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="my_proxy__col my_proxy__check">
+                <input id="my_proxy__checkbox_8" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_8" class="my_proxy__checkbox_label">
+                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </label>
+              </td>
+              <td class="my_proxy__col my_proxy__country">
+                <svg class="my_proxy__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+              <td class="my_proxy__col my_proxy__type">
+                <span>5.188.181.246</span>
+              </td>
+              <td class="my_proxy__col my_proxy__ip">
+                <span>1050</span>
+              </td>
+              <td class="my_proxy__col my_proxy__socks">
+                <span>-</span>
+              </td>
+              <td class="my_proxy__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="my_proxy__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="my_proxy__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="my_proxy__col my_proxy__coment">
                 <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
                 <label for="my_proxy__coment_text" class="my_proxy__coment_label">
                   Продлевать
@@ -395,20 +720,23 @@
               </td>
               <td class="my_proxy__col my_proxy__action">
                 <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
                   <use xlink:href="img/sprite.svg#icon-invisible"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
+                <input id="my_proxy__checkbox_9" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_9" class="my_proxy__checkbox_label">
                   <svg class="my_proxy__checkbox_icon" width="10" height="7">
                     <use xlink:href="img/sprite.svg#icon-check"></use>
                   </svg>
@@ -438,27 +766,30 @@
                 <span>23д 15ч</span>
               </td>
               <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+">Продлевать</textarea>
                 <label for="my_proxy__coment_text" class="my_proxy__coment_label">
                   Продлевать
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__action">
                 <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
                   <use xlink:href="img/sprite.svg#icon-invisible"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
+                <input id="my_proxy__checkbox_10" type="checkbox" name="" class="my_proxy__checkbox">
+                <label for="my_proxy__checkbox_10" class="my_proxy__checkbox_label">
                   <svg class="my_proxy__checkbox_icon" width="10" height="7">
                     <use xlink:href="img/sprite.svg#icon-check"></use>
                   </svg>
@@ -488,319 +819,21 @@
                 <span>23д 15ч</span>
               </td>
               <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
+                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text" placeholder="+"></textarea>
                 <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__action">
                 <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
                   <use xlink:href="img/sprite.svg#icon-invisible"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
                 </svg>
                 <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="my_proxy__row">
-              <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__country">
-                <svg class="my_proxy__table_icon" width="21" height="14">
-                  <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
-                </svg>
-              </td>
-              <td class="my_proxy__col my_proxy__type">
-                <span>5.188.181.246</span>
-              </td>
-              <td class="my_proxy__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="my_proxy__col my_proxy__socks">
-                <span>-</span>
-              </td>
-              <td class="my_proxy__col my_proxy__login">
-                <span>lGr3NJWT</span>
-              </td>
-              <td class="my_proxy__col my_proxy__pas">
-                <span>hdSyZ1gH</span>
-              </td>
-              <td class="my_proxy__col my_proxy__date">
-                <span>23д 15ч</span>
-              </td>
-              <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
-                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__action">
-                <svg class="my_proxy__icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="my_proxy__row">
-              <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__country">
-                <svg class="my_proxy__table_icon" width="21" height="14">
-                  <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
-                </svg>
-              </td>
-              <td class="my_proxy__col my_proxy__type">
-                <span>5.188.181.246</span>
-              </td>
-              <td class="my_proxy__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="my_proxy__col my_proxy__socks">
-                <span>-</span>
-              </td>
-              <td class="my_proxy__col my_proxy__login">
-                <span>lGr3NJWT</span>
-              </td>
-              <td class="my_proxy__col my_proxy__pas">
-                <span>hdSyZ1gH</span>
-              </td>
-              <td class="my_proxy__col my_proxy__date">
-                <span>23д 15ч</span>
-              </td>
-              <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
-                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__action">
-                <svg class="my_proxy__icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="my_proxy__row">
-              <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__country">
-                <svg class="my_proxy__table_icon" width="21" height="14">
-                  <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
-                </svg>
-              </td>
-              <td class="my_proxy__col my_proxy__type">
-                <span>5.188.181.246</span>
-              </td>
-              <td class="my_proxy__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="my_proxy__col my_proxy__socks">
-                <span>-</span>
-              </td>
-              <td class="my_proxy__col my_proxy__login">
-                <span>lGr3NJWT</span>
-              </td>
-              <td class="my_proxy__col my_proxy__pas">
-                <span>hdSyZ1gH</span>
-              </td>
-              <td class="my_proxy__col my_proxy__date">
-                <span>23д 15ч</span>
-              </td>
-              <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
-                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__action">
-                <svg class="my_proxy__icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="my_proxy__row">
-              <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__country">
-                <svg class="my_proxy__table_icon" width="21" height="14">
-                  <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
-                </svg>
-              </td>
-              <td class="my_proxy__col my_proxy__type">
-                <span>5.188.181.246</span>
-              </td>
-              <td class="my_proxy__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="my_proxy__col my_proxy__socks">
-                <span>-</span>
-              </td>
-              <td class="my_proxy__col my_proxy__login">
-                <span>lGr3NJWT</span>
-              </td>
-              <td class="my_proxy__col my_proxy__pas">
-                <span>hdSyZ1gH</span>
-              </td>
-              <td class="my_proxy__col my_proxy__date">
-                <span>23д 15ч</span>
-              </td>
-              <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
-                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__action">
-                <svg class="my_proxy__icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="my_proxy__row">
-              <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__country">
-                <svg class="my_proxy__table_icon" width="21" height="14">
-                  <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
-                </svg>
-              </td>
-              <td class="my_proxy__col my_proxy__type">
-                <span>5.188.181.246</span>
-              </td>
-              <td class="my_proxy__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="my_proxy__col my_proxy__socks">
-                <span>-</span>
-              </td>
-              <td class="my_proxy__col my_proxy__login">
-                <span>lGr3NJWT</span>
-              </td>
-              <td class="my_proxy__col my_proxy__pas">
-                <span>hdSyZ1gH</span>
-              </td>
-              <td class="my_proxy__col my_proxy__date">
-                <span>23д 15ч</span>
-              </td>
-              <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
-                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__action">
-                <svg class="my_proxy__icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr class="my_proxy__row">
-              <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__country">
-                <svg class="my_proxy__table_icon" width="21" height="14">
-                  <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
-                </svg>
-              </td>
-              <td class="my_proxy__col my_proxy__type">
-                <span>5.188.181.246</span>
-              </td>
-              <td class="my_proxy__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="my_proxy__col my_proxy__socks">
-                <span>-</span>
-              </td>
-              <td class="my_proxy__col my_proxy__login">
-                <span>lGr3NJWT</span>
-              </td>
-              <td class="my_proxy__col my_proxy__pas">
-                <span>hdSyZ1gH</span>
-              </td>
-              <td class="my_proxy__col my_proxy__date">
-                <span>23д 15ч</span>
-              </td>
-              <td class="my_proxy__col my_proxy__coment">
-                <textarea name="" id="my_proxy__coment_text" maxlength="170" class="my_proxy__coment_text">Продлевать</textarea>
-                <label for="my_proxy__coment_text" class="my_proxy__coment_label">
-                  Продлевать
-                </label>
-              </td>
-              <td class="my_proxy__col my_proxy__action">
-                <svg class="my_proxy__icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
-                </svg>
-                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
@@ -809,14 +842,16 @@
           <tfoot class="my_proxy__tfoot">
             <tr class="my_proxy__footer_row">
               <td class="my_proxy__footer_col">
-                <a href="">
-                  <svg width="15" height="15"></svg>
+                <a href="" class="my_proxy__footer_link">
+                  <svg class="my_proxy__icon" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                  </svg>
                   Показать скрытые прокси
                 </a>
               </td>
               <td class="my_proxy__footer_col">
-                <p>Строк на странице</p>
-                <select name="" id="">
+                <span class="my_proxy__footer_text">Строк на странице</span>
+                <select name="" id="" class="my_proxy__footer_select">
                   <option value="20">20</option>
                   <option value="50">50</option>
                   <option value="100">100</option>
@@ -824,10 +859,14 @@
                 </select>
               </td>
               <td class="my_proxy__footer_col">
-                <p>1-10 из 10</p>
-                <div>
-                  <a href=""></a>
-                  <a href=""></a>
+                <span class="my_proxy__footer_text">1-10 из 10</span>
+                <div class="my_proxy__change_page">
+                  <a href="" class="my_proxy__prev_page">
+                    <span>&#8249</span>
+                  </a>
+                  <a href="" class="my_proxy__next_page">
+                    <span>&#8250</span>
+                  </a>
                 </div>
 
               </td>
@@ -843,8 +882,9 @@
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

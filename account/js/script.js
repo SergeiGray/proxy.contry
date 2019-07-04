@@ -2,6 +2,12 @@
 
 (function () {
 
+  let hangSelect2 = function () {
+    $(document).ready(function() {
+      $('.my_proxy__footer_select').select2();
+    });
+  };
+
   var getSliderInNav = function () {
     $('.nav__slide').click( function (evt) {
       evt.preventDefault();
@@ -35,6 +41,7 @@
 
   };
 
+  hangSelect2();
   getSliderInNav();
   getComentInMyProxy();
 
