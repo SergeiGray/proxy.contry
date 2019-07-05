@@ -235,38 +235,44 @@
         </nav>
         <section class="my_proxy__prolong">
           <div class="my_proxy__prolong_container">
-            <form action="" class="my_proxy__prolong_form">
-              <span class="my_proxy__text">Срок</span>
-              <select name="" id="" class="my_proxy__prolong_select">
+            <form action="" class="my_proxy__form">
+              <label class="my_proxy__label">
+                <span class="my_proxy__text">Срок</span>
+                <select name="" id="" class="my_proxy__prolong_select">
                 <option value="1">1 день</option>
-                <option value="2">2 деня</option>
-                <option value="3">3 деня</option>
-                <option value="4">4 деня</option>
-                <option value="5">5 деней</option>
-                <option value="6">6 деней</option>
-                <option value="7">7 деней</option>
-              </select>
-              <p>Стоимость: <span>23,30 руб.</span></p>
-              <button type="submit">Продлить</button>
+                <option value="2">2 дня</option>
+                <option value="3">3 дня</option>
+                <option value="4">4 дня</option>
+                <option value="5">5 дней</option>
+                <option value="6">6 дней</option>
+                <option value="7">7 дней</option>
+                </select>
+              </label>
+              <p class="my_proxy__text">Стоимость: <span>23,30 руб.</span></p>
+              <button type="submit" class="my_proxy__submit">Продлить</button>
             </form>
           </div>
           <div class="my_proxy__prolong_container">
-            <p>Включить автопродление</p>
-            <button>Для всех прокси</button>
-            <button>Для выбранных прокси</button>
+            <p class="my_proxy__text">Включить автопродление</p>
+            <button class="my_proxy__button">Для всех прокси</button>
+            <button class="my_proxy__button">Для выбранных прокси</button>
           </div>
         </section>
         <section class="my_proxy__search">
-          <form action="" class="my_proxy__search_form">
-            <span>Поиск</span>
-            <select name="" id="" class="my_proxy__search_select">
-              <option value="">Везде</option>
-            </select>
-            <input type="text" placeholder="Что искать">
-            <button type="submit">Найти</button>
+          <form action="" class="my_proxy__form">
+            <label class="my_proxy__label">
+              <span class="my_proxy__text">Поиск</span>
+              <select name="" id="" class="my_proxy__search_select">
+                <option value="">Везде</option>
+              </select>
+            </label>
+            <label class="my_proxy__label">
+              <input type="text" placeholder="Что искать" class="my_proxy__input">
+            </label>
+            <button type="submit" class="my_proxy__submit">Найти</button>
           </form>
-          <p>Вы можете использовать
-            <a href="">Поиск списком
+          <p class="my_proxy__text">Вы можете использовать
+            <a href="" class="my_proxy__search_link">Поиск списком
               <svg class="my_proxy__icon" width="13" height="13">
                 <use xlink:href="img/sprite.svg#icon-round-question"></use>
               </svg>
@@ -275,126 +281,166 @@
         </section>
         <section class="my_proxy__edit">
           <nav class="my_proxy__edit_nav">
-            <a href="">Логин и пароль</a>
-            <a href="">Комментарий</a>
-            <a href="">Тип прокси</a>
+            <a href="" class="my_proxy__edit_link my_proxy__edit_link_active">Логин и пароль</a>
+            <a href="" class="my_proxy__edit_link">Комментарий</a>
+            <a href="" class="my_proxy__edit_link">Тип прокси</a>
           </nav>
           <section class="my_proxy__edit_login">
-            <form action="">
-              <input type="text" placeholder="Новый логин">
-              <input type="text" placeholder="Новый пароль">
-              <button type="submit">Сохранить</button>
-              <button>Сгенерировать</button>
+            <form action="" class="my_proxy__form">
+              <input type="text" placeholder="Новый логин" class="my_proxy__input">
+              <input type="text" placeholder="Новый пароль" class="my_proxy__input">
+              <button type="submit" class="my_proxy__submit">Сохранить</button>
+              <button class="my_proxy__button">Сгенерировать</button>
             </form>
-            <label>
-              <input type="checkbox">
-              Использовать уникальный логин и пароль для каждого прокси
-            </label>
+            <div class="my_proxy__item_container">
+              <input id="my_proxy__edit_login_check" type="checkbox" class="my_proxy__checkbox">
+              <label for="my_proxy__edit_login_check" class="my_proxy__checkbox_label">Использовать уникальный логин и пароль для каждого прокси</label>
+            </div>
           </section>
           <section class="my_proxy__edit_comment">
-            <form action="">
-              <input type="text">
-              <button type="submit">Добавить</button>
-              <button>Очистить все</button>
+            <form action="" class="my_proxy__form">
+              <input type="text" class="my_proxy__input" placeholder="Введите текст">
+              <button type="submit" class="my_proxy__submit">Добавить</button>
+              <button class="my_proxy__button">Очистить все</button>
             </form>
-            <p>Здесь вы можете присвоить комментарий к списку прокси для удобства поиска и сортировки или очистить все комментарии</p>
+            <p class="my_proxy__text">Здесь вы можете присвоить комментарий к списку прокси для удобства поиска и сортировки или очистить все комментарии</p>
           </section>
           <section class="my_proxy__edit_type">
-            <form action="">
-              <input type="radio" name="my_proxy__edit_type">
-              <input type="radio" name="my_proxy__edit_type">
-              <button type="submit">Применить</button>
+            <form action="" class="my_proxy__form">
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__edit_type_https" type="radio" name="my_proxy__edit_type" value="htts" class="my_proxy__radio">
+                <label for="my_proxy__edit_type_https" class="my_proxy__radio_label">HTTPS</label>
+              </div>
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__edit_type_socks" type="radio" name="my_proxy__edit_type" value="socks" class="my_proxy__radio">
+                <label for="my_proxy__edit_type_socks" class="my_proxy__radio_label">SOCKS</label>
+              </div>
+              <button type="submit" class="my_proxy__submit">Применить</button>
             </form>
-            <p>Выбранный тип будет применён ко всем указанным прокси</p>
+            <p class="my_proxy__text">Выбранный тип будет применён ко всем указанным прокси</p>
           </section>
         </section>
         <section class="my_proxy__auth">
-          <form action="">
-            <input type="radio">
-            <span>По логину и паролю</span>
-            <input type="radio">
-            <span>По IP</span>
-            <button type="submit">Применить</button>
+          <form action="" class="my_proxy__form">
+            <div class="my_proxy__item_container">
+              <input id="my_proxy__auth_log" type="radio" name="my_proxy__auth" value="login" class="my_proxy__radio">
+              <label for="my_proxy__auth_log" class="my_proxy__radio_label">
+                По логину и паролю
+              </label>
+            </div>
+            <div class="my_proxy__item_container">
+              <input id="my_proxy__auth_ip" type="radio" name="my_proxy__auth" value="ip" class="my_proxy__radio">
+              <label for="my_proxy__auth_ip" class="my_proxy__radio_label">
+                По IP
+              </label>
+            </div>
+            <button type="submit" class="my_proxy__submit">Применить</button>
           </form>
-          <form action="">
-            <input type="text" placeholder="Укажите IP">
-            <button type="submit">Сохранить</button>
+          <form action="" class="my_proxy__form">
+            <input type="text" placeholder="Укажите IP" class="my_proxy__input">
+            <button type="submit" class="my_proxy__button">Сохранить</button>
           </form>
         </section>
         <section class="my_proxy__download">
-          <form action="">
-            <p>Укажите формат вывода</p>
-            <p>
+          <form action="" class="my_proxy__form">
+            <p class="my_proxy__text">Укажите формат вывода</p>
+            <p class="my_proxy__text">
               <span>IP</span>
-              <input type="text" value=":">
+              <input type="text" value=":" class="my_proxy__input">
               <span>port</span>
-              <input type="text" value="@">
+              <input type="text" value="@" class="my_proxy__input">
               <span>login</span>
-              <input type="text" value=":">
+              <input type="text" value=":" class="my_proxy__input">
               <span>pass</span>
             </p>
-            <button type="submit">
-              <svg width="15" height="15"></svg>
+            <button type="submit" class="my_proxy__submit">
+              <svg class="my_proxy__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-exchange-arrows"></use>
+              </svg>
             </button>
-            <span>— поменять местами IP и login</span>
+            <span class="my_proxy__text">— поменять местами IP и login</span>
           </form>
-          <form action="">
-            <select name="" id="">
-              <option value="">С авторизацией</option>
-            </select>
-            <select name="" id="">
-              <option value="">HTTP (s)</option>
-            </select>
-            <select name="" id="">
-              <option value="">.csv</option>
-            </select>
-            <button type="submit">Скачать</button>
-            <button>Копировать в буфер</button>
+          <form action="" class="my_proxy__form">
+            <label class="my_proxy__label">
+              <select name="" id="" class="my_proxy__download_select">
+                <option value="">С авторизацией</option>
+              </select>
+            </label>
+            <label class="my_proxy__label">
+              <select name="" id="" class="my_proxy__download_select">
+                <option value="">HTTP (s)</option>
+              </select>
+            </label>
+            <label class="my_proxy__label">
+              <select name="" id="" class="my_proxy__download_select">
+                <option value="">.csv</option>
+              </select>
+            </label>
+            <button type="submit" class="my_proxy__submit">Скачать</button>
+            <button class="my_proxy__button">Копировать в буфер</button>
           </form>
         </section>
         <section class="my_proxy__filter">
-          <form action="">
-            <div>
-              <h2>Сортировать</h2>
-              <label>
-                Показывать сначала
-                <select name="" id="">
+          <form action="" class="my_proxy__form">
+            <div class="my_proxy__item_container">
+              <h2 class="my_proxy__filter_title">Сортировать</h2>
+              <label class="my_proxy__label">
+                <span class="my_proxy__text">Показывать сначала</span>
+                <select name="" id="" class="my_proxy__filter_select">
                   <option value="">Новые</option>
                 </select>
               </label>
             </div>
-            <select name="" id="">
-              <option value="">Активные</option>
-              <option value="">Требуют продления</option>
-              <option value="">Видимые</option>
-              <option value="">Скрытые</option>
-            </select>
-            <select name="" id="">
-              <option value="">IPv4</option>
-              <option value="">IPv6</option>
-              <option value="">Shared IPv4</option>
-            </select>
-            <select name="" id="">
-              <option value="">Socks</option>
-              <option value="">Https</option>
-            </select>
-            <select name="" id="">
-              <option value="">Россия</option>
-              <option value="">Германия</option>
-            </select>
-            <select name="" id="">
-              <option value="">Есть комментарий</option>
-              <option value="">Нет комментария</option>
-            </select>
-            <select name="" id="">
-              <option value="">Автопродление вкл</option>
-              <option value="">Автопродление выкл</option>
-            </select>
-            <select name="" id="">
-              <option value="">Группа А</option>
-              <option value="">Группа В</option>
-            </select>
-            <button type="submit">Применить</button>
+            <div class="my_proxy__item_container">
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">Активные</option>
+                  <option value="">Требуют продления</option>
+                  <option value="">Видимые</option>
+                  <option value="">Скрытые</option>
+                </select>
+              </label>
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">IPv4</option>
+                  <option value="">IPv6</option>
+                  <option value="">Shared IPv4</option>
+                </select>
+              </label>
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">Socks</option>
+                  <option value="">Https</option>
+                </select>
+              </label>
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">Россия</option>
+                  <option value="">Германия</option>
+                </select>
+              </label>
+            </div>
+            <div class="my_proxy__item_container">
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">Есть комментарий</option>
+                  <option value="">Нет комментария</option>
+                </select>
+              </label>
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">Автопродление вкл</option>
+                  <option value="">Автопродление выкл</option>
+                </select>
+              </label>
+              <label class="my_proxy__label">
+                <select name="" id="" class="my_proxy__filter_select">
+                  <option value="">Группа А</option>
+                  <option value="">Группа В</option>
+                </select>
+              </label>
+              <button type="submit" class="my_proxy__submit">Применить</button>
+            </div>
           </form>
         </section>
         <table class="my_proxy__table">
@@ -403,9 +449,6 @@
               <th class="my_proxy__header_col my_proxy__check">
                 <input id="my_proxy__checkbox_0" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_0" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </th>
               <th class="my_proxy__header_col my_proxy__country">
@@ -428,9 +471,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -481,9 +521,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_2" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_2" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -534,9 +571,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_3" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_3" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -587,9 +621,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_4" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_4" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -639,9 +670,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_5" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_5" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -692,9 +720,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_6" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_6" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -744,9 +769,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_7" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_7" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -796,9 +818,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_8" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_8" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -848,9 +867,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_8" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_8" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -901,9 +917,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_9" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_9" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -954,9 +967,6 @@
               <td class="my_proxy__col my_proxy__check">
                 <input id="my_proxy__checkbox_10" type="checkbox" name="" class="my_proxy__checkbox">
                 <label for="my_proxy__checkbox_10" class="my_proxy__checkbox_label">
-                  <svg class="my_proxy__checkbox_icon" width="10" height="7">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">

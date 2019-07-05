@@ -9,6 +9,15 @@
     $(document).ready(function() {
       $('.my_proxy__prolong_select').select2();
     });
+    $(document).ready(function() {
+      $('.my_proxy__search_select').select2();
+    });
+    $(document).ready(function() {
+      $('.my_proxy__download_select').select2();
+    });
+    $(document).ready(function() {
+      $('.my_proxy__filter_select').select2();
+    });
   };
 
   var getSliderInNav = function () {
