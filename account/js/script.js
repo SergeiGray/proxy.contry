@@ -91,9 +91,26 @@
     });
   };
 
+  let showPopUpMyProxySearch = function () {
+    $('.pop_up__icon_close, .my_proxy__pop_up__overlay').click(function (){
+      $('.my_proxy__search_pop_up, .my_proxy__pop_up__overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.my_proxy__open_pop_up').click(function (evt){
+      evt.preventDefault();
+      $('.my_proxy__search_pop_up, .my_proxy__pop_up__overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(evt) {
+          if (evt.keyCode === 27) {
+              evt.stopPropagation();
+              $('.my_proxy__search_pop_up, .my_proxy__pop_up__overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
   hangSelect2();
   getSliderInNav();
   getComentInMyProxy();
   getShowInMyProxy();
+  showPopUpMyProxySearch();
 
 })();

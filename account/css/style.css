@@ -810,6 +810,7 @@ body {
 .my_proxy__pop_up__overlay {
   display: none;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -824,9 +825,9 @@ body {
 }
 
 .my_proxy__search_pop_up {
-  /*display: none;*/
+  display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 50%;
   margin-top: -210px;
   left: 50%;
@@ -840,12 +841,12 @@ body {
   border: 1px solid #E7E7E7;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   background-color: #ffffff;
-/*  opacity: 0;
+  opacity: 0;
   -webkit-transition: opacity .5s, top .5s;
   -moz-transition: opacity .5s, top .5s;
   -ms-transition: opacity .5s, top .5s;
   -o-transition: opacity .5s, top .5s;
-  transition: opacity .5s, top .5s;*/
+  transition: opacity .5s, top .5s;
 }
 
 .pop_up__icon_close {
