@@ -375,6 +375,10 @@ body {
   margin-bottom: 15px;
 }
 
+.my_proxy__navigation  .my_proxy__input {
+  display: none;
+}
+
 .my_proxy__list {
   display: -webkit-flex;
   display: -moz-flex;
@@ -396,19 +400,6 @@ body {
   align-items: center;
   margin-right: 49px;
   margin-top: 2px;
-}
-
-.my_proxy__link {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 13px;
-  color: #666666;
 }
 
 .my_proxy__counter {
@@ -436,6 +427,27 @@ body {
 
 .my_proxy__item .my_proxy__icon {
   margin-right: 9px;
+}
+
+.my_proxy__link {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #666666;
+}
+
+.my_proxy__link_active {
+  color: #7E64FE;
+}
+
+.my_proxy__link_active .my_proxy__icon {
+  fill: #7E64FE;
 }
 
 .my_proxy__item_container {
@@ -744,6 +756,10 @@ body {
 }
 
 .my_proxy__search .my_proxy__text {
+  margin-right: 5px;
+}
+
+.my_proxy__search .my_proxy__form .my_proxy__text {
   margin-right: 15px;
 }
 
@@ -751,15 +767,127 @@ body {
   margin-right: 20px;
 }
 
-.my_proxy__search .my_proxy__icon {
-  margin-left: 4px;
-  margin-bottom: -2px;
-}
-
 .my_proxy__search .my_proxy__filter_select,
 .my_proxy__search .select2-container,
 .my_proxy__search .select2-selection__rendered {
   width: 120px !important;
+}
+
+.my_proxy__search .my_proxy__icon_container {
+  position: relative;
+}
+
+.my_proxy__search .my_proxy__icon_container:hover:before {
+  content: 'Поиск списком помогает найти нужные прокси, используя множество параметров или список из прокси';
+  position: absolute;
+  left: -225px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  box-sizing: border-box;
+  width: 210px;
+  padding: 20px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+  color: #333333;
+  font-size: 13px;
+  line-height: 130%;
+}
+
+.my_proxy__search .my_proxy__icon_container:hover:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -20px;
+  background: #FFFFFF;
+  transform: rotate(-45deg);
+}
+
+.my_proxy__pop_up__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.my_proxy__search_pop_up {
+  /*display: none;*/
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  margin-top: -210px;
+  left: 50%;
+  margin-left: -218px;
+  right: 0;
+  flex-direction: column;
+  width: 436px;
+  min-height: 420px;
+  box-sizing: border-box;
+  padding: 30px 38px 40px;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+/*  opacity: 0;
+  -webkit-transition: opacity .5s, top .5s;
+  -moz-transition: opacity .5s, top .5s;
+  -ms-transition: opacity .5s, top .5s;
+  -o-transition: opacity .5s, top .5s;
+  transition: opacity .5s, top .5s;*/
+}
+
+.pop_up__icon_close {
+  position: absolute;
+  top: 24px;
+  right: 22px;
+}
+
+.my_proxy__search_pop_up .my_proxy__title {
+  margin: 0 0 15px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #221B44;
+  text-transform: none;
+}
+
+.my_proxy__search_pop_up .my_proxy__paragraph {
+  margin: 0 0 15px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #221B44;
+  opacity: 0.7;
+}
+
+.my_proxy__search_pop_up .my_proxy__textarea {
+  margin-bottom: 22px;
+  width: 100%;
+  height: 215px;
+  resize: none;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  padding: 7px 20px 0;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.my_proxy__search_pop_up .my_proxy__textarea::placeholder {
+  opacity: 1;
 }
 
 /*___edit___*/
@@ -816,6 +944,10 @@ body {
 .my_proxy__edit_link_active {
   color: #7E64FE;
   border-bottom: 1px solid #7E64FE;
+}
+
+.my_proxy__edit_nav .my_proxy__input {
+  display: none;
 }
 
 /*____edit_login____*/
