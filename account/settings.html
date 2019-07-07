@@ -41,8 +41,8 @@
               <span>sergey.1988@strogiy.ru</span>
             </a>
           </li>
-          <li class="header__tuning">
-            <a href="" class="header__tuning_link">
+          <li class="header__settings">
+            <a href="settings.html" class="header__settings_link">
               <svg class="header__icon" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-gear"></use>
               </svg>
@@ -179,7 +179,45 @@
       </a>
     </nav>
     <main class="main">
-
+      <section class="settings">
+        <h2 class="main__title">Настройки</h2>
+        <h3 class="settings__form_title">Настройки E-mail рассылки</h3>
+        <form action="" class="main__form">
+          <div class="settings__item_container">
+            <input id="settings__check_payment" type="checkbox" class="main__checkbox">
+            <label for="settings__check_payment" class="main__checkbox_label">Оповещения об оплате</label>
+          </div>
+          <div class="settings__item_container">
+            <input id="settings__check_entering" type="checkbox" class="main__checkbox">
+            <label for="settings__check_entering" class="main__checkbox_label">Вход в личный кабинет</label>
+          </div>
+          <div class="settings__item_container">
+            <input id="settings__check_ending" type="checkbox" class="main__checkbox">
+            <label for="settings__check_ending" class="main__checkbox_label">Окончание срока аренды</label>
+            <label class="settings__select_label">
+              <select name="" id="" class="settings__select">
+                <option value="">2 дня</option>
+              </select>
+            </label>
+          </div>
+        </form>
+        <h3 class="settings__form_title">Настройки профиля</h3>
+        <form action="" class="main__form">
+          <label class="settings__label">
+            <span class="main__text">Логин/почта</span>
+            <input type="email" placeholder="sergh.g@gmail.com" class="main__input">
+          </label>
+          <label class="settings__label">
+            <span class="main__text">Старый пароль</span>
+            <input type="password" placeholder="**************" class="main__input">
+          </label>
+          <label class="settings__label">
+            <span class="main__text">Новый пароль</span>
+            <input type="password" placeholder="**************" class="main__input">
+          </label>
+          <button type="submit" class="main__submit">Сохранить</button>
+        </form>
+      </section>
     </main>
     <aside class="sidebar"></aside>
   </section>

@@ -163,11 +163,11 @@ body {
   margin-right: 14px;
 }
 
-.header__tuning {
+.header__settings {
   margin-right: 32px;
 }
 
-.header__tuning_link {
+.header__settings_link {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -522,6 +522,13 @@ body {
   color: #333333;
 }
 
+.main__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 140%;
+  color: #666666;
+}
+
 /*---MY_PROXY---*/
 
 .my_proxy {
@@ -628,13 +635,6 @@ body {
   justify-content: flex-start;
 }
 
-.my_proxy__text {
-  margin: 0;
-  font-size: 13px;
-  line-height: 140%;
-  color: #666666;
-}
-
 /*___prolong___*/
 
 .my_proxy__prolong {
@@ -676,7 +676,7 @@ body {
   color: #333333;
 }
 
-.my_proxy__prolong .my_proxy__text {
+.my_proxy__prolong .main__text {
   margin-right: 15px;
 }
 
@@ -688,7 +688,7 @@ body {
   margin-left: 10px;
 }
 
-.my_proxy__prolong_container:last-child .my_proxy__text {
+.my_proxy__prolong_container:last-child .main__text {
   margin-right: 20px;
 }
 
@@ -759,11 +759,11 @@ body {
   color: #666666;
 }
 
-.my_proxy__search .my_proxy__text {
+.my_proxy__search .main__text {
   margin-right: 5px;
 }
 
-.my_proxy__search .main__form .my_proxy__text {
+.my_proxy__search .main__form .main__text {
   margin-right: 15px;
 }
 
@@ -876,7 +876,7 @@ body {
   opacity: 0.7;
 }
 
-.my_proxy__search_pop_up .my_proxy__textarea {
+.my_proxy__search_pop_up .main__textarea {
   margin-bottom: 22px;
   width: 100%;
   height: 215px;
@@ -891,7 +891,7 @@ body {
   color: #666666;
 }
 
-.my_proxy__search_pop_up .my_proxy__textarea::placeholder {
+.my_proxy__search_pop_up .main__textarea::placeholder {
   opacity: 1;
 }
 
@@ -1121,19 +1121,19 @@ body {
   text-align: center;
 }
 
-.my_proxy__download .my_proxy__text:first-child {
+.my_proxy__download .main__text:first-child {
   margin-right: 30px;
 }
 
-.my_proxy__download .my_proxy__text:nth-of-type(2) {
+.my_proxy__download .main__text:nth-of-type(2) {
   margin-right: 6px;
 }
 
-.my_proxy__download .my_proxy__text:last-of-type {
+.my_proxy__download .main__text:last-of-type {
   margin-left: 5px;
 }
 
-.my_proxy__download .my_proxy__text :nth-child(n) {
+.my_proxy__download .main__text :nth-child(n) {
   margin-right: 13px;
 }
 
@@ -1183,7 +1183,7 @@ body {
   padding: 27px 34px 30px;
 }
 
-.my_proxy__filter .my_proxy__text {
+.my_proxy__filter .main__text {
   margin-right: 24px;
 }
 
@@ -1767,16 +1767,100 @@ body {
   color: #7E64FE;
 }
 
+/*---SETTINGS---*/
 
+.settings {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
 
+.settings .main__form {
+  width: 360px;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
 
+.settings__label {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.settings__label:last-of-type {
+  margin-bottom: 33px;
+}
 
+.settings .main__title {
+  margin: 0 0 23px;
+}
 
+.settings .settings__item_container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-left: 33px;
+}
 
+.settings .settings__item_container:nth-child(1) {
+  margin-bottom: 17px;
+}
 
+.settings .settings__item_container:nth-child(2) {
+  margin-bottom: 9px;
+}
 
+.settings .main__checkbox_label {
+  margin-right: 27px;
+}
 
+.settings__form_title {
+  margin: 0 0 27px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 130%;
+  color: #221B44;
+}
+
+.settings .main__checkbox_label::after {
+  left: -33px;
+}
+
+.settings .pricing__select,
+.settings .select2-container,
+.settings .select2-selection__rendered {
+  width: 72px !important;
+}
+
+.settings .main__submit {
+  min-width: 204px;
+}
+
+/** {
+  outline: 1px solid green;
+}*/
 
 
 

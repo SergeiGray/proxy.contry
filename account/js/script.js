@@ -21,6 +21,9 @@
     $(document).ready(function() {
       $('.pricing__select').select2();
     });
+    $(document).ready(function() {
+      $('.settings__select').select2();
+    });
   };
 
   let getSliderInNav = function () {
