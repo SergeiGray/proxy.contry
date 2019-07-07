@@ -179,7 +179,65 @@
       </a>
     </nav>
     <main class="main">
-
+      <section class="balance">
+        <h2 class="main__title">Баланс</h2>
+        <div class="balance__your_balance">
+          <div class="balance__show">
+            <p class="balance__show_text">Ваш баланс</p>
+            <p class="balance__show_amount">4 569 &#8381</p>
+          </div>
+          <div class="balance__attention">
+            <p class="balance__attention_text">Внимание! У вас подключено автопродление 25 прокси. <br>
+            Следующее списание в размере <a href="" class="balance__attention_link">300 руб.</a> состоится <a href="" class="balance__attention_link">23.07.19.</a></p>
+            <p class="balance__attention_text">В случае, если на балансе будет недостаточно средств, прокси будут аннулированы.</p>
+            <p class="balance__attention_text">Вы можете выключить автопродление в разделе <a href="" class="balance__attention_link">Мои прокси</a>.</p>
+          </div>
+        </div>
+        <h3 class="balance__title">Пополнение баланса</h3>
+        <form action="" class="main__form">
+          <p class="balance__form_title">Выберите способ пополнение счёта.</p>
+          <div class="balance__systems">
+            <div class="balance__item_systems">
+              <input id="balance__system_card" name="payment_system" value="card" type="radio" class="balance__radio">
+              <label for="balance__system_card" class="balance__radio_label">
+                <svg class="balance__icon" width="64" height="64">
+                  <use xlink:href="img/sprite.svg#icon-card"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="balance__item_systems">
+              <input id="balance__system_yandex" name="payment_system" value="yandex" type="radio" class="balance__radio">
+              <label for="balance__system_yandex" class="balance__radio_label">
+                <svg class="balance__icon" width="95" height="26">
+                  <use xlink:href="img/sprite.svg#icon-yandex-money"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="balance__item_systems">
+              <input id="balance__system_qiwi" name="payment_system" value="qiwi" type="radio" class="balance__radio">
+              <label for="balance__system_qiwi" class="balance__radio_label">
+                <svg class="balance__icon" width="88" height="32">
+                  <use xlink:href="img/sprite.svg#icon-qiwi"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="balance__item_systems">
+              <input id="balance__system_webmoney" name="payment_system" value="webmoney" type="radio" class="balance__radio">
+              <label for="balance__system_webmoney" class="balance__radio_label">
+                <svg class="balance__icon" width="159" height="48">
+                  <use xlink:href="img/sprite.svg#icon-webmoney"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+          <p class="balance__form_title">Сумма</p>
+          <div class="balance__amount">
+            <input type="text" placeholder="0 руб." class="main__input">
+            <button type="submit" class="main__submit">Перейти к оплате</button>
+            <p class="balance__amount_text">Вы будете направлены на сайт выбранной платежной системы</p>
+          </div>
+        </form>
+      </section>
     </main>
     <aside class="sidebar"></aside>
   </section>
