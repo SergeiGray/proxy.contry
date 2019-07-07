@@ -61,7 +61,7 @@
   </header>
   <section class="wrapper layout">
     <nav class="nav">
-      <a href="" class="nav__buy">Купить прокси</a>
+      <a href="pricing.html" class="nav__buy">Купить прокси</a>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="" class="nav__link nav__slide">
@@ -180,12 +180,12 @@
     </nav>
     <main class="main">
       <section class="my_proxy">
-        <h2 class="my_proxy__title">Мои прокси</h2>
+        <h2 class="main__title">Мои прокси</h2>
         <nav class="my_proxy__navigation">
-          <input id="show__none" type="radio" name="my_proxy__nav_check" class="my_proxy__input" checked="">
+          <input id="show__none" type="radio" name="my_proxy__nav_check" class="main__input" checked="">
           <ul class="my_proxy__list">
             <li class="my_proxy__item">
-              <input id="show__prolong" type="radio" name="my_proxy__nav_check" class="my_proxy__input">
+              <input id="show__prolong" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__prolong" class="my_proxy__link show__prolong">
                 <svg class="my_proxy__icon" width="15" height="15">
                   <use xlink:href="img/sprite.svg#icon-refresh"></use>
@@ -195,7 +195,7 @@
               </label>
             </li>
             <li class="my_proxy__item">
-              <input id="show__search" type="radio" name="my_proxy__nav_check" class="my_proxy__input">
+              <input id="show__search" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__search" class="my_proxy__link show__search">
                 <svg class="my_proxy__icon" width="17" height="17">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
@@ -204,7 +204,7 @@
               </label>
             </li>
             <li class="my_proxy__item">
-              <input id="show__edit" type="radio" name="my_proxy__nav_check" class="my_proxy__input">
+              <input id="show__edit" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__edit" class="my_proxy__link show__edit">
                 <svg class="my_proxy__icon" width="17" height="17">
                   <use xlink:href="img/sprite.svg#icon-draw"></use>
@@ -214,7 +214,7 @@
               </label>
             </li>
             <li class="my_proxy__item">
-              <input id="show__auth" type="radio" name="my_proxy__nav_check" class="my_proxy__input">
+              <input id="show__auth" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__auth" class="my_proxy__link show__auth">
                 <svg class="my_proxy__icon" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-man"></use>
@@ -223,7 +223,7 @@
               </label>
             </li>
             <li class="my_proxy__item">
-              <input id="show__download" type="radio" name="my_proxy__nav_check" class="my_proxy__input">
+              <input id="show__download" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__download" class="my_proxy__link show__download">
                 <svg class="my_proxy__icon" width="17" height="17">
                   <use xlink:href="img/sprite.svg#icon-download"></use>
@@ -233,7 +233,7 @@
               </label>
             </li>
           </ul>
-          <input id="show__filter" type="radio" name="my_proxy__nav_check" class="my_proxy__input">
+          <input id="show__filter" type="radio" name="my_proxy__nav_check" class="main__input">
           <label for="show__filter" class="my_proxy__link show__filter">
             <svg class="my_proxy__icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-console"></use>
@@ -242,7 +242,7 @@
         </nav>
         <section class="my_proxy__prolong display_none">
           <div class="my_proxy__prolong_container">
-            <form action="" class="my_proxy__form">
+            <form action="" class="main__form">
               <label class="my_proxy__label">
                 <span class="my_proxy__text">Срок</span>
                 <select name="" id="" class="my_proxy__prolong_select">
@@ -256,17 +256,17 @@
                 </select>
               </label>
               <p class="my_proxy__text">Стоимость: <span>23,30 руб.</span></p>
-              <button type="submit" class="my_proxy__submit">Продлить</button>
+              <button type="submit" class="main__submit">Продлить</button>
             </form>
           </div>
           <div class="my_proxy__prolong_container">
             <p class="my_proxy__text">Включить автопродление</p>
-            <button class="my_proxy__button">Для всех прокси</button>
-            <button class="my_proxy__button">Для выбранных прокси</button>
+            <button class="main__button">Для всех прокси</button>
+            <button class="main__button">Для выбранных прокси</button>
           </div>
         </section>
         <section class="my_proxy__search display_none">
-          <form action="" class="my_proxy__form">
+          <form action="" class="main__form">
             <label class="my_proxy__label">
               <span class="my_proxy__text">Поиск</span>
               <select name="" id="" class="my_proxy__search_select">
@@ -274,9 +274,9 @@
               </select>
             </label>
             <label class="my_proxy__label">
-              <input type="text" placeholder="Что искать" class="my_proxy__input">
+              <input type="text" placeholder="Что искать" class="main__input">
             </label>
-            <button type="submit" class="my_proxy__submit">Найти</button>
+            <button type="submit" class="main__submit">Найти</button>
           </form>
           <p class="my_proxy__text">Вы можете использовать
             <a href="" class="my_proxy__search_link my_proxy__open_pop_up">Поиск списком
@@ -295,100 +295,100 @@
                 <title>Закрыть</title>
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
-              <p class="my_proxy__title">Поиск списком</p>
+              <p class="main__title">Поиск списком</p>
               <form action="">
                 <p class="my_proxy__paragraph">Введите текст для поиска</p>
                 <textarea name="" id="" placeholder="Что искать" class="my_proxy__textarea"></textarea>
-                <button type="submit" class="my_proxy__submit">Найти</button>
+                <button type="submit" class="main__submit">Найти</button>
               </form>
             </section>
           </div>
         </section>
         <section class="my_proxy__edit display_none">
           <nav class="my_proxy__edit_nav">
-            <input id="show__edit_login" type="radio" name="my_proxy__edit_check" class="my_proxy__input" checked="">
+            <input id="show__edit_login" type="radio" name="my_proxy__edit_check" class="main__input" checked="">
             <label for="show__edit_login" class="my_proxy__edit_link show__edit_login my_proxy__edit_link_active">Логин и пароль</label>
-            <input id="show__edit_comment" type="radio" name="my_proxy__edit_check" class="my_proxy__input">
+            <input id="show__edit_comment" type="radio" name="my_proxy__edit_check" class="main__input">
             <label for="show__edit_comment" class="my_proxy__edit_link show__edit_comment">Комментарий</label>
-            <input id="show__edit_type" type="radio" name="my_proxy__edit_check" class="my_proxy__input">
+            <input id="show__edit_type" type="radio" name="my_proxy__edit_check" class="main__input">
             <label for="show__edit_type" class="my_proxy__edit_link show__edit_type">Тип прокси</label>
           </nav>
           <section class="my_proxy__edit_login">
-            <form action="" class="my_proxy__form">
-              <input type="text" placeholder="Новый логин" class="my_proxy__input">
-              <input type="text" placeholder="Новый пароль" class="my_proxy__input">
-              <button type="submit" class="my_proxy__submit">Сохранить</button>
-              <button class="my_proxy__button">Сгенерировать</button>
+            <form action="" class="main__form">
+              <input type="text" placeholder="Новый логин" class="main__input">
+              <input type="text" placeholder="Новый пароль" class="main__input">
+              <button type="submit" class="main__submit">Сохранить</button>
+              <button class="main__button">Сгенерировать</button>
             </form>
             <div class="my_proxy__item_container">
-              <input id="my_proxy__edit_login_check" type="checkbox" class="my_proxy__checkbox">
-              <label for="my_proxy__edit_login_check" class="my_proxy__checkbox_label">Использовать уникальный логин и пароль для каждого прокси</label>
+              <input id="my_proxy__edit_login_check" type="checkbox" class="main__checkbox">
+              <label for="my_proxy__edit_login_check" class="main__checkbox_label">Использовать уникальный логин и пароль для каждого прокси</label>
             </div>
           </section>
           <section class="my_proxy__edit_comment display_none">
-            <form action="" class="my_proxy__form">
-              <input type="text" class="my_proxy__input" placeholder="Введите текст">
-              <button type="submit" class="my_proxy__submit">Добавить</button>
-              <button class="my_proxy__button">Очистить все</button>
+            <form action="" class="main__form">
+              <input type="text" class="main__input" placeholder="Введите текст">
+              <button type="submit" class="main__submit">Добавить</button>
+              <button class="main__button">Очистить все</button>
             </form>
             <p class="my_proxy__text">Здесь вы можете присвоить комментарий к списку прокси для удобства поиска и сортировки или очистить все комментарии</p>
           </section>
           <section class="my_proxy__edit_type display_none">
-            <form action="" class="my_proxy__form">
+            <form action="" class="main__form">
               <div class="my_proxy__item_container">
-                <input id="my_proxy__edit_type_https" type="radio" name="my_proxy__edit_type" value="htts" class="my_proxy__radio">
-                <label for="my_proxy__edit_type_https" class="my_proxy__radio_label">HTTPS</label>
+                <input id="my_proxy__edit_type_https" type="radio" name="my_proxy__edit_type" value="htts" class="main__radio" checked="">
+                <label for="my_proxy__edit_type_https" class="main__radio_label">HTTPS</label>
               </div>
               <div class="my_proxy__item_container">
-                <input id="my_proxy__edit_type_socks" type="radio" name="my_proxy__edit_type" value="socks" class="my_proxy__radio">
-                <label for="my_proxy__edit_type_socks" class="my_proxy__radio_label">SOCKS</label>
+                <input id="my_proxy__edit_type_socks" type="radio" name="my_proxy__edit_type" value="socks" class="main__radio">
+                <label for="my_proxy__edit_type_socks" class="main__radio_label">SOCKS</label>
               </div>
-              <button type="submit" class="my_proxy__submit">Применить</button>
+              <button type="submit" class="main__submit">Применить</button>
             </form>
             <p class="my_proxy__text">Выбранный тип будет применён ко всем указанным прокси</p>
           </section>
         </section>
         <section class="my_proxy__auth display_none">
-          <form action="" class="my_proxy__form">
+          <form action="" class="main__form">
             <div class="my_proxy__item_container">
-              <input id="my_proxy__auth_log" type="radio" name="my_proxy__auth" value="login" class="my_proxy__radio">
-              <label for="my_proxy__auth_log" class="my_proxy__radio_label">
+              <input id="my_proxy__auth_log" type="radio" name="my_proxy__auth" value="login" class="main__radio" checked="">
+              <label for="my_proxy__auth_log" class="main__radio_label">
                 По логину и паролю
               </label>
             </div>
             <div class="my_proxy__item_container">
-              <input id="my_proxy__auth_ip" type="radio" name="my_proxy__auth" value="ip" class="my_proxy__radio">
-              <label for="my_proxy__auth_ip" class="my_proxy__radio_label">
+              <input id="my_proxy__auth_ip" type="radio" name="my_proxy__auth" value="ip" class="main__radio">
+              <label for="my_proxy__auth_ip" class="main__radio_label">
                 По IP
               </label>
             </div>
-            <button type="submit" class="my_proxy__submit">Применить</button>
+            <button type="submit" class="main__submit">Применить</button>
           </form>
-          <form action="" class="my_proxy__form">
-            <input type="text" placeholder="Укажите IP" class="my_proxy__input">
-            <button type="submit" class="my_proxy__button">Сохранить</button>
+          <form action="" class="main__form">
+            <input type="text" placeholder="Укажите IP" class="main__input">
+            <button type="submit" class="main__button">Сохранить</button>
           </form>
         </section>
         <section class="my_proxy__download display_none">
-          <form action="" class="my_proxy__form">
+          <form action="" class="main__form">
             <p class="my_proxy__text">Укажите формат вывода</p>
             <p class="my_proxy__text">
               <span>IP</span>
-              <input type="text" value=":" class="my_proxy__input">
+              <input type="text" value=":" class="main__input">
               <span>port</span>
-              <input type="text" value="@" class="my_proxy__input">
+              <input type="text" value="@" class="main__input">
               <span>login</span>
-              <input type="text" value=":" class="my_proxy__input">
+              <input type="text" value=":" class="main__input">
               <span>pass</span>
             </p>
-            <button type="submit" class="my_proxy__submit">
+            <button type="submit" class="main__submit">
               <svg class="my_proxy__icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-exchange-arrows"></use>
               </svg>
             </button>
             <span class="my_proxy__text">— поменять местами IP и login</span>
           </form>
-          <form action="" class="my_proxy__form">
+          <form action="" class="main__form">
             <label class="my_proxy__label">
               <select name="" id="" class="my_proxy__download_select">
                 <option value="">С авторизацией</option>
@@ -404,12 +404,12 @@
                 <option value="">.csv</option>
               </select>
             </label>
-            <button type="submit" class="my_proxy__submit">Скачать</button>
-            <button class="my_proxy__button">Копировать в буфер</button>
+            <button type="submit" class="main__submit">Скачать</button>
+            <button class="main__button">Копировать в буфер</button>
           </form>
         </section>
         <section class="my_proxy__filter display_none">
-          <form action="" class="my_proxy__form">
+          <form action="" class="main__form">
             <div class="my_proxy__item_container">
               <h2 class="my_proxy__filter_title">Сортировать</h2>
               <label class="my_proxy__label">
@@ -467,7 +467,7 @@
                   <option value="">Группа В</option>
                 </select>
               </label>
-              <button type="submit" class="my_proxy__submit">Применить</button>
+              <button type="submit" class="main__submit">Применить</button>
             </div>
           </form>
         </section>
@@ -475,8 +475,8 @@
           <thead class="my_proxy__thead">
             <tr class="my_proxy__header_row">
               <th class="my_proxy__header_col my_proxy__check">
-                <input id="my_proxy__checkbox_0" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_0" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_0" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_0" class="main__checkbox_label">
                 </label>
               </th>
               <th class="my_proxy__header_col my_proxy__country">
@@ -497,8 +497,8 @@
           <tbody class="my_proxy__tbody">
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_1" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_1" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_1" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_1" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -547,8 +547,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_2" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_2" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_2" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_2" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -597,8 +597,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_3" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_3" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_3" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_3" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -647,8 +647,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_4" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_4" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_4" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_4" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -696,8 +696,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_5" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_5" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_5" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_5" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -746,8 +746,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_6" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_6" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_6" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_6" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -795,8 +795,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_7" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_7" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_7" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_7" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -844,8 +844,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_8" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_8" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_8" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_8" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -893,8 +893,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_8" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_8" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_8" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_8" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -943,8 +943,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_9" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_9" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_9" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_9" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">
@@ -993,8 +993,8 @@
             </tr>
             <tr class="my_proxy__row">
               <td class="my_proxy__col my_proxy__check">
-                <input id="my_proxy__checkbox_10" type="checkbox" name="" class="my_proxy__checkbox">
-                <label for="my_proxy__checkbox_10" class="my_proxy__checkbox_label">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
                 </label>
               </td>
               <td class="my_proxy__col my_proxy__country">

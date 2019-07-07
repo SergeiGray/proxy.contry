@@ -18,6 +18,9 @@
     $(document).ready(function() {
       $('.my_proxy__filter_select').select2();
     });
+    $(document).ready(function() {
+      $('.pricing__select').select2();
+    });
   };
 
   let getSliderInNav = function () {
@@ -62,7 +65,7 @@
         $(itemCheck).prop('checked') ? $(itemShow).removeClass('display_none') && $(itemLink).addClass('my_proxy__edit_link_active') : $(itemShow).addClass('display_none') && $(itemLink).removeClass('my_proxy__edit_link_active');
     };
 
-    $(".my_proxy__navigation .my_proxy__input").change( function() {
+    $(".my_proxy__navigation .main__input").change( function() {
         check('#show__prolong', '.my_proxy__prolong', '.show__prolong');
         check('#show__search', '.my_proxy__search', '.show__search');
         check('#show__edit', '.my_proxy__edit', '.show__edit');
@@ -72,7 +75,7 @@
     });
 
     $(".my_proxy__navigation .my_proxy__link").click( function(evt) {
-      if ($(this).siblings('.my_proxy__input').prop('checked')) {
+      if ($(this).siblings('.main__input').prop('checked')) {
         evt.preventDefault();
         $('#show__none').trigger('click')
         check('#show__prolong', '.my_proxy__prolong', '.show__prolong');
@@ -84,7 +87,7 @@
       };
     });
 
-    $(".my_proxy__edit_nav .my_proxy__input").change( function() {
+    $(".my_proxy__edit_nav .main__input").change( function() {
       checkEdit('#show__edit_login', '.my_proxy__edit_login', '.show__edit_login');
       checkEdit('#show__edit_comment', '.my_proxy__edit_comment', '.show__edit_comment');
       checkEdit('#show__edit_type', '.my_proxy__edit_type', '.show__edit_type');
