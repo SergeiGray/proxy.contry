@@ -113,11 +113,21 @@
     });
   };
 
+  let copyText = function (buttonCopy, copyTextBlock) {
+    $(buttonCopy).click( function(evt) {
+      let copyText = document.getElementById(copyTextBlock);
+      copyText.select();
+      document.execCommand("copy");
+    });
+  };
+
   hangSelect2();
   getSliderInNav();
   getComentInMyProxy();
   getShowInMyProxy();
   showPopUpMyProxySearch('.my_proxy__open_pop_up', '.my_proxy__search_pop_up');
   showPopUpMyProxySearch('.history__open_pop_up', '.history__pop_up');
+  copyText('.partnership__promocode_copy', 'partnership__promocode');
+  copyText('.partnership__ref_link_copy', 'partnership__ref_link');
 
 })();
