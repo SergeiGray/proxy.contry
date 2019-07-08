@@ -37,21 +37,21 @@
   let getComentInMyProxy = function () {
 
     $(window).on("load", function() {
-      $('.my_proxy__coment_text').each( function (index, el) {
-        var label = $(el).parents('td').find('.my_proxy__coment_label');
+      $('.main__coment_text').each( function (index, el) {
+        var label = $(el).parents('td').find('.main__coment_label');
         $(el)[0].scrollWidth > $(el).innerWidth() ? label.removeClass('my_proxy__coment_off') : label.addClass('my_proxy__coment_off');
       });
     });
 
-    $('.my_proxy__coment_text').focusout( function (evt) {
+    $('.main__coment_text').focusout( function (evt) {
       let text = $(evt.target).val();
-      let label = $(evt.target).parents('td').find('.my_proxy__coment_label');
+      let label = $(evt.target).parents('td').find('.main__coment_label');
       label.text(text);
       $(evt.target)[0].scrollWidth > $(evt.target).innerWidth() ? label.removeClass('my_proxy__coment_off') : label.addClass('my_proxy__coment_off');
     });
 
-    $('.my_proxy__coment_text').mouseover( function (evt) {
-      let label = $(evt.target).parents('td').find('.my_proxy__coment_label');
+    $('.main__coment_text').mouseover( function (evt) {
+      let label = $(evt.target).parents('td').find('.main__coment_label');
       let position = $(evt.target).offset();
       let height = label.height();
       label.attr('style', 'top: ' + (position.top - height - 25) + 'px;' + 'left: ' + (position.left - 40) + 'px;' );
@@ -97,17 +97,17 @@
     });
   };
 
-  let showPopUpMyProxySearch = function () {
-    $('.pop_up__icon_close, .my_proxy__pop_up__overlay').click(function (){
-      $('.my_proxy__search_pop_up, .my_proxy__pop_up__overlay').css({'opacity': 0, 'display': 'none'});
+  let showPopUpMyProxySearch = function (popUpOpen, popUpBlock) {
+    $('.pop_up__icon_close, .pop_up__overlay').click(function (){
+      $(popUpBlock + ', .pop_up__overlay').css({'opacity': 0, 'display': 'none'});
     });
-    $('.my_proxy__open_pop_up').click(function (evt){
+    $(popUpOpen).click(function (evt){
       evt.preventDefault();
-      $('.my_proxy__search_pop_up, .my_proxy__pop_up__overlay').css({'opacity': 1, 'display': 'flex'});
+      $(popUpBlock + ', .pop_up__overlay').css({'opacity': 1, 'display': 'flex'});
       $(document).keydown(function(evt) {
           if (evt.keyCode === 27) {
               evt.stopPropagation();
-              $('.my_proxy__search_pop_up, .my_proxy__pop_up__overlay').css({'opacity': 0, 'display': 'none'});
+              $(popUpBlock + ', .pop_up__overlay').css({'opacity': 0, 'display': 'none'});
           }
       });
     });
@@ -117,6 +117,7 @@
   getSliderInNav();
   getComentInMyProxy();
   getShowInMyProxy();
-  showPopUpMyProxySearch();
+  showPopUpMyProxySearch('.my_proxy__open_pop_up', '.my_proxy__search_pop_up');
+  showPopUpMyProxySearch('.history__open_pop_up', '.history__pop_up');
 
 })();
