@@ -24,6 +24,12 @@
     $(document).ready(function() {
       $('.settings__select').select2();
     });
+    $(document).ready(function() {
+      $('.cheker__select').select2();
+    });
+    $(document).ready(function() {
+      $('.converter__select').select2();
+    });
   };
 
   let getSliderInNav = function () {
