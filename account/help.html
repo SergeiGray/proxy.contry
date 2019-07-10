@@ -179,7 +179,112 @@
       </a>
     </nav>
     <main class="main">
-
+      <section class="help">
+        <h2 class="main__title">Помощь</h2>
+        <p class="help__text">В этом разделе вы можете задать интересующие вопросы, а также решить возникшие проблемы и трудности. Для этого необходимо создать заявку и начать чат со специалистом.</p>
+        <div class="help__container">
+          <table class="help__requests">
+            <thead>
+              <tr class="help__head_row">
+                <th class="help__head_col">
+                  <span>Ваши заявки</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="help__row">
+                <td class="help__col help__closed">
+                  <p class="help__col_status">
+                    <span class="help__col_status_marker"></span>
+                    <span>Закрыта</span>
+                    <button class="help__col_status_delete"></button>
+                  </p>
+                  <p class="help__col_title">
+                    Ошибка при проверке
+                  </p>
+                  <p class="help__col_date">
+                    22.06.19
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col help__closed">
+                  <p class="help__col_status">
+                    <span class="help__col_status_marker"></span>
+                    <span>Закрыта</span>
+                    <button class="help__col_status_delete"></button>
+                  </p>
+                  <p class="help__col_title">
+                    Ошибка при проверке
+                  </p>
+                  <p class="help__col_date">
+                    22.06.19
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col help__opened help__active">
+                  <p class="help__col_status">
+                    <span class="help__col_status_marker"></span>
+                    <span>Открыта</span>
+                    <button class="help__col_status_delete"></button>
+                  </p>
+                  <p class="help__col_title">
+                    Ошибка при проверке
+                  </p>
+                  <p class="help__col_date">
+                    22.06.19
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="help__foot_row">
+                <td class="help__foot_col">
+                  <button class="help__foot_button">
+                    Новая заявка
+                  </button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="help__dialog">
+            <div class="help__dialog_theme">
+              <span class="help__dialog_theme_text">Тема обращения</span>
+              <input type="text" class="main__input help__dialog_theme_title" value="Ошибка при проверке">
+            </div>
+            <div class="help__dialog_field">
+              <div class="help__dialog_manager">
+                <div class="help__dialog_avatar">
+                  <img src="img/avatar.png" alt="Менеджер Максим">
+                </div>
+                <div class="help__dialog_content">
+                  <div class="help__dialog_title">
+                    <span class="help__dialog_name">Максим</span>
+                    <span class="help__dialog_manager_time">13:30</span>
+                  </div>
+                  <p class="help__dialog_text">Здравствуйте, Сергей! <br>Чем я могу вам помочь?</p>
+                </div>
+              </div>
+              <div class="help__dialog_client">
+                <div class="help__dialog_content">
+                  <div class="help__dialog_title">
+                    <span class="help__dialog_manager_time">13:30</span>
+                  </div>
+                  <p class="help__dialog_text">Здравствуйте, Максим! <br>У меня не работает чуть ли не половина прокси. В чём причина?</p>
+                </div>
+              </div>
+            </div>
+            <form action="">
+              <textarea name="" id="" class="help__dialog_input"></textarea>
+              <div class="help__container">
+                <button type="submit" class="main__submit">Отправить</button>
+                <button class="main__button">Закрыть заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <aside class="sidebar"></aside>
   </section>

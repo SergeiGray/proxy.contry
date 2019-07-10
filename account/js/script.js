@@ -32,6 +32,15 @@
     });
   };
 
+  let scrollBarСustomization = function () {
+    $('body').overlayScrollbars({
+      className: "os-theme-dark"
+    });
+    $('.my_proxy__tbody').overlayScrollbars({
+      className: "os-theme-dark"
+    });
+  }
+
   let getSliderInNav = function () {
     $('.nav__slide').click( function (evt) {
       evt.preventDefault();
@@ -128,6 +137,7 @@
   };
 
   hangSelect2();
+  scrollBarСustomization();
   getSliderInNav();
   getComentInMyProxy();
   getShowInMyProxy();
