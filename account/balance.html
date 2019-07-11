@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <section class="attention">
+    <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе Мои прокси</p>
+  </section>
   <header class="header">
     <section class="wrapper header__container">
       <a href="index.html" class="header__logo">
@@ -26,12 +30,12 @@
             </a>
           </li>
           <li class="header__balance">
-            <a href="" class="header__balance_link">
+            <a href="balance.html" class="header__balance_link">
               <span class="header__balance_circle"></span>
               Баланс
               <span class="header__balance_price">4 569 &#8381</span>
             </a>
-            <a href="" class="header__balance_button">Пополнить</a>
+            <a href="balance.html" class="header__balance_button">Пополнить</a>
           </li>
           <li class="header__login">
             <a href="" class="header__login_link">
@@ -41,8 +45,8 @@
               <span>sergey.1988@strogiy.ru</span>
             </a>
           </li>
-          <li class="header__tuning">
-            <a href="" class="header__tuning_link">
+          <li class="header__settings">
+            <a href="settings.html" class="header__settings_link">
               <svg class="header__icon" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-gear"></use>
               </svg>
@@ -61,7 +65,7 @@
   </header>
   <section class="wrapper layout">
     <nav class="nav">
-      <a href="" class="nav__buy">Купить прокси</a>
+      <a href="pricing.html" class="nav__buy">Купить прокси</a>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="" class="nav__link nav__slide">
@@ -73,7 +77,7 @@
               <use xlink:href="img/sprite.svg#icon-pointer"></use>
             </svg>
           </a>
-          <ul class="nav__drop_out">
+          <ul class="nav__drop_out display_none">
             <li class="nav__drop_out_item">
               <a href="" class="nav__drop_out_link">
                 Все
@@ -101,7 +105,7 @@
           </ul>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="history.html" class="nav__link">
             <svg class="nav__icon" width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-clock"></use>
             </svg>
@@ -109,7 +113,7 @@
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="partnership.html" class="nav__link">
             <svg class="nav__icon" width="24" height="24">
               <use xlink:href="img/sprite.svg#icon-deal"></use>
             </svg>
@@ -117,7 +121,7 @@
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="developers.html" class="nav__link">
             <svg class="nav__icon" width="21" height="21">
               <use xlink:href="img/sprite.svg#icon-coding"></use>
             </svg>
@@ -134,26 +138,26 @@
               <use xlink:href="img/sprite.svg#icon-pointer"></use>
             </svg>
           </a>
-          <ul class="nav__drop_out">
+          <ul class="nav__drop_out display_none">
             <li class="nav__item">
-              <a href="" class="nav__drop_out_link">
+              <a href="cheker.html" class="nav__drop_out_link">
                 Чекер прокси
               </a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__drop_out_link">
+              <a href="converter.html" class="nav__drop_out_link">
                 Конвертер форматов
               </a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__drop_out_link">
+              <a href="compatibility.html" class="nav__drop_out_link">
                 Совместимость IPv6
               </a>
             </li>
           </ul>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="news.html" class="nav__link">
             <svg class="nav__icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-newspaper"></use>
             </svg>
@@ -161,7 +165,7 @@
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="help.html" class="nav__link">
             <svg class="nav__icon" width="19" height="19">
               <use xlink:href="img/sprite.svg#icon-round-question"></use>
             </svg>
@@ -246,6 +250,7 @@
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.overlayScrollbars.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/script.js"></script>

@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <section class="attention">
+  <section class="attention display_none">
     <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе Мои прокси</p>
   </section>
   <header class="header">
@@ -68,7 +68,7 @@
       <a href="pricing.html" class="nav__buy">Купить прокси</a>
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="" class="nav__link nav__slide">
+          <a href="" class="nav__link nav__slide nav__link_active">
             <svg class="nav__icon" width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-globe"></use>
             </svg>
@@ -79,7 +79,7 @@
           </a>
           <ul class="nav__drop_out">
             <li class="nav__drop_out_item">
-              <a href="" class="nav__drop_out_link">
+              <a href="my_proxy.html" class="nav__drop_out_link nav__link_active">
                 Все
                 <span>29</span>
               </a>
@@ -138,7 +138,7 @@
               <use xlink:href="img/sprite.svg#icon-pointer"></use>
             </svg>
           </a>
-          <ul class="nav__drop_out">
+          <ul class="nav__drop_out display_none">
             <li class="nav__item">
               <a href="cheker.html" class="nav__drop_out_link">
                 Чекер прокси
@@ -186,9 +186,9 @@
       <section class="my_proxy">
         <h2 class="main__title">Мои прокси</h2>
         <nav class="my_proxy__navigation">
-          <input id="show__none" type="radio" name="my_proxy__nav_check" class="main__input" checked="">
           <ul class="my_proxy__list">
-            <li class="my_proxy__item">
+            <input id="show__none" type="radio" name="my_proxy__nav_check" class="main__input" checked="">
+            <li class="my_proxy__navigation_item">
               <input id="show__prolong" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__prolong" class="my_proxy__link show__prolong">
                 <svg class="my_proxy__icon" width="15" height="15">
@@ -198,7 +198,7 @@
                 <span class="my_proxy__counter">1</span>
               </label>
             </li>
-            <li class="my_proxy__item">
+            <li class="my_proxy__navigation_item">
               <input id="show__search" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__search" class="my_proxy__link show__search">
                 <svg class="my_proxy__icon" width="17" height="17">
@@ -207,7 +207,7 @@
                 Найти
               </label>
             </li>
-            <li class="my_proxy__item">
+            <li class="my_proxy__navigation_item">
               <input id="show__edit" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__edit" class="my_proxy__link show__edit">
                 <svg class="my_proxy__icon" width="17" height="17">
@@ -217,7 +217,7 @@
                 <span class="my_proxy__counter">10</span>
               </label>
             </li>
-            <li class="my_proxy__item">
+            <li class="my_proxy__navigation_item">
               <input id="show__auth" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__auth" class="my_proxy__link show__auth">
                 <svg class="my_proxy__icon" width="16" height="16">
@@ -226,7 +226,7 @@
                 Авторизация
               </label>
             </li>
-            <li class="my_proxy__item">
+            <li class="my_proxy__navigation_item">
               <input id="show__download" type="radio" name="my_proxy__nav_check" class="main__input">
               <label for="show__download" class="my_proxy__link show__download">
                 <svg class="my_proxy__icon" width="17" height="17">
@@ -236,13 +236,15 @@
                 <span class="my_proxy__counter">1000</span>
               </label>
             </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__filter" type="radio" name="my_proxy__nav_check" class="main__input">
+              <label for="show__filter" class="my_proxy__link show__filter">
+                <svg class="my_proxy__icon" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-console"></use>
+                </svg>
+              </label>
+            </li>
           </ul>
-          <input id="show__filter" type="radio" name="my_proxy__nav_check" class="main__input">
-          <label for="show__filter" class="my_proxy__link show__filter">
-            <svg class="my_proxy__icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-console"></use>
-            </svg>
-          </label>
         </nav>
         <section class="my_proxy__prolong display_none">
           <div class="my_proxy__prolong_container">
@@ -488,9 +490,9 @@
                   <use xlink:href="img/sprite.svg#icon-globe"></use>
                 </svg>
               </th>
+              <th class="main__header_col my_proxy__port">IP:port</th>
               <th class="main__header_col my_proxy__type">Тип</th>
-              <th class="main__header_col my_proxy__ip">IP</th>
-              <th class="main__header_col my_proxy__socks">SOCKS</th>
+              <th class="main__header_col my_proxy__protocol">Протокол</th>
               <th class="main__header_col my_proxy__login">Логин</th>
               <th class="main__header_col my_proxy__pas">Пароль</th>
               <th class="main__header_col my_proxy__date">Срок</th>
@@ -510,14 +512,14 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
                 </svg>
               </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
               <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+                <span>IPv6</span>
               </td>
-              <td class="main__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="main__col my_proxy__socks">
-                <span>-</span>
+              <td class="main__col my_proxy__protocol">
+                <span>SOCKS</span>
               </td>
               <td class="main__col my_proxy__login">
                 <span>lGr3NJWT</span>
@@ -529,8 +531,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+                <label for="" class="main__coment_label">
                   Этот прокси периодически барахлит. Держать на контроле
                 </label>
               </td>
@@ -560,14 +562,14 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-ru"></use>
                 </svg>
               </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
               <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+                <span>IPv6</span>
               </td>
-              <td class="main__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="main__col my_proxy__socks">
-                <span>-</span>
+              <td class="main__col my_proxy__protocol">
+                <span>SOCKS</span>
               </td>
               <td class="main__col my_proxy__login">
                 <span>lGr3NJWT</span>
@@ -579,8 +581,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+                <label for="" class="main__coment_label">
                   Этот прокси периодически барахлит. Держать на контроле
                 </label>
               </td>
@@ -610,13 +612,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
                 </svg>
               </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
               <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+                <span>IPv6</span>
               </td>
-              <td class="main__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -629,8 +631,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="" class="main__coment_label">
                   Продлевать
                 </label>
               </td>
@@ -660,13 +662,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
                 </svg>
               </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
               <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+                <span>IPv6</span>
               </td>
-              <td class="main__col my_proxy__ip">
-                <span>1050</span>
-              </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -679,8 +681,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
                 </label>
               </td>
               <td class="main__col my_proxy__action">
@@ -709,13 +711,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-ru"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -728,8 +730,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="" class="main__coment_label">
                   Продлевать
                 </label>
               </td>
@@ -759,13 +761,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -778,8 +780,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
                 </label>
               </td>
               <td class="main__col my_proxy__action">
@@ -808,13 +810,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -827,8 +829,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
                 </label>
               </td>
               <td class="main__col my_proxy__action">
@@ -857,13 +859,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-ru"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -876,8 +878,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text"></textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text"></textarea>
+                <label for="" class="main__coment_label">
                 </label>
               </td>
               <td class="main__col my_proxy__action">
@@ -906,13 +908,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -925,8 +927,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text">Продлевать</textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text">Продлевать</textarea>
+                <label for="" class="main__coment_label">
                   Продлевать
                 </label>
               </td>
@@ -956,13 +958,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -975,8 +977,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="" class="main__coment_label">
                   Продлевать
                 </label>
               </td>
@@ -1006,13 +1008,13 @@
                   <use xlink:href="img/sprite-flag.svg#icon-flag-es"></use>
                 </svg>
               </td>
-              <td class="main__col my_proxy__type">
-                <span>5.188.181.246</span>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
               </td>
-              <td class="main__col my_proxy__ip">
+              <td class="main__col my_proxy__type">
                 <span>1050</span>
               </td>
-              <td class="main__col my_proxy__socks">
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
                 <span>-</span>
               </td>
               <td class="main__col my_proxy__login">
@@ -1025,8 +1027,8 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
-                <label for="main__coment_text" class="main__coment_label">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
                 </label>
               </td>
               <td class="main__col my_proxy__action">

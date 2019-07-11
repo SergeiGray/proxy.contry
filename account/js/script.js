@@ -36,7 +36,10 @@
     $('body').overlayScrollbars({
       className: "os-theme-dark"
     });
-    $('.my_proxy__tbody').overlayScrollbars({
+    $('tbody').overlayScrollbars({
+      className: "os-theme-dark"
+    });
+    $('.help__dialog_field').overlayScrollbars({
       className: "os-theme-dark"
     });
   }

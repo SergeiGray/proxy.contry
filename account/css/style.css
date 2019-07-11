@@ -317,7 +317,7 @@ body {
 }
 
 .nav__drop_out {
-  display: none;
+  /*display: none;*/
   margin: 0;
   padding: 8px 0 15px;
   list-style: none;
@@ -341,7 +341,6 @@ body {
 }
 
 .nav__drop_out_link:hover {
-  color: #7E64FE;
   background: #F7F7F7;
 }
 
@@ -361,6 +360,11 @@ body {
   text-decoration: none;
   font-size: 13px;
   color: #444444;
+}
+
+.nav__link_active {
+  color: #7E64FE;
+  background-color: #F7F7F7;
 }
 
 /*---MAIN---*/
@@ -730,7 +734,6 @@ body {
   color: #ffffff;
 }
 
-
 .main__coment_label {
   display: none;
 }
@@ -739,7 +742,7 @@ body {
   display: block;
   width: 210px;
   padding: 13px 15px 13px 22px;
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   text-align: left;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
@@ -836,12 +839,13 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.my_proxy__item {
+.my_proxy__navigation_item {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -851,6 +855,11 @@ body {
   align-items: center;
   margin-right: 49px;
   margin-top: 2px;
+}
+
+.my_proxy__navigation_item:last-child {
+  margin: 0;
+  margin-left: auto;
 }
 
 .my_proxy__counter {
@@ -876,7 +885,7 @@ body {
   fill: #CCCCCC;
 }
 
-.my_proxy__item .my_proxy__icon {
+.my_proxy__navigation_item .my_proxy__icon {
   margin-right: 9px;
 }
 
@@ -1463,45 +1472,42 @@ body {
 /*___table base start___*/
 
 .my_proxy__check {
-  width: 50px;
-  padding: 0;
-  justify-content: center;
+  width: 55px;
+  box-sizing: border-box;
+  padding-left: 17px;
 }
 
 .my_proxy__country {
-  width: 35px;
-  padding: 0;
-  justify-content: center;
+  width: 40px;
+}
+
+.my_proxy__thead .my_proxy__country {
+  padding-left: 3px;
+}
+
+.my_proxy__port {
+  width: 135px;
 }
 
 .my_proxy__type {
-  width: 105px;
-  padding-left: 12px;
-  justify-content: flex-start;
+  width: 45px;
 }
 
-.my_proxy__ip {
-  width: 55px;
-  justify-content: center;
-}
-
-.my_proxy__socks {
-  width: 80px;
-  justify-content: center;
+.my_proxy__protocol {
+  width: 100px;
+  box-sizing: border-box;
 }
 
 .my_proxy__login {
-  width: 95px;
-  justify-content: flex-start;
+  width: 85px;
 }
 
 .my_proxy__pas {
-  width: 90px;
-  justify-content: flex-start;
+  width: 85px;
 }
 
 .my_proxy__date {
-  width: 85px;
+  width: 65px;
   justify-content: flex-start;
 }
 
@@ -1511,10 +1517,6 @@ body {
 
 .my_proxy__action {
   flex-grow: 1;
-}
-
-.main__table .main__checkbox_label:after {
-  left: -8px;
 }
 
 /*___table base end___*/
@@ -1531,6 +1533,10 @@ body {
 /*___table thead end___*/
 /*___table tbody start___*/
 
+.my_proxy__protocol_none_data {
+  padding-left: 36px;
+}
+
 .my_proxy__tbody .my_proxy__date {
   font-weight: 500;
   color: #1AB04D;
@@ -1543,10 +1549,6 @@ body {
 
 .my_proxy__tbody .my_proxy__icon_active {
   fill: #1AB04D;
-}
-
-.my_proxy__tbody .my_proxy__socks {
-  justify-content: center;
 }
 
 /*___table tbody end___*/
@@ -3319,6 +3321,19 @@ body {
   font-size: 13px;
   line-height: 140%;
   color: #666666;
+}
+
+.help__dialog_field .os-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 
 .help__dialog_manager {
