@@ -2,8 +2,6 @@
 
 /*---OVERALL STYLE---*/
 
-/** {outline: 1px solid red;}*/
-
 body {
   margin: 0;
   font-family: Ubuntu, Arial, sans-serif;
@@ -316,8 +314,11 @@ body {
   color: #fff;
 }
 
+.nav__buy:hover {
+  background-color: #a18dff;
+}
+
 .nav__drop_out {
-  /*display: none;*/
   margin: 0;
   padding: 8px 0 15px;
   list-style: none;
@@ -420,6 +421,10 @@ body {
   padding: 0 14px;
 }
 
+.main__submit:hover {
+  background-color: #a18dff;
+}
+
 .main__form {
   display: -webkit-flex;
   display: -moz-flex;
@@ -439,6 +444,8 @@ body {
 .main__form .select2-selection__rendered {
   height: 34px !important;
   line-height: 34px !important;
+  box-sizing: border-box;
+  padding: 0 0 0 6px;
 }
 
 .main__form .select2-selection--single {
@@ -483,6 +490,7 @@ body {
 .main__checkbox_label:after {
   content: '';
   position: absolute;
+  top: 0;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -591,8 +599,11 @@ body {
   -o-flex-direction: column;
   flex-direction: column;
   min-height: 250px;
-  max-height: calc(100vh - 230px);
   overflow-y: auto;
+}
+
+.main__table .main__checkbox_label {
+  height: 15px;
 }
 
 .main__header_row {
@@ -1465,10 +1476,6 @@ body {
   width: 177px !important;
 }
 
-/*.my_proxy__filter .select2-selection--single {
-  width: 177px !important;
-}*/
-
 /*___table base start___*/
 
 .my_proxy__check {
@@ -1526,15 +1533,12 @@ body {
   fill: #999999;
 }
 
-/*___table all end___*/
-/*___table thead start___*/
-
-
-/*___table thead end___*/
-/*___table tbody start___*/
-
 .my_proxy__protocol_none_data {
   padding-left: 36px;
+}
+
+.my_proxy__tbody {
+  max-height: calc(100vh - 270px);
 }
 
 .my_proxy__tbody .my_proxy__date {
@@ -1550,9 +1554,6 @@ body {
 .my_proxy__tbody .my_proxy__icon_active {
   fill: #1AB04D;
 }
-
-/*___table tbody end___*/
-/*___table tfoot start___*/
 
 .my_proxy__tfoot .main__footer_col:nth-child(2) {
   margin-left: auto;
@@ -1580,7 +1581,7 @@ body {
   fill: #1AB04D;
 }
 
-/*___table tfoot end___*/
+/*___table all end___*/
 
 /*---PRICING---*/
 
@@ -1851,6 +1852,8 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -ms-align-items: center;
+  align-items: center;
   margin-left: 33px;
 }
 
@@ -2148,6 +2151,10 @@ body {
 
 .history__money_costs {
   color: #E00101;
+}
+
+.history__tbody {
+  max-height: calc(100vh - 230px);
 }
 
 .history__tbody .history__action {
@@ -3298,7 +3305,6 @@ body {
   background-position: 95% center;
 }
 
-
 .help__dialog_field {
   display: -webkit-flex;
   display: -moz-flex;
@@ -3406,11 +3412,6 @@ body {
   border-radius: 10px;
 }
 
-
-
-
-
-
 .help__dialog_input {
   width: 100%;
   height: 110px;
@@ -3425,46 +3426,11 @@ body {
   margin-bottom: 17px;
 }
 
-
-
-
-
-
-
-/** {outline: 1px solid green;}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---SELECT2---*/
-
-/*.select2-container {
-  font-size: 16px;
-  width: 150px;
-  border: none;
-}*/
 
 .select2-container .select2-selection--single {
   height: 24px;
   border: 1px solid #D9D9D9;
-  padding-left: 6px;
-  /*background: transparent;*/
-  /*border: none;*/
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -3480,14 +3446,6 @@ body {
   border: none;
   border-radius: 3px;
 }
-
-/*.select2-dropdown--above {
-  width: 100% !important;
-}*/
-
-/*.select2-dropdown--below {
-  width: 100% !important;
-}*/
 
 .select2-results__option {
   border-radius: 0;
@@ -3512,18 +3470,6 @@ body {
   background-color: #FAFAFA;
   color: #4D4D4D;
 }
-
-/*.select2-container--open .select2-dropdown--above {
-  border-bottom: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}*/
-
-/*.select2-container--open .select2-dropdown--below {
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}*/
 
 .select2-search--dropdown {
   display: none;
@@ -3566,8 +3512,6 @@ body {
 .os-scrollbar-horizontal {
   display: none;
 }
-
-
 
 .display_none {
   display: none;

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
         </svg>
         <span><b>proxy.</b>contry</span>
       </a>
-      <h1 class="header__title">Индивидуальные анонимные прокси HTTPS и SOCKS5</h1>
+      <h1 class="header__title">Прокси-серверы HTTPS и SOCKS</h1>
       <div class="header__lang">
         <a href="index.html" class="header__lang_enabled">Ru</a>
         <b class="header__lang_dividing_line"></b>
@@ -44,8 +45,8 @@
       <section class="wrapper landing__container">
         <section class="objective">
           <p class="landing__mobile_title">Индивидуальные анонимные прокси HTTPS и SOCKS5</p>
-          <h2 class="objective__title">Прокси-серверы со всего мира</h2>
-          <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и др.</p>
+          <h2 class="objective__title">Анонимные прокси IPv4 и IPv6</h2>
+          <p class="objective__paragraph">для любых задач: маркетинг, парсинг, социальные сети, букмекерске конторы и другие</p>
           <div class="objective__applicable_conteiner">
             <div class="objective__applicable objective__applicable_IPv6">
               <p class="objective__paragraph">IPv6 подходит для</p>
@@ -145,6 +146,7 @@
                 <select name="type" class="parameters__select">
                   <option value="IPv6" selected="">IPv6</option>
                   <option value="IPv4">IPv4</option>
+                  <option value="IPv4">Shared IPv4</option>
                 </select>
               </label>
               <label>
@@ -187,7 +189,7 @@
                 </select>
               </label>
             </form>
-            <p class="parameters__paragraph"> <span>Внимание! Выбранные товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="parameters__link">«Проверка совместимости IPv6»</a></p>
+            <p class="parameters__paragraph"> <span>Важно! Выбранный товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="parameters__link">«Проверка совместимости IPv6»</a></p>
           </div>
           <div class="parameters__down_block">
             <div class="parameters__up_line">
@@ -396,7 +398,7 @@
           </p>
           <div class="wholesale__up_right_block">
             <p class="wholesale__title">Оптом дешевле!</p>
-            <p class="wholesale__paragraph">Если у вас есть потребность в большом количестве прокси, мы будем рады предоставить скидку до -60% на весь объем. Больше берете — больше скидка!</p>
+            <p class="wholesale__paragraph">Если у вас есть потребность в большом количестве прокси, мы будем рады предоставить скидку до -60% на весь объём. Больше берете — больше скидка!</p>
           </div>
         </div>
         <div class="wholesale__down_block">
@@ -416,28 +418,52 @@
                </div>
               </div>
               <div class="wholesale__form_down_block">
-                <label class="wholesale__select_label wholesale__select_first_label">
-                  <span class="wholesale__form_title">Тип</span>
-                  <select name="type" class="wholesale__select">
-                    <option value="IPv6">IPv6</option>
-                    <option value="IPv4">IPv4</option>
-                  </select>
-                </label >
-                <label class="wholesale__select_label wholesale__select_second_label">
-                  <span class="wholesale__form_title">Страна</span>
-                  <select name="country" id="" class="wholesale__select">
-                    <option value="Россия">Россия</option>
-                    <option value="Германия">Германия</option>
-                    <option value="США">США</option>
-                    <option value="Франция">Франция</option>
-                    <option value="Австралия">Австралия</option>
-                    <option value="Сингапур">Сингапур</option>
-                    <option value="Великобритания">Великобритания</option>
-                    <option value="Украина">Украина</option>
-                    <option value="Япония">Япония</option>
-                    <option value="Нидерланды">Нидерланды</option>
-                  </select>
-                </label>
+                <div class="wholesale__form_row">
+                  <label class="wholesale__select_label">
+                    <span class="wholesale__form_title">Тип</span>
+                    <select name="type" class="wholesale__select">
+                      <option value="IPv6">IPv6</option>
+                      <option value="IPv4">IPv4</option>
+                    </select>
+                  </label >
+                  <label class="wholesale__select_label">
+                    <span class="wholesale__form_title">Страна</span>
+                    <select name="country" id="" class="wholesale__select">
+                      <option value="Россия">Россия</option>
+                      <option value="Германия">Германия</option>
+                      <option value="США">США</option>
+                      <option value="Франция">Франция</option>
+                      <option value="Австралия">Австралия</option>
+                      <option value="Сингапур">Сингапур</option>
+                      <option value="Великобритания">Великобритания</option>
+                      <option value="Украина">Украина</option>
+                      <option value="Япония">Япония</option>
+                      <option value="Нидерланды">Нидерланды</option>
+                    </select>
+                  </label >
+                </div>
+                <div class="wholesale__form_row">
+                  <label class="wholesale__select_label">
+                    <span class="wholesale__form_title">Срок аренды</span>
+                    <select name="time" id="" class="wholesale__select">
+                      <option value="3 дня">3 дня</option>
+                      <option value="7 дней">7 дней</option>
+                      <option value="2 недели">2 недели</option>
+                      <option value="1 месяц">1 месяц</option>
+                      <option value="2 месяца">2 месяца</option>
+                      <option value="3 месяца">3 месяца</option>
+                      <option value="6 месяцев">6 месяцев</option>
+                      <option value="1 год">1 год</option>
+                    </select>
+                  </label>
+                  <label class="wholesale__select_label">
+                    <span class="wholesale__form_title">Протокол</span>
+                    <select name="protocol" class="wholesale__select">
+                      <option value="HTTPS">HTTPS</option>
+                      <option value="SOCKS">SOCKS</option>
+                    </select>
+                  </label>
+                </div>
               </div>
             </form>
           </div>
@@ -459,9 +485,9 @@
         <img src="img/earnings.png" class="earnings__image" width="656" height="600">
         <div class="earnings__right_block">
           <p class="earnings__title">Помогаем заработать</p>
-          <p class="earnings__paragraph">Наша партнерская программа позволит вам зарабатывать от всех платежей привлеченных вами клиентов. Для участия в программе всего лишь нужно привлекать новых клиентов по реферальной ссылке. Пользователь пожизненно закрепляется за вами и со всех его платежей вам будет идти процент.</p>
-          <p class="earnings__paragraph">Для начала сотрудничества необходимо зарегистироваться в нашей системе и получить свой купон в разделе «Партнёрка».</p>
-          <p class="earnings__paragraph">Партнерское вознаграждение можно выводить на QIWI, WebMoney и Яндекс.Деньги, либо использовать на оплату любых услуг сервиса.</p>
+          <p class="earnings__paragraph">Наша уникальная партнёрская программа позволяет зарабатывать со всех платежей привлеченных вами клиентов.</p>
+          <p class="earnings__paragraph">Вы делитесь партнёрской ссылкой или своим уникальным промокодом на скидку, после чего новый клиент привязывается к вашему аккаунту. Он производит покупки, а вы получаете отчисления в виде 10% с каждой его оплаты.</p>
+          <p class="earnings__paragraph">Заработанные деньги можно вывести на счет WebMoney, Яндекс.Деньги и QIWI, либо использовать для оплаты услуг нашего сайта.</p>
         </div>
       </section>
       <div class="earnings__image_mobile"></div>
@@ -544,35 +570,35 @@
     <section class="why_we">
       <section class="wrapper why_we__container">
         <div class="why_we__left_line">
-          <p class="why_we__paragraph">Наша команда уже более шести лет занимается продажей персональных, индивидуальных, анонимных прокси серверов.</p>
-          <p class="why_we__title">Почему вам стоит купить прокси у нас:</p>
+          <p class="why_we__paragraph"><b>Proxy.Country</b> - это прокси-серверы от лучших провайдеров со всего мира. Мы предоставляем индивидуальные, персональные, анонимные прокси.</p>
+          <p class="why_we__title">Покупая у нас, вы получаете:</p>
           <ul class="why_we__list">
             <li>
-              <span>Высокая скорость работы - прокси быстрые и стабильные;</span>
+              <span><b>Высокий аптайм.</b> Мы используем только новоейшее оборудование, которое позволяет равномерно распределять нагрузку на серверы без необходимости их перезагрузки.</span>
             </li>
             <li>
-              <span>Полная анонимность - прокси полностью анонимные и мы не логируем ваши действия, и выдаем прокси только в один руки;</span>
+              <span><b>Хорошая скорост доступа в сеть.</b> Мы оптимизируем работу наших прокси таким образом, чтобы скорость не зависела от нагрузки другими пользователями.</span>
             </li>
             <li>
-              <span>Низкие цены - у нас одни из самых дешевых прокси на рынке IPv6 и IPv4;</span>
+              <span><b>Анонимность в сети.</b> Наши серверы полностью анонимны и не ведут логи.</span>
             </li>
             <li>
-              <span>Полная автоматизация - вам не нужно ожидать выдачи арендованных прокси после оплаты, они выдаются сразу же автоматически и отображаются в личном кабинете;</span>
+              <span><b>Оперативная поддержка.</b> Техническая поддержка по любому вопросу оперативно через онлайн-чат и систему тикетов.</span>
             </li>
             <li>
-              <span>Быстрая поддержка - мы ответим на все ваши технические и косвенные вопросы по IPv6 и IPv4 прокси. Для связи с нами используйте email, либо онлайн консультант;</span>
+              <span><b>Одни из самых низких цен на рынке.</b> Мы продаем прокси-серверы непосредственно от провайдера, что позволяет нам продавать прокси без наценки.</span>
             </li>
             <li>
-              <span>Наши надежные персональные прокси подходят для работы со всеми сайтами и сервисами;</span>
+              <span><b>Автоматизированный личный кабинет.</b> Вам не нужно ждать пока ваш запрос будет обработан. Все прокси выдаются автоматизированной системой. Управляйте своими списками прокси через удобный личный кабинет.</span>
+            </li>
+            <li class="why_we__title">
+              <span class="why_we__title_span">Наши индивидуальные прокси подойдут для работы с любым ресурсом и софтом:</span>
             </li>
             <li>
-              <span>Прокси IPv6 отлично подойдут для работы в социальных сетях, таких как: facebook, instagram, youtube и многими другими с поддержкой IPv6;</span>
+              <span><b>Прокси IPv4</b> подходят для работы с любыми сайтами, кроме запрещённых в регионе, к которому они относятся.</span>
             </li>
             <li>
-              <span>Прокси IPv4 подойдут для работы с любыми сайтами и сервисами;</span>
-            </li>
-            <li>
-              <span>Наши дешевые быстрые прокси позволят вам работать в сети комфортно и безопасно. Если вы еще задаетесь вопросом: Где купить прокси? - то ответ на него - PROXY6.net</span>
+              <span><b>Прокси IPv6</b> стоят гораздо дешевле, но подходят только для тех ресурсов, на которых они разрешены. Перед покупкой обязательно проверьте доступность прокси IPv6 на совместимость с нужным сайтом.</span>
             </li>
           </ul>
         </div>
@@ -592,14 +618,14 @@
         <svg class="payment__icon" width="88" height="32">
           <use xlink:href="img/sprite.svg#icon-qiwi-pay"></use>
         </svg>
-        <svg class="payment__icon" width="114" height="28">
-          <use xlink:href="img/sprite.svg#icon-bitcoin-pay"></use>
+        <svg class="payment__icon" width="157" height="50">
+          <use xlink:href="img/sprite.svg#icon-yandex-cash"></use>
         </svg>
-        <svg class="payment__icon" width="92" height="24">
-          <use xlink:href="img/sprite.svg#icon-paypal-pay"></use>
+        <svg class="payment__icon" width="85" height="41">
+          <use xlink:href="img/sprite.svg#icon-apple-pay"></use>
         </svg>
-        <svg class="payment__icon" width="90" height="25">
-          <use xlink:href="img/sprite.svg#icon-payeer-pay"></use>
+        <svg class="payment__icon" width="95" height="39">
+          <use xlink:href="img/sprite.svg#icon-google-pay"></use>
         </svg>
         <svg class="payment__icon" width="172" height="52">
           <use xlink:href="img/sprite.svg#icon-webmoney-pay"></use>
@@ -671,7 +697,7 @@
           </svg>
           <b>proxy</b>.contry
         </a>
-        <p class="footer__title">Индивидуальные анонимные<br>прокси HTTPS и SOCKS5</p>
+        <p class="footer__title">Прокси-серверы HTTPS и <br>SOCKS</p>
       </div>
       <div class="footer__center_block">
         <p class="footer__copyright">© 2019 «Proxy.Country»<br>Все права защищены</p>
@@ -686,6 +712,7 @@
   </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.overlayScrollbars.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/script.js"></script>

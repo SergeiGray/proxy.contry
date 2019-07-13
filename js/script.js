@@ -3,24 +3,15 @@
 
   let hangSelect2 = function () {
     $(document).ready(function() {
-      $('.parameters__select').select2();
-    });
-    $(document).ready(function() {
-      $('.wholesale__select').select2();
+      $('select').select2()
     });
   };
 
-  let changeStyleOptionSelect2 = function () {
-    $('.parameters__last-label').click(function(event) {
-      $('body').children('.select2-container').addClass('parameters__select_protocol');
-     });
-    $('.wholesale__select_first_label').click(function(event) {
-      $('body').children('.select2-container').addClass('wholesale__select_type');
-     });
-    $('.wholesale__select_second_label').click(function(event) {
-      $('body').children('.select2-container').addClass('wholesale__select_country');
-     });
-  };
+  let scrollBarСustomization = function () {
+    $('body').overlayScrollbars({
+      className: "os-theme-dark"
+    });
+  }
 
   let showPopUpAuthorization = function () {
     $('.pop_up__icon_close, .pop_up__overlay').click(function (){
@@ -71,7 +62,7 @@
   };
 
   hangSelect2();
-  changeStyleOptionSelect2();
+  scrollBarСustomization();
   showPopUpAuthorization();
   showPopUpRegistration();
   changeBlockApplicable();
