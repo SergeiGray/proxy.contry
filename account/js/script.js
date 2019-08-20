@@ -4,43 +4,28 @@
 
   let hangSelect2 = function () {
     $(document).ready(function() {
-      $('.main__footer_select').select2();
-    });
-    $(document).ready(function() {
-      $('.my_proxy__prolong_select').select2();
-    });
-    $(document).ready(function() {
-      $('.my_proxy__search_select').select2();
-    });
-    $(document).ready(function() {
-      $('.my_proxy__download_select').select2();
-    });
-    $(document).ready(function() {
-      $('.my_proxy__filter_select').select2();
-    });
-    $(document).ready(function() {
-      $('.pricing__select').select2();
-    });
-    $(document).ready(function() {
-      $('.settings__select').select2();
-    });
-    $(document).ready(function() {
-      $('.cheker__select').select2();
-    });
-    $(document).ready(function() {
-      $('.converter__select').select2();
+      $('select').select2();
     });
   };
 
   let scrollBarСustomization = function () {
-    $('body').overlayScrollbars({
-      className: "os-theme-dark"
+    $('body').niceScroll({
+      cursorcolor:"#666666",
+      cursorborder: "none"
     });
-    $('tbody').overlayScrollbars({
-      className: "os-theme-dark"
+    $('tbody').niceScroll({
+      cursorcolor:"#666666",
+      cursorborder: "none"
     });
-    $('.help__dialog_field').overlayScrollbars({
-      className: "os-theme-dark"
+    $('.help__dialog_field').niceScroll({
+      cursorcolor:"#666666",
+      cursorborder: "none"
+    });
+    $('select').click( function () {
+      $('.select2-results__options').niceScroll({
+        cursorcolor:"#666666",
+        cursorborder: "none"
+      });
     });
   }
 
@@ -106,12 +91,17 @@
         check('#show__download', '.my_proxy__download', '.show__download');
         check('#show__filter', '.my_proxy__filter', '.show__filter');
       };
+      $('body').getNiceScroll().remove();
+      $('body').niceScroll({cursorcolor: "#CCCCCC", cursorborder: "none"});
+      $('tbody').getNiceScroll().remove();
+      $('tbody').niceScroll({cursorcolor: "#CCCCCC", cursorborder: "none"});
     });
 
     $(".my_proxy__edit_nav .main__input").change( function() {
       checkEdit('#show__edit_login', '.my_proxy__edit_login', '.show__edit_login');
       checkEdit('#show__edit_comment', '.my_proxy__edit_comment', '.show__edit_comment');
       checkEdit('#show__edit_type', '.my_proxy__edit_type', '.show__edit_type');
+      checkEdit('#show__edit_hide', '.my_proxy__edit_hide', '.show__edit_hide');
     });
   };
 
@@ -146,6 +136,7 @@
   getShowInMyProxy();
   showPopUpMyProxySearch('.my_proxy__open_pop_up', '.my_proxy__search_pop_up');
   showPopUpMyProxySearch('.history__open_pop_up', '.history__pop_up');
+  showPopUpMyProxySearch('.search__open_pop_up', '.search__pop_up');
   copyText('.partnership__promocode_copy', 'partnership__promocode');
   copyText('.partnership__ref_link_copy', 'partnership__ref_link');
 

@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Proxy.contry</title>
+  <title>Proxy.country</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <section class="attention display_none">
@@ -19,7 +19,7 @@
           <svg class="header__icon-logo" width="33" height="33">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
-          <span><b>proxy.</b>contry</span>
+          <span><b>proxy.</b>country</span>
       </a>
       <nav class="header__navigation">
         <ul class="header__navigation_container">
@@ -188,7 +188,7 @@
             <h3 class="partnership__title">Ваш промокод</h3>
             <div class="partnership__promocode_item">
               <input id="partnership__promocode" type="text" value="cubepromo12118738" class="main__input">
-              <button class="main__submit partnership__promocode_copy">Скопировать</button>
+              <button class="main__submit partnership__promocode_copy"><span>Скопировать</span></button>
             </div>
             <a href="" class="partnership__link">Изменить промокод</a>
           </div>
@@ -196,7 +196,7 @@
             <h3 class="partnership__title">Ваша реферальная ссылка</h3>
             <div class="partnership__promocode_item">
               <input id="partnership__ref_link" type="text" value="https://proxy.market/?rf=Y3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZY3ViZ" class="main__input">
-              <button class="main__submit partnership__ref_link_copy">Скопировать</button>
+              <button class="main__submit partnership__ref_link_copy"><span>Скопировать</span></button>
             </div>
             <p class="main__text">Внимание! Смена промокода автоматически меняет реферальную ссылку</p>
           </div>
@@ -211,29 +211,41 @@
                 <th class="main__header_col partnership__selling"><span>Продажи</span></th>
                 <th class="main__header_col partnership__income"><span>Доход</span></th>
               </tr>
-              <tbody class="partnership__tbody">
-                <tr class="partnership__row">
-                  <td class="main__col partnership__date"><span>Сегодня</span></td>
-                  <td class="main__col partnership__new_client"><span>1</span></td>
-                  <td class="main__col partnership__selling"><span>2</span></td>
-                  <td class="main__col partnership__income"><span>120 руб.</span></td>
-                </tr>
-                <tr class="partnership__row">
-                  <td class="main__col partnership__date"><span>Вчера</span></td>
-                  <td class="main__col partnership__new_client"><span>1</span></td>
-                  <td class="main__col partnership__selling"><span>2</span></td>
-                  <td class="main__col partnership__income"><span>120 руб.</span></td>
-                </tr>
-                <tr class="partnership__row">
-                  <td class="main__col partnership__date"><span>Всего</span></td>
-                  <td class="main__col partnership__new_client"><span>56</span></td>
-                  <td class="main__col partnership__selling"><span>100</span></td>
-                  <td class="main__col partnership__income"><span>1200 руб.</span></td>
-                </tr>
-              </tbody>
             </thead>
+            <tbody class="partnership__tbody">
+              <tr class="partnership__row">
+                <td class="main__col partnership__date"><span>Сегодня</span></td>
+                <td class="main__col partnership__new_client"><span>1</span></td>
+                <td class="main__col partnership__selling"><span>2</span></td>
+                <td class="main__col partnership__income"><span>120 руб.</span></td>
+              </tr>
+              <tr class="partnership__row">
+                <td class="main__col partnership__date"><span>Вчера</span></td>
+                <td class="main__col partnership__new_client"><span>1</span></td>
+                <td class="main__col partnership__selling"><span>2</span></td>
+                <td class="main__col partnership__income"><span>120 руб.</span></td>
+              </tr>
+              <tr class="partnership__row">
+                <td class="main__col partnership__date"><span>Всего</span></td>
+                <td class="main__col partnership__new_client"><span>56</span></td>
+                <td class="main__col partnership__selling"><span>100</span></td>
+                <td class="main__col partnership__income"><span>1200 руб.</span></td>
+              </tr>
+            </tbody>
           </table>
         </div>
+        <h3 class="partnership__title">Вывод средств</h3>
+        <form action="" class="main__form partnership__withdrawal">
+          <input type="number" class="main__input" placeholder="Сумма">
+          <label>
+            <select name="" id="">
+              <option value="qiwi">QIWI</option>
+              <option value="webmoney">WebMoney</option>
+              <option value="yandex">Яндекс.Деньги</option>
+            </select>
+          </label>
+          <button class="main__submit"><span>Вывести</span></button>
+        </form>
       </section>
     </main>
     <aside class="sidebar"></aside>
@@ -241,10 +253,9 @@
   <footer></footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.overlayScrollbars.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>

@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Proxy.contry</title>
+  <title>Proxy.country</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <section class="attention display_none">
@@ -19,7 +19,7 @@
           <svg class="header__icon-logo" width="33" height="33">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
-          <span><b>proxy.</b>contry</span>
+          <span><b>proxy.</b>country</span>
       </a>
       <nav class="header__navigation">
         <ul class="header__navigation_container">
@@ -254,7 +254,7 @@
                 </select>
               </label>
               <p class="main__text">Стоимость: <span>23,30 руб.</span></p>
-              <button type="submit" class="main__submit">Продлить</button>
+              <button type="submit" class="main__submit"><span>Продлить</span></button>
             </form>
           </div>
           <div class="my_proxy__prolong_container">
@@ -264,58 +264,78 @@
           </div>
         </section>
         <section class="my_proxy__search display_none">
-          <form action="" class="main__form">
-            <label class="my_proxy__label">
-              <span class="main__text">Поиск</span>
-              <select name="" id="" class="my_proxy__search_select">
-                <option value="">Везде</option>
-              </select>
-            </label>
-            <label class="my_proxy__label">
-              <input type="text" placeholder="Что искать" class="main__input">
-            </label>
-            <button type="submit" class="main__submit">Найти</button>
-          </form>
-          <p class="main__text">Вы можете использовать
-            <a href="" class="my_proxy__search_link my_proxy__open_pop_up">Поиск списком
-            </a>
-            <div class="my_proxy__item_container my_proxy__icon_container">
-              <svg class="my_proxy__icon" width="13" height="13">
-                  <use xlink:href="img/sprite.svg#icon-round-question"></use>
-              </svg>
+          <div class="my_proxy__search_row">
+            <form action="" class="main__form">
+              <label class="my_proxy__label">
+                <span class="main__text">Поиск</span>
+                <select name="" id="" class="my_proxy__search_select">
+                  <option value="">Везде</option>
+                </select>
+              </label>
+              <label class="my_proxy__label">
+                <input type="text" placeholder="Что искать" class="main__input">
+              </label>
+              <button type="submit" class="main__submit"><span>Найти</span></button>
+            </form>
+            <p class="main__text">Вы можете использовать
+              <a href="" class="my_proxy__search_link my_proxy__open_pop_up">Поиск списком
+              </a>
+              <div class="my_proxy__item_container my_proxy__icon_container">
+                <svg class="my_proxy__icon" width="13" height="13">
+                    <use xlink:href="img/sprite.svg#icon-round-question"></use>
+                </svg>
+              </div>
+            </p>
+            <div class="my_proxy__item_container">
+              <section class="pop_up__overlay">
+              </section>
+              <section class="pop_up my_proxy__search_pop_up">
+                <svg class="pop_up__icon_close" width="16" height="16">
+                  <title>Закрыть</title>
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+                <p class="main__title">Поиск списком</p>
+                <form action="">
+                  <p class="my_proxy__paragraph">Укажите формат вывода</p>
+                  <div class="my_proxy__search_format">
+                    <span class="main__text">IP</span>
+                    <input type="text" value=":" class="main__input">
+                    <span class="main__text">port</span>
+                    <input type="text" value="@" class="main__input">
+                    <span class="main__text">login</span>
+                    <input type="text" value=":" class="main__input">
+                    <span class="main__text">pass</span>
+                    <button class="main__submit my_proxy__search_format_button"></button>
+                  </div>
+                  <p class="my_proxy__paragraph">Введите текст для поиска</p>
+                  <textarea name="" id="" placeholder="Что искать" class="main__textarea"></textarea>
+                  <button type="submit" class="main__submit"><span>Найти</span></button>
+                </form>
+              </section>
             </div>
-          </p>
-          <div class="my_proxy__item_container">
-            <section class="pop_up__overlay">
-            </section>
-            <section class="pop_up my_proxy__search_pop_up">
-              <svg class="pop_up__icon_close" width="16" height="16">
-                <title>Закрыть</title>
-                <use xlink:href="img/sprite.svg#icon-close"></use>
-              </svg>
-              <p class="main__title">Поиск списком</p>
-              <form action="">
-                <p class="my_proxy__paragraph">Введите текст для поиска</p>
-                <textarea name="" id="" placeholder="Что искать" class="main__textarea"></textarea>
-                <button type="submit" class="main__submit">Найти</button>
-              </form>
-            </section>
+          </div>
+          <div class="my_proxy__search_row">
+            <div class="my_proxy__search_warning">
+              <p class="main__text"><span class="my_proxy__search_alert">Внимание!</span> Из указанного списка не найдено значений: <span class="my_proxy__search_not_found">10</span><a href="" class="my_proxy__search_link search__open_pop_up"> Подробнее</a></p>
+            </div>
           </div>
         </section>
         <section class="my_proxy__edit display_none">
           <nav class="my_proxy__edit_nav">
-            <input id="show__edit_login" type="radio" name="my_proxy__edit_check" class="main__input" checked="">
+            <input id="show__edit_login" type="radio" name="my_proxy__edit_check" class="main__input" checked autocomplete="off" >
             <label for="show__edit_login" class="my_proxy__edit_link show__edit_login my_proxy__edit_link_active">Логин и пароль</label>
-            <input id="show__edit_comment" type="radio" name="my_proxy__edit_check" class="main__input">
+            <input id="show__edit_comment" type="radio" name="my_proxy__edit_check" class="main__input" autocomplete="off" >
             <label for="show__edit_comment" class="my_proxy__edit_link show__edit_comment">Комментарий</label>
-            <input id="show__edit_type" type="radio" name="my_proxy__edit_check" class="main__input">
+            <input id="show__edit_type" type="radio" name="my_proxy__edit_check" class="main__input" autocomplete="off" >
             <label for="show__edit_type" class="my_proxy__edit_link show__edit_type">Тип прокси</label>
+            <input id="show__edit_hide" type="radio" name="my_proxy__edit_check" class="main__input" autocomplete="off" >
+            <label for="show__edit_hide" class="my_proxy__edit_link show__edit_hide">Показать/скрыть прокси</label>
           </nav>
           <section class="my_proxy__edit_login">
             <form action="" class="main__form">
               <input type="text" placeholder="Новый логин" class="main__input">
               <input type="text" placeholder="Новый пароль" class="main__input">
-              <button type="submit" class="main__submit">Сохранить</button>
+              <button type="submit" class="main__submit"><span>Сохранить</span></button>
               <button class="main__button">Сгенерировать</button>
             </form>
             <div class="my_proxy__item_container">
@@ -326,7 +346,7 @@
           <section class="my_proxy__edit_comment display_none">
             <form action="" class="main__form">
               <input type="text" class="main__input" placeholder="Введите текст">
-              <button type="submit" class="main__submit">Добавить</button>
+              <button type="submit" class="main__submit"><span>Добавить</span></button>
               <button class="main__button">Очистить все</button>
             </form>
             <p class="main__text">Здесь вы можете присвоить комментарий к списку прокси для удобства поиска и сортировки или очистить все комментарии</p>
@@ -341,9 +361,14 @@
                 <input id="my_proxy__edit_type_socks" type="radio" name="my_proxy__edit_type" value="socks" class="main__radio">
                 <label for="my_proxy__edit_type_socks" class="main__radio_label">SOCKS</label>
               </div>
-              <button type="submit" class="main__submit">Применить</button>
+              <button type="submit" class="main__submit"><span>Применить</span></button>
             </form>
             <p class="main__text">Выбранный тип будет применён ко всем указанным прокси</p>
+          </section>
+          <section class="my_proxy__edit_hide display_none">
+            <button class="main__submit my_proxy__edit_hide_hide"><span>Скрыть</span></button>
+            <button class="main__submit my_proxy__edit_hide_show"><span>Показать</span></button>
+            <button class="main__button my_proxy__edit_hide_show_all">Показать все скрытые</button>
           </section>
         </section>
         <section class="my_proxy__auth display_none">
@@ -360,7 +385,7 @@
                 По IP
               </label>
             </div>
-            <button type="submit" class="main__submit">Применить</button>
+            <button type="submit" class="main__submit"><span>Применить</span></button>
           </form>
           <form action="" class="main__form">
             <input type="text" placeholder="Укажите IP" class="main__input">
@@ -379,10 +404,7 @@
               <input type="text" value=":" class="main__input">
               <span>pass</span>
             </p>
-            <button type="submit" class="main__submit">
-              <svg class="my_proxy__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#icon-exchange-arrows"></use>
-              </svg>
+            <button type="submit" class="main__submit my_proxy__icon_arrows">
             </button>
             <span class="main__text">— поменять местами IP и login</span>
           </form>
@@ -394,15 +416,10 @@
             </label>
             <label class="my_proxy__label">
               <select name="" id="" class="my_proxy__download_select">
-                <option value="">HTTP (s)</option>
-              </select>
-            </label>
-            <label class="my_proxy__label">
-              <select name="" id="" class="my_proxy__download_select">
                 <option value="">.csv</option>
               </select>
             </label>
-            <button type="submit" class="main__submit">Скачать</button>
+            <button type="submit" class="main__submit"><span>Скачать</span></button>
             <button class="main__button">Копировать в буфер</button>
           </form>
         </section>
@@ -465,7 +482,7 @@
                   <option value="">Группа В</option>
                 </select>
               </label>
-              <button type="submit" class="main__submit">Применить</button>
+              <button type="submit" class="main__submit"><span>Применить</span></button>
             </div>
           </form>
         </section>
@@ -870,7 +887,7 @@
                 <span>23д 15ч</span>
               </td>
               <td class="main__col my_proxy__coment">
-                <textarea name="" id="" maxlength="170" class="main__coment_text"></textarea>
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
                 <label for="" class="main__coment_label">
                 </label>
               </td>
@@ -1086,7 +1103,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr>     
+            </tr>
             <tr class="my_proxy__row">
               <td class="main__col my_proxy__check">
                 <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
@@ -1135,7 +1152,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr>   
+            </tr>
             <tr class="my_proxy__row">
               <td class="main__col my_proxy__check">
                 <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
@@ -1184,7 +1201,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr>    
+            </tr>
             <tr class="my_proxy__row">
               <td class="main__col my_proxy__check">
                 <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
@@ -1233,7 +1250,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr> 
+            </tr>
             <tr class="my_proxy__row">
               <td class="main__col my_proxy__check">
                 <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
@@ -1331,7 +1348,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr>    
+            </tr>
             <tr class="my_proxy__row">
               <td class="main__col my_proxy__check">
                 <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
@@ -1380,7 +1397,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr>   
+            </tr>
             <tr class="my_proxy__row">
               <td class="main__col my_proxy__check">
                 <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
@@ -1528,7 +1545,7 @@
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </td>
-            </tr>                           
+            </tr>
           </tbody>
           <tfoot class="my_proxy__tfoot">
             <tr class="main__footer_row">
@@ -1566,15 +1583,306 @@
         </table>
       </section>
     </main>
-    <aside class="sidebar"></aside>
+  </section>
+  <section class="pop_up search__pop_up">
+    <svg class="pop_up__icon_close" width="16" height="16">
+      <title>Закрыть</title>
+      <use xlink:href="img/sprite.svg#icon-close"></use>
+    </svg>
+    <p class="main__title">Не найдены прокси</p>
+    <table class="main__table">
+      <thead class="history__thead">
+        <tr class="main__header_row">
+          <th class="main__header_col history__type">Тип</th>
+          <th class="main__header_col history__ip">IP</th>
+          <th class="main__header_col history__socks">Socks</th>
+          <th class="main__header_col history__login">Логин</th>
+          <th class="main__header_col history__pas">Пароль</th>
+          <th class="main__header_col history__coment">Комментарий</th>
+        </tr>
+      </thead>
+      <tbody class="history__tbody">
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+            <label for="main__coment_text" class="main__coment_label"></label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Этот прокси периодически барахлит. Держать на контроле
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Продлевать
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+            <label for="main__coment_text" class="main__coment_label"></label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Этот прокси периодически барахлит. Держать на контроле
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Продлевать
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+            <label for="main__coment_text" class="main__coment_label"></label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Этот прокси периодически барахлит. Держать на контроле
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Продлевать
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+            <label for="main__coment_text" class="main__coment_label"></label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Этот прокси периодически барахлит. Держать на контроле
+            </label>
+          </td>
+        </tr>
+        <tr class="history__row">
+          <td class="main__col history__type">
+            <span>5.188.181.246</span>
+          </td>
+          <td class="main__col history__ip">
+            <span>1050</span>
+          </td>
+          <td class="main__col history__socks">
+            <span>-</span>
+          </td>
+          <td class="main__col history__login">
+            <span>lGr3NJWT</span>
+          </td>
+          <td class="main__col history__pas">
+            <span>hdSyZ1gH</span>
+          </td>
+          <td class="main__col history__coment">
+            <textarea name="" id="main__coment_text" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+            <label for="main__coment_text" class="main__coment_label">
+              Продлевать
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="search__pop_up_row">
+      <button class="main__submit"><span>Скачать</span></button>
+      <button class="main__button">Скопировать в буфер</button>
+    </div>
   </section>
   <footer></footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.overlayScrollbars.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>

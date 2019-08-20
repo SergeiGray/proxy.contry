@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Proxy.country</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header compatibility__header">
+    <section class="wrapper header__container">
+      <a href="index.html" class="header__logo">
+        <svg class="header__icon-logo" width="33" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span><b>proxy.</b>country</span>
+      </a>
+      <h1 class="header__title">Прокси-серверы HTTPS и SOCKS</h1>
+      <nav class="header__nav">
+        <a href="" class="header__nav_title">Полезные сервисы<span class="header__nav_arrow"></span></a>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="cheker.html" class="header__nav_link">Чекер прокси</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="converter.html" class="header__nav_link">Конвертер форматов</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="compatibility.html" class="header__nav_link">Совместимость с IPv6</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="news.html" class="header__nav_link">Новости</a>
+          </li>
+        </ul>
+        <div class="header__lang">
+          <a href="index.html" class="header__lang_enabled">Ru</a>
+          <b class="header__lang_dividing_line"></b>
+          <a href="" class="header__lang_disabled">En</a>
+          <button class="header__nav_close"></button>
+        </div>
+        <div class="header__login">
+          <a href="" class="header__login_link header__login_desktop">
+            <svg class="header__login_icon" width="26" height="26">
+              <title>LogIn</title>
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <span>Личный кабинет</span>
+          </a>
+          <div class="header__login_tablet">
+            <div class="header__login_link">
+              <svg class="header__login_icon" width="26" height="26">
+                <title>LogIn</title>
+                <use xlink:href="img/sprite.svg#icon-login"></use>
+              </svg>
+              <span>Личный кабинет :</span>
+              <a href="">Войти</a>
+              <a href="">Зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="header__nav_open"></button>
+    </section>
+  </header>
+  <section class="wrapper layout">
+    <nav class="nav">
+      <a href="pricing.html" class="nav__buy">Купить прокси</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="" class="nav__link  nav__slide nav__link_active">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-gear"></use>
+            </svg>
+          Вспомогательные сервисы
+            <svg class="nav__icon_pointer" width="10" height="5">
+              <use xlink:href="img/sprite.svg#icon-pointer"></use>
+            </svg>
+          </a>
+          <ul class="nav__drop_out">
+            <li class="nav__item">
+              <a href="cheker.html" class="nav__drop_out_link nav__link_active">
+                Чекер прокси
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="converter.html" class="nav__drop_out_link">
+                Конвертер форматов
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="compatibility.html" class="nav__drop_out_link">
+                Совместимость IPv6
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">
+            <svg class="nav__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-newspaper"></use>
+            </svg>
+          Новости
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="cheker">
+        <h2 class="main__title">Чекер прокси</h2>
+        <p class="cheker__text">Сервис для проверки работоспособности прокси. Он поможет Вам определить статус, тип, страну прокси, а так же внешний адрес прокси, который отображается тому или иному ресурсу в Сети.</p>
+        <form action="" class="main__form">
+          <div class="cheker__format">
+            <div class="cheker__format_container">
+              <p class="main__text">Укажите формат</p>
+              <label class="cheker__select_label">
+                <select name="" id="" class="cheker__select">
+                  <option value="IP">IP</option>
+                </select>
+              </label>
+              <input type="text" value=":" class="main__input">
+              <label class="cheker__select_label">
+                <select name="" id="" class="cheker__select">
+                  <option value="port">port</option>
+                </select>
+              </label>
+              <input type="text" value="@" class="main__input">
+              <label class="cheker__select_label">
+                <select name="" id="" class="cheker__select">
+                  <option value="login">login</option>
+                </select>
+              </label>
+              <input type="text" value=":" class="main__input">
+              <label class="cheker__select_label">
+                <select name="" id="" class="cheker__select">
+                  <option value="pass">pass</option>
+                </select>
+              </label>
+            </div>
+            <input id="cheker__with_authorization" type="checkbox" class="main__checkbox">
+            <label for="cheker__with_authorization" class="main__checkbox_label">Прокси с авторизацией</label>
+          </div>
+          <div class="cheker__field">
+            <textarea name="" id=""  class="cheker__field_input"></textarea>
+            <div class="cheker__field_info">
+              <p class="cheker__field_title">В каком формате добавлять прокси в прокси-чекер?</p>
+              <p class="cheker__text">IP:PORT — если у вас публичные прокси (без логина  и пароля)</p>
+              <p class="cheker__text">IP:PORT@USER:PASS — если у вас приватные прокси  <br>(с авторизацией по логину и паролю)</p>
+            </div>
+          </div>
+          <button type="submit" class="main__submit">
+            <span>Проверить</span></button>
+        </form>
+        <div class="cheker__container">
+          <h2 class="main__title">Результаты проврки</h2>
+          <div class="cheker__container_item">
+            <svg class="cheker__icon" width="13" height="13">
+              <use xlink:href="img/sprite.svg#icon-tick-allright"></use>
+            </svg>
+            <button class="cheker__copy_button">Скопировать все рабочие</button>
+          </div>
+          <div class="cheker__container_item">
+            <svg class="cheker__icon" width="13" height="13">
+              <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+            </svg>
+            <button class="cheker__copy_button">Скопировать все нерабочие</button>
+          </div>
+        </div>
+        <table class="main__table">
+          <thead class="cheker__thead">
+            <tr class="main__header_row">
+              <th class="main__header_col cheker__status">Статус</th>
+              <th class="main__header_col cheker__port">IP:port</th>
+              <th class="main__header_col cheker__login">Логин</th>
+              <th class="main__header_col cheker__pas">Пароль</th>
+              <th class="main__header_col cheker__type">Тип</th>
+              <th class="main__header_col cheker__time">Время ответа</th>
+              <th class="main__header_col cheker__country">Страна</th>
+            </tr>
+          </thead>
+          <tbody class="cheker__tbody">
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-allright"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-russia"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-allright"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-russia"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-allright"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-russia"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-allright"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-russia"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="cheker__row">
+              <td class="main__col cheker__status">
+                <svg class="main__table_icon" width="13" height="13">
+                  <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+                </svg>
+              </td>
+              <td class="main__col cheker__port">
+                <span>5.188.181.246:4116</span>
+              </td>
+              <td class="main__col cheker__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col cheker__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col cheker__type">
+                <span>HTTP9s)</span>
+              </td>
+              <td class="main__col cheker__time">
+                <span>0.192 s</span>
+              </td>
+              <td class="main__col cheker__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot class="cheker__tfoot">
+            <tr class="main__footer_row">
+              <td class="main__footer_col">
+                <span class="main__footer_text">Строк на странице</span>
+                <select name="" id="" class="main__footer_select">
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="150">150</option>
+                </select>
+              </td>
+              <td class="main__footer_col">
+                <span class="main__footer_text">1-10 из 10</span>
+                <div class="main__change_page">
+                  <a href="" class="main__prev_page">
+                    <span>&#8249</span>
+                  </a>
+                  <a href="" class="main__next_page">
+                    <span>&#8250</span>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </section>
+  <section class="pop_up">
+    <section class="pop_up__overlay">
+    </section>
+    <section class="pop_up__authorization">
+      <svg class="pop_up__icon_close" width="16" height="16">
+        <title>Закрыть</title>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <p class="pop_up__title">Авторизация</p>
+      <p class="pop_up__up_paragraph">Введите логин и пароль, указанные при регистрации</p>
+      <form id="pop_up__authorization_form" action="handler.php" method="post" class="pop_up__form">
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Логин</span>
+          <input type="email" name="login">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Пароль</span>
+          <input type="text" name="password">
+        </label>
+        <a href="" class="pop_up__form_link">Забыл пароль</a>
+        <button form="pop_up__authorization_form" class="pop_up__sending" type="submit">Войти</button>
+      </form>
+      <p class="pop_up__down_paragraph">
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="privacy_policy.html" class="pop_up__down_link">Политика конфидециальности</a>
+      </p>
+      <a href="" class="pop_up__link pop_up__link_reg">Зарегистрироваться</a>
+    </section>
+    <section class="pop_up__registration">
+      <svg class="pop_up__icon_close" width="16" height="16">
+        <title>Закрыть</title>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <p class="pop_up__title">Регистрация</p>
+      <p class="pop_up__up_paragraph">Введите логин и пароль, указанные при регистрации</p>
+      <form id="pop_up__registration_form" action="handler.php" method="post" class="pop_up__form">
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Логин (E-mail)</span>
+          <input type="email" name="login">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Пароль</span>
+          <input type="text" name="password">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Повторите пароль</span>
+          <input type="text" name="repeat_password">
+        </label>
+        <button form="pop_up__registration_form" class="pop_up__sending" type="submit">Зарегистрироваться</button>
+      </form>
+      <p class="pop_up__down_paragraph">
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="privacy_policy.html" class="pop_up__down_link">Политика конфидециальности</a>
+      </p>
+      <a href="" class="pop_up__link pop_up__link_auto">Уже есть аккаунт</a>
+    </section>
+  </section>
+  <footer>
+    <section class="wrapper footer_container">
+      <div class="footer__left_block">
+        <a href="" class="footer__logo">
+          <svg class="footer__icon-logo" width="25" height="25">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+          <b>proxy</b>.country
+        </a>
+        <p class="footer__title">Прокси-серверы HTTPS и <br>SOCKS</p>
+      </div>
+      <div class="footer__center_block">
+        <p class="footer__copyright">© 2019 «Proxy.Country»<br>Все права защищены</p>
+      </div>
+      <div class="footer__right_block">
+        <p>
+          <a href="privacy_policy.html" class="footer__link">Политика конфиденциальности</a><br>
+          <a href="" class="footer__link">Пользовательское соглашение</a>
+        </p>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

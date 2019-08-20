@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Proxy.contry</title>
+  <title>Proxy.country</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <section class="attention display_none">
@@ -19,7 +19,7 @@
           <svg class="header__icon-logo" width="33" height="33">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
-          <span><b>proxy.</b>contry</span>
+          <span><b>proxy.</b>country</span>
       </a>
       <nav class="header__navigation">
         <ul class="header__navigation_container">
@@ -180,8 +180,110 @@
         <p class="compatibility__text">С помощью данного сервиса вы можете проверить любой сайт на поддержку доступа по IPv6</p>
         <form action="" class="main__form">
           <input type="text" class="main__input" placeholder="sitename.ru">
-          <button type="submit" class="main__submit">Проверить</button>
+          <button type="submit" class="main__submit"><span>Проверить</span></button>
         </form>
+      </section>
+      <section class="pricing">
+        <h2 class="main__title">Результаты проверки</h2>
+        <p class="pricing__paragraph">С сайтом <a href="" class="pricing__link">proxy.country</a> совместимы все типы прокси</p>
+        <section class="pricing__container">
+          <section class="pricing__item_container">
+            <span class="pricing__around">
+              <span>
+                <span class="pricing__around_text">IPv6</span>
+              </span>
+            </span>
+            <div class="pricing__item_container">
+              <h2 class="pricing__item_title">Индивидуальные <br>IPv6 прокси</h2>
+              <p class="pricing__item_paragraph">в одни руки</p>
+              <form id="pricing__form" action="" class="main__form">
+                <input type="text" class="main__input" placeholder="1 шт.">
+                <label class="pricing__label">
+                  <select name="" id="" class="pricing__select">
+                    <option value="">1 месяц</option>
+                  </select>
+                </label>
+                <label class="pricing__label">
+                  <select name="" id="" class="pricing__select">
+                    <option value="">Россия</option>
+                  </select>
+                </label>
+              </form>
+              <form action="" class="main__form pricing__promocode">
+                <input type="text" class="main__input" placeholder="Промокод">
+                <button type="submit" class="pricing__promocode_submit">Применить</button>
+              </form>
+              <p class="pricing__price">6,5 руб.</p>
+              <p class="pricing__item_paragraph">возьмите еще 4 прокси — получите скидку 1.5 руб</p>
+              <button for="pricing__form" type="submit" class="main__submit"><span>Купить</span></button>
+            </div>
+          </section>
+          <section class="pricing__item_container">
+            <span class="pricing__around">
+              <span>
+                <span class="pricing__around_text">IPv4</span>
+              </span>
+            </span>
+            <div class="pricing__item_container">
+              <h2 class="pricing__item_title">Индивидуальные <br>IPv4 прокси</h2>
+              <p class="pricing__item_paragraph">в одни руки</p>
+              <form id="pricing__form" action="" class="main__form">
+                <input type="text" class="main__input" placeholder="1 шт.">
+                <label class="pricing__label">
+                  <select name="" id="" class="pricing__select">
+                    <option value="">1 месяц</option>
+                  </select>
+                </label>
+                <label class="pricing__label">
+                  <select name="" id="" class="pricing__select">
+                    <option value="">Россия</option>
+                  </select>
+                </label>
+              </form>
+              <form action="" class="main__form pricing__promocode">
+                <input type="text" class="main__input" placeholder="Промокод">
+                <button type="submit" class="pricing__promocode_submit">Применить</button>
+              </form>
+              <p class="pricing__price">65 руб.</p>
+              <p class="pricing__item_paragraph">возьмите еще 4 прокси — получите скидку 15 руб</p>
+              <button for="pricing__form" type="submit" class="main__submit"><span>Купить</span></button>
+            </div>
+          </section>
+          <section class="pricing__item_container">
+            <span class="pricing__around">
+              <span>
+                <span class="pricing__around_text">
+                  <span>IPv4</span>
+                  <span class="pricing__around_text_small">shared</span>
+                </span>
+              </span>
+            </span>
+            <div class="pricing__item_container">
+              <h2 class="pricing__item_title">shared <br>IPv4 прокси</h2>
+              <p class="pricing__item_paragraph">до трёх пользователей</p>
+              <form id="pricing__form" action="" class="main__form">
+                <input type="text" class="main__input" placeholder="1 шт.">
+                <label class="pricing__label">
+                  <select name="" id="" class="pricing__select">
+                    <option value="">1 месяц</option>
+                  </select>
+                </label>
+                <label class="pricing__label">
+                  <select name="" id="" class="pricing__select">
+                    <option value="">Россия</option>
+                  </select>
+                </label>
+              </form>
+              <form action="" class="main__form pricing__promocode">
+                <input type="text" class="main__input" placeholder="Промокод">
+                <button type="submit" class="pricing__promocode_submit">Применить</button>
+              </form>
+              <p class="pricing__price">33 руб.</p>
+              <p class="pricing__item_paragraph">возьмите еще 4 прокси — получите скидку 15 руб</p>
+              <button for="pricing__form" type="submit" class="main__submit"><span>Купить</span></button>
+            </div>
+          </section>
+        </section>
       </section>
     </main>
     <aside class="sidebar"></aside>
@@ -189,10 +291,9 @@
   <footer></footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.overlayScrollbars.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>

@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Proxy.contry</title>
+	<title>Proxy.country</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <section class="background_video_container">
@@ -21,23 +21,53 @@
         <svg class="header__icon-logo" width="33" height="33">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg>
-        <span><b>proxy.</b>contry</span>
+        <span><b>proxy.</b>country</span>
       </a>
       <h1 class="header__title">Прокси-серверы HTTPS и SOCKS</h1>
-      <div class="header__lang">
-        <a href="index.html" class="header__lang_enabled">Ru</a>
-        <b class="header__lang_dividing_line"></b>
-        <a href="" class="header__lang_disabled">En</a>
-      </div>
-      <div class="header__login">
-        <a href="" class="header__login_link">
-          <svg class="header__login_icon" width="26" height="26">
-            <title>LogIn</title>
-            <use xlink:href="img/sprite.svg#icon-login"></use>
-          </svg>
-          <span>Личный кабинет</span>
-        </a>
-      </div>
+      <nav class="header__nav">
+        <a href="" class="header__nav_title">Полезные сервисы<span class="header__nav_arrow"></span></a>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="cheker.html" class="header__nav_link">Чекер прокси</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="converter.html" class="header__nav_link">Конвертер форматов</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="compatibility.html" class="header__nav_link">Совместимость с IPv6</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="news.html" class="header__nav_link">Новости</a>
+          </li>
+        </ul>
+        <div class="header__lang">
+          <a href="index.html" class="header__lang_enabled">Ru</a>
+          <b class="header__lang_dividing_line"></b>
+          <a href="" class="header__lang_disabled">En</a>
+          <button class="header__nav_close"></button>
+        </div>
+        <div class="header__login">
+          <a href="" class="header__login_link header__login_desktop">
+            <svg class="header__login_icon" width="26" height="26">
+              <title>LogIn</title>
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <span>Личный кабинет</span>
+          </a>
+          <div class="header__login_tablet">
+            <div class="header__login_link">
+              <svg class="header__login_icon" width="26" height="26">
+                <title>LogIn</title>
+                <use xlink:href="img/sprite.svg#icon-login"></use>
+              </svg>
+              <span>Личный кабинет :</span>
+              <a href="">Войти</a>
+              <a href="">Зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="header__nav_open"></button>
     </section>
   </header>
   <main>
@@ -88,7 +118,7 @@
                   </svg>
                 </a>
               </div>
-              <a href="" class="objective__others-services">и других сервисов</a>
+              <a href="compatibility.html" class="objective__others-services">и других сервисов</a>
             </div>
             <div class="objective__applicable objective__applicable_IPv4">
               <p class="objective__paragraph">IPv4 подходит для</p>
@@ -140,13 +170,13 @@
         <section class="parameters">
           <div class="parameters__up_block">
             <p class="parameters__title">Выберите прокси по параметрам</p>
-            <form id="parameters__form" action="handler.php" method="post" class="parameters__form">
+            <form id="parameters__form" action="buy.html" method="" class="parameters__form">
               <label>
                 <span class="parameters__form-title">Тип</span>
                 <select name="type" class="parameters__select">
                   <option value="IPv6" selected="">IPv6</option>
                   <option value="IPv4">IPv4</option>
-                  <option value="IPv4">Shared IPv4</option>
+                  <option value="Shared IPv4">Shared IPv4</option>
                 </select>
               </label>
               <label>
@@ -189,20 +219,26 @@
                 </select>
               </label>
             </form>
-            <p class="parameters__paragraph"> <span>Важно! Выбранный товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="" class="parameters__link">«Проверка совместимости IPv6»</a></p>
+            <p class="parameters__paragraph"> <span>Важно! Выбранный товар подходит только для сайтов, совместимых с данным типом прокси серверов. Проверить совместимость с нужным ресурсом можно в разделе</span> <a href="compatibility.html" class="parameters__link">«Проверка совместимости IPv6»</a></p>
           </div>
           <div class="parameters__down_block">
             <div class="parameters__up_line">
               <p class="parameters__title">Оплатите заказ</p>
-              <a href="" class="parameters__link"><span class="parameters__link_tablet">У меня есть промокод</span><span class="parameters__link_mobile">Промокод</span></a>
+              <div class="parameters__link">
+                <button class="parameters__link_tablet landing__button_promo">У меня есть промокод</button>
+                <button class="parameters__link_mobile landing__button_promo">Промокод</button>
+                <label class="select_label landing__label_promo display_none">
+                  <input name="promocode" type="text" class="parameters__promocode_input" placeholder="Промокод">
+                </label>
+              </div>
             </div>
             <div class="parameters__down_line">
               <div class="parameters__price">
                 <span>6,5 &#8381</span>
                 <span>6,5 &#8381/шт</span>
               </div>
-              <button form="parameters__form" type="submit" class="parameters__sending">Купить</button>
-              <p class="parameters__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span><br><a href="" class="parameters__link">Политика конфидециальности</a></p>
+                <button form="parameters__form" type="submit" class="parameters__sending">Купить</button>
+              <p class="parameters__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span><br><a href="privacy_policy.html" class="parameters__link">Политика конфидециальности</a></p>
             </div>
           </div>
         </section>
@@ -308,7 +344,7 @@
         <div class="choice__right_block">
           <p class="choice__title">Не знаете, какой прокси нужен?</p>
           <p class="choice__paragraph">Укажите цель использования, мы подберем прокси для вас</p>
-          <form id="choice__form" action="handler.php" method="post" class="choice__form">
+          <form id="choice__form" action="compatibility.html" method="post" class="choice__form">
             <label>
               <span class="choice__form-title">Сервис</span>
               <input name="address" type="text" placeholder="например, http://yandex.ru">
@@ -403,7 +439,7 @@
         </div>
         <div class="wholesale__down_block">
           <div class="wholesale__down_left_block">
-            <form id="wholesale__form" action="handler.php" method="post" class="wholesale__form">
+            <form id="wholesale__form" action="buy.html" method="post" class="wholesale__form">
               <div class="wholesale__form_up_block">
                 <span class="wholesale__form_title">Количество</span>
                 <div class="wholesale__form_inputs">
@@ -474,7 +510,7 @@
             </div>
             <button form="wholesale__form" type="submit" class="wholesale__sending">-30% Купить</button>
             <p class="wholesale__paragraph">Нажимая на кнопку вы соглашаетесь на обработку персональных данных.
-              <a href="" class="wholesale__link">Политика конфидециальности</a>
+              <a href="privacy_policy.html" class="wholesale__link">Политика конфидециальности</a>
             </p>
           </div>
         </div>
@@ -531,7 +567,7 @@
           <div class="questions__down_block">
             <button form="questions__form" type="submit" class="questions__sending">Отправить</button>
             <p class="questions__paragraph">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных. <br>
-            <a href=""  class="questions__link">Политика конфидециальности</a></p>
+            <a href="privacy_policy.html"  class="questions__link">Политика конфидециальности</a></p>
           </div>
         </div>
       </section>
@@ -618,7 +654,7 @@
         <svg class="payment__icon" width="88" height="32">
           <use xlink:href="img/sprite.svg#icon-qiwi-pay"></use>
         </svg>
-        <svg class="payment__icon" width="157" height="50">
+        <svg class="payment__icon payment__icon_yandex-cash" width="157" height="50">
           <use xlink:href="img/sprite.svg#icon-yandex-cash"></use>
         </svg>
         <svg class="payment__icon" width="85" height="41">
@@ -656,7 +692,7 @@
         <button form="pop_up__authorization_form" class="pop_up__sending" type="submit">Войти</button>
       </form>
       <p class="pop_up__down_paragraph">
-        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="" class="pop_up__down_link">Политика конфидециальности</a>
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="privacy_policy.html" class="pop_up__down_link">Политика конфидециальности</a>
       </p>
       <a href="" class="pop_up__link pop_up__link_reg">Зарегистрироваться</a>
     </section>
@@ -683,7 +719,7 @@
         <button form="pop_up__registration_form" class="pop_up__sending" type="submit">Зарегистрироваться</button>
       </form>
       <p class="pop_up__down_paragraph">
-        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="" class="pop_up__down_link">Политика конфидециальности</a>
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="privacy_policy.html" class="pop_up__down_link">Политика конфидециальности</a>
       </p>
       <a href="" class="pop_up__link pop_up__link_auto">Уже есть аккаунт</a>
     </section>
@@ -695,7 +731,7 @@
           <svg class="footer__icon-logo" width="25" height="25">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
-          <b>proxy</b>.contry
+          <b>proxy</b>.country
         </a>
         <p class="footer__title">Прокси-серверы HTTPS и <br>SOCKS</p>
       </div>
@@ -704,7 +740,7 @@
       </div>
       <div class="footer__right_block">
         <p>
-          <a href="" class="footer__link">Политика конфиденциальности</a><br>
+          <a href="privacy_policy.html" class="footer__link">Политика конфиденциальности</a><br>
           <a href="" class="footer__link">Пользовательское соглашение</a>
         </p>
       </div>
@@ -712,10 +748,9 @@
   </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.overlayScrollbars.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>

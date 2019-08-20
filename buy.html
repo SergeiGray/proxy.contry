@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Proxy.country</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header compatibility__header">
+    <section class="wrapper header__container">
+      <a href="index.html" class="header__logo">
+        <svg class="header__icon-logo" width="33" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span><b>proxy.</b>country</span>
+      </a>
+      <h1 class="header__title">Прокси-серверы HTTPS и SOCKS</h1>
+      <nav class="header__nav">
+        <a href="" class="header__nav_title">Полезные сервисы<span class="header__nav_arrow"></span></a>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="cheker.html" class="header__nav_link">Чекер прокси</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="converter.html" class="header__nav_link">Конвертер форматов</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="compatibility.html" class="header__nav_link">Совместимость с IPv6</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="news.html" class="header__nav_link">Новости</a>
+          </li>
+        </ul>
+        <div class="header__lang">
+          <a href="index.html" class="header__lang_enabled">Ru</a>
+          <b class="header__lang_dividing_line"></b>
+          <a href="" class="header__lang_disabled">En</a>
+          <button class="header__nav_close"></button>
+        </div>
+        <div class="header__login">
+          <a href="" class="header__login_link header__login_desktop">
+            <svg class="header__login_icon" width="26" height="26">
+              <title>LogIn</title>
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <span>Личный кабинет</span>
+          </a>
+          <div class="header__login_tablet">
+            <div class="header__login_link">
+              <svg class="header__login_icon" width="26" height="26">
+                <title>LogIn</title>
+                <use xlink:href="img/sprite.svg#icon-login"></use>
+              </svg>
+              <span>Личный кабинет :</span>
+              <a href="">Войти</a>
+              <a href="">Зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="header__nav_open"></button>
+    </section>
+  </header>
+  <main>
+    <section class="wrapper buy">
+      <div class="privacy__bread_crumbs">
+        <a href="index.html">Главная</a>
+        <div class="privacy__circle"></div>
+        <a href="buy.html" class="privacy__active_link">Покупка прокси</a>
+      </div>
+      <h2 class="main__title">Покупка прокси</h2>
+      <table class="main__table buy__table buy__table_desktop">
+        <thead class="buy__thead">
+          <tr class="main__header_row">
+            <th class="main__header_col buy__quantity">Количество</th>
+            <th class="main__header_col buy__term">Срок</th>
+            <th class="main__header_col buy__pay">К оплате</th>
+          </tr>
+        </thead>
+        <tbody class="buy__tbody">
+          <tr class="buy__row">
+            <td class="main__col buy__quantity"><span>150</span></td>
+            <td class="main__col buy__term"><span>1 месяц</span></td>
+            <td class="main__col buy__pay"><span>400 руб.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="main__table buy__table buy__table_mobile">
+        <tbody class="buy__tbody">
+          <tr class="main__header_row">
+            <td class="main__header_col buy__quantity">Количество</td>
+          </tr>
+          <tr class="buy__row">
+            <td class="main__col buy__quantity"><span>150</span></td>
+          </tr>
+          <tr class="main__header_row">
+            <td class="main__header_col buy__quantity">Срок</td>
+          </tr>
+          <tr class="buy__row">
+            <td class="main__col buy__term"><span>1 месяц</span></td>
+          </tr>
+          <tr class="main__header_row">
+            <td class="main__header_col buy__quantity">К оплате</td>
+          </tr>
+          <tr class="buy__row">
+            <td class="main__col buy__pay"><span>400 руб.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <form action="" class="main__form">
+        <p class="balance__form_title">Выберите способ оплаты</p>
+        <div class="balance__systems">
+          <div class="balance__item_systems">
+            <input id="balance__system_card" name="payment_system" value="card" type="radio" class="balance__radio">
+            <label for="balance__system_card" class="balance__radio_label">
+              <svg class="balance__icon" width="64" height="64">
+                <use xlink:href="img/sprite.svg#icon-card"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="balance__item_systems">
+            <input id="balance__system_yandex" name="payment_system" value="yandex" type="radio" class="balance__radio">
+            <label for="balance__system_yandex" class="balance__radio_label">
+              <svg class="balance__icon" width="95" height="26">
+                <use xlink:href="img/sprite.svg#icon-yandex-money"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="balance__item_systems">
+            <input id="balance__system_qiwi" name="payment_system" value="qiwi" type="radio" class="balance__radio">
+            <label for="balance__system_qiwi" class="balance__radio_label">
+              <svg class="balance__icon" width="88" height="32">
+                <use xlink:href="img/sprite.svg#icon-qiwi-buy"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="balance__item_systems">
+            <input id="balance__system_webmoney" name="payment_system" value="webmoney" type="radio" class="balance__radio">
+            <label for="balance__system_webmoney" class="balance__radio_label">
+              <svg class="balance__icon" width="159" height="48">
+                <use xlink:href="img/sprite.svg#icon-webmoney"></use>
+              </svg>
+            </label>
+          </div>
+        </div>
+        <div class="balance__amount buy__amount">
+          <label class="questions__form_label byu__label">
+            <span class="questions__form-title">E-mail</span>
+            <input type="email" name="email" placeholder="example@gmail.com">
+            <span class="questions__form_line"></span>
+          </label>
+          <button type="submit" class="buy__sending">Купить</button>
+          <p class="buy__paragraph"><span>Нажимая на кнопку вы соглашаетесь на обработку персональных данных.</span><br><a href="privacy_policy.html" class="buy__link">Политика конфидециальности</a></p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <section class="pop_up">
+    <section class="pop_up__overlay">
+    </section>
+    <section class="pop_up__authorization">
+      <svg class="pop_up__icon_close" width="16" height="16">
+        <title>Закрыть</title>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <p class="pop_up__title">Авторизация</p>
+      <p class="pop_up__up_paragraph">Введите логин и пароль, указанные при регистрации</p>
+      <form id="pop_up__authorization_form" action="handler.php" method="post" class="pop_up__form">
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Логин</span>
+          <input type="email" name="login">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Пароль</span>
+          <input type="text" name="password">
+        </label>
+        <a href="" class="pop_up__form_link">Забыл пароль</a>
+        <button form="pop_up__authorization_form" class="pop_up__sending" type="submit">Войти</button>
+      </form>
+      <p class="pop_up__down_paragraph">
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="privacy_policy.html" class="pop_up__down_link">Политика конфидециальности</a>
+      </p>
+      <a href="" class="pop_up__link pop_up__link_reg">Зарегистрироваться</a>
+    </section>
+    <section class="pop_up__registration">
+      <svg class="pop_up__icon_close" width="16" height="16">
+        <title>Закрыть</title>
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <p class="pop_up__title">Регистрация</p>
+      <p class="pop_up__up_paragraph">Введите логин и пароль, указанные при регистрации</p>
+      <form id="pop_up__registration_form" action="handler.php" method="post" class="pop_up__form">
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Логин (E-mail)</span>
+          <input type="email" name="login">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Пароль</span>
+          <input type="text" name="password">
+        </label>
+        <label class="pop_up__form_label">
+          <span class="pop_up__form-title">Повторите пароль</span>
+          <input type="text" name="repeat_password">
+        </label>
+        <button form="pop_up__registration_form" class="pop_up__sending" type="submit">Зарегистрироваться</button>
+      </form>
+      <p class="pop_up__down_paragraph">
+        Нажимая на кнопку вы соглашаетесь на обработку персональных данных. <a href="privacy_policy.html" class="pop_up__down_link">Политика конфидециальности</a>
+      </p>
+      <a href="" class="pop_up__link pop_up__link_auto">Уже есть аккаунт</a>
+    </section>
+  </section>
+  <footer>
+    <section class="wrapper footer_container">
+      <div class="footer__left_block">
+        <a href="" class="footer__logo">
+          <svg class="footer__icon-logo" width="25" height="25">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+          <b>proxy</b>.country
+        </a>
+        <p class="footer__title">Прокси-серверы HTTPS и <br>SOCKS</p>
+      </div>
+      <div class="footer__center_block">
+        <p class="footer__copyright">© 2019 «Proxy.Country»<br>Все права защищены</p>
+      </div>
+      <div class="footer__right_block">
+        <p>
+          <a href="privacy_policy.html" class="footer__link">Политика конфиденциальности</a><br>
+          <a href="" class="footer__link">Пользовательское соглашение</a>
+        </p>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
